@@ -72,37 +72,6 @@ breadcrumb_html: |
                 <div class="main-blog-item-card d-flex flex-column gap-3">
                     <h5 class="h5 fw-semibold mb-3">Upcoming Conferences</h5>
 
-                  <!-- NEUER UPCOMING EVENT: Open Chain and Friends in Stuttgart -->
-                  <div class="main-blog-item-card d-flex flex-column gap-3">
-                    <div class="blog-img d-flex align-items-center justify-content-center">
-                      <img src="images/news/2026_openchain_and_friends.png" alt="Open Chain and Friends" />
-                    </div>
-
-                    <div class="blog-item-content">
-                      <div
-                        class="top-pick-date d-flex align-items-center gap-2 mb-2"
-                      >
-                        <span class="icon d-flex align-items-center">
-                          <img src="images/icons/calendar.svg" alt="" />
-                        </span>
-                        <span class="date">24-26 Mar, 2026</span>
-                      </div>
-                      <h2 class="h2 mb-3">
-                        Open Chain and Friends, <br> Stuttgart, Germany
-                      </h2>
-                      <p>
-                        Presenter: Björn Reistel <br>
-                        Topic: Eclipse S-CORE: Open by Choice, Safe by Design.
-                      </p>
-                      <a
-                        class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
-                        href="https://openchainproject.org/news/2025/12/09/openchain-and-friends-2026"
-                      >
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-
                   <!-- BESTEHENDER UPCOMING EVENT: OCX 2026 -->
                   <div class="main-blog-item-card d-flex flex-column gap-3">
                     <div class="blog-img d-flex align-items-center justify-content-center">
@@ -153,6 +122,29 @@ breadcrumb_html: |
                   <h5 class="h5 fw-semibold mb-3">Previous Conferences</h5>
 
                   <aside class="top-picks-our-blogs">
+
+                    <!-- MOVED EVENT: Open Chain and Friends in Stuttgart -->
+                    <a href="https://openchainproject.org/news/2025/12/09/openchain-and-friends-2026"
+                    class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
+                    <div class="top-pick-img">
+                      <img src="images/news/2026_openchain_and_friends.png" alt="Open Chain and Friends" />
+                    </div>                     
+                    <div class="top-pick-content">
+                      <div
+                        class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                      >
+                        <span class="icon d-flex align-items-center">
+                          <img src="images/icons/calendar.svg" alt="" />
+                        </span>
+                        <span class="date">24-26 Mar, 2026</span>
+                      </div>
+                      <h3>Open Chain and Friends, <br> Stuttgart, Germany</h3>
+                      <p class="text-muted">
+                        Presenter: Björn Reistel <br>
+                        Topic: Eclipse S-CORE: Open by Choice, Safe by Design.
+                      </p>
+                    </div>
+                  </a>
 
                     <!-- NEUER PREVIOUS EVENT: SDV Community Days at T-Systems -->
                     <a href="https://www.eclipse-foundation.events/event/SDV-Community-Days-2026/home"

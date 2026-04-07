@@ -153,7 +153,7 @@ breadcrumb_html: |
       <span class="date">Feb 23, 2026</span>
     </div>
     <h2 class="h2 mb-3">
-      Eclipse S-CORE v0.6.0 Milestone Released!
+     Revoked: Eclipse S-CORE v0.6.0 Milestone Released!
     </h2>
     
     <!-- IMPORTANT: The markdown="1" attribute ensures the content is rendered correctly -->
@@ -182,22 +182,6 @@ breadcrumb_html: |
   </li>
 </ul>
 
-<h4 class="mt-4 mb-2">Get Involved:</h4>
-
-<ul>
-    <li>Explore the release: <a href="https://eclipse-score.github.io/reference_integration/v0.6.0/_collections/score_platform/docs/score_releases/index.html" target="_blank">Release Notes</a></li>
-    <li>Read the S-CORE Handbook: <a href="https://eclipse-score.github.io/reference_integration/v0.6.0/_collections/score_platform/docs/handbook/index.html" target="_blank">S-CORE Handbook</a></li>
-    <li>Join the conversation: <a href="https://github.com/orgs/eclipse-score/discussions">Discussions on GitHub</a></li>
-    <li>Contribute: <a href="https://github.com/eclipse-score" target="_blank">GitHub Repo</a></li>
-</ul>
-
-<p class="mt-3">A huge thank you to our contributors and the Eclipse SDV community for making this milestone possible!</p>
-
-    </div>
-
-    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://eclipse-score.github.io/reference_integration/v0.6.0/index.html" target="_blank">
-      Full release notes
-    </a>
   </div>
 </div>
 <!-- ========== END: S-CORE 0.6.0 Release Card (English Version) ========== -->
