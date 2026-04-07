@@ -49,27 +49,101 @@ breadcrumb_html: |
 <main class="main-section p-0 d-flex flex-column">
       <section class="esc-pages-section nav-tabs-section">
         <div class="container">
-          <div class="nav-tabs-wrapper">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" href="training-modules.html"
-                  >How to Collaborate</a
-                >
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="reference-implementation.html"
-                  >How to Contribute</a
-                >
-              </li>            
+        <div class="row w-100 g-4">
+        <div class="col-12 col-xl-6">
+               <h2 class="h2 mb-3 fw-semibold"> How to get in contact with the project</h2>
+                <p class="mb-2">
+                  We’re a collaborative and ever-growing community of automotive
+                  experts, technology partners, developers, and innovators
+                  united under the Eclipse Foundation. Together, we’re shaping
+                  the future of automotive software by building open, safe, and
+                  scalable solutions.
+                </p>              
+              <p class="max-w-100">
+                  Active Contributions to the S-CORE project are the basis for getting involved. 
+                  The S-CORE Project works according to the Eclipse Project Handbook and has named and elected project leads and committers 
+                  (see 
+                  <a  href="https://projects.eclipse.org/projects/automotive.score" class="read-more main-primary" target="_blank"
+                  >Eclipse Safe Open Vehicle Core               
+                  </a> 
+                  ). <br><br>The direction of the S-CORE project is discussed and decided in the project lead circle, 
+                  the technical direction is created and upfront in the tech lead circle. Meeting notes are transparent via the
+
+                  <a  href="https://github.com/orgs/eclipse-score/discussions" class="read-more main-primary" target="_blank"
+                  >S-CORE GitHub Discussions.               
+                  </a> <br><br>
+
+                </p>
+                <p class="max-w-100">
+                    We aim to build a safety ready full stack architecture, 
+                    where components fit to each other in automotive grade Software Quality and performance. To achieve this, we follow a strict
+                    
+                  <a  href="https://eclipse-score.github.io/score/main/score_releases/index.html#releases" class="read-more main-primary" target="_blank"
+                  >feature roadmap and architecture           
+                  </a> 
+                   and a rigid
+
+                  <a  href="https://eclipse-score.github.io/process_description/main/index.html" class="read-more main-primary target="_blank"
+                  > software development process         
+                  </a> <br><br>
+
+                </p>
+
+                <p class="max-w-100">
+                   Contributions to the S-CORE project must therefore follow the technical direction of the project and the S-CORE architecture. 
+                   For an introduction on how to contribute, please check out our 
+                  <a  href="https://eclipse-score.github.io/score/main/contribute/index.html" class="read-more main-primary target" target="_blank"
+                  >How to Contribut Guideline.        
+                  </a> <br><br>
+                </p>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="who-we-are-content">
+               
+
+                <p class="max-w-100"> <br><br>
+
+            <strong class="fw-semibold">Project Mailing List:</strong><br>
+                <a  href="mailto:score-dev@eclipse.org" class="read-more btn btn-primary main-primary" target="_blank"
+                  >score-dev@eclipse.org 
+            </a><br>     <br> 
+
+            <strong class="fw-semibold">Architectural Discussion:</strong> <br>
+            <a href="https://join.slack.com/t/sdvworkinggroup/shared_invite/zt-3c5ied1nk-Mk87s4kOX7ipcNo_VktlWg" class="read-more btn btn-primary main-primary" target="_blank">Join SDV's slack workspace</a> and jump to 
+              <a  href="https://sdvworkinggroup.slack.com/archives/C083Z4VL90B" class="read-more btn btn-primary main-primary" target="_blank"
+                  >#score-project-channel-public 
+                
+            </a><br>     <br>   
+            
+            <strong class="fw-semibold">Eclipse S-CORE Project Office Hours:  </strong> <br>
              
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-              
-            </ul>
+            <a  href="https://calendar.google.com/calendar/u/0/embed?src=c_2ampi2bmoka3qter4dceap1d5g@group.calendar.google.com&ctz=Europe/Berlin" class="read-more btn btn-primary main-primary" target="_blank"
+                  >Monday 13.00 - 14.00 (Weekly)
+                
+            </a> 
+            </p>
+            <p><br>
+            <strong class="fw-semibold">Find all our meetings:  </strong> <br>
+            <a  href="https://calendar.google.com/calendar/u/0/embed?src=c_2ampi2bmoka3qter4dceap1d5g@group.calendar.google.com&ctz=Europe/Berlin" class="read-more btn btn-primary main-primary" target="_blank"
+                  >Open Eclipse community calendar
+                
+            </a> <br/>  <br>    
+            <strong class="fw-semibold">General Information / Alignment regarding S-CORE as a basis for distributions & products:  </strong> <br>
+             
+            <a  href="https://projects.eclipse.org/projects/automotive.score/who" class="read-more btn btn-primary main-primary" target="_blank"
+                  >Contact one of the project leads of Eclipse S-CORE
+                
+            </a> 
+            </p>
+
+               
+              </div>
+            </div>
+            
+            
           </div>
-        </div>
+          
+          
       </section>
 
       <section class="esc-section esc-training-modules-container-section pt-0">
