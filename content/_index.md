@@ -114,6 +114,72 @@ extra_scripts:
       </header>
     </div>
 
+    <div class="section esc-section-needed-container">
+      <section class="esc-section esc-needed-section">
+        <div class="container">
+          <div class="esc-header esc-header-needed mb-5">
+            <div class="w-100">
+              <h2 class="h2">Why is S-CORE Needed</h2>
+            </div>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/home/icons/Collaboration.svg" alt="" />
+                </div>
+                <h5>Common Stack & Collaboration</h5>
+                <p>
+                  A common full-stack software runtime addressing shared
+                  industry problems through joint solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/home/icons/Speed.svg" alt="" />
+                </div>
+                <h5>Speed</h5>
+                <p>
+                  Accelerates development by working in open source with
+                  code-centric, iterative methods.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/home/icons/Abstraction.svg" alt="" />
+                </div>
+                <h5>Abstraction & Extensibility</h5>
+                <p>
+                  Decouples HW and SW with flexible layers and enables
+                  project-specific extensions of the stack.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/home/icons/Quality.svg" alt="" />
+                </div>
+                <h5>Quality & Efficiency</h5>
+                <p>
+                  A lean, no-frills solution using modern languages,
+                  readable specs, and safe open source processes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <div class="section esc-news--container">
       <section class="esc-section esc-news-section">
         <div class="container">
@@ -419,71 +485,7 @@ extra_scripts:
       </section>
     </div>
 
-    <div class="section esc-section-needed-container">
-      <section class="esc-section esc-needed-section">
-        <div class="container">
-          <div class="esc-header esc-header-needed mb-5">
-            <div class="w-100">
-              <h2 class="h2">Why is S-CORE Needed</h2>
-            </div>
-          </div>
-
-          <div class="row g-4 justify-content-center">
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Collaboration.svg" alt="" />
-                </div>
-                <h5>Common Stack & Collaboration</h5>
-                <p>
-                  A common full-stack software runtime addressing shared
-                  industry problems through joint solutions.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Speed.svg" alt="" />
-                </div>
-                <h5>Speed</h5>
-                <p>
-                  Accelerates development by working in open source with
-                  code-centric, iterative methods.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Abstraction.svg" alt="" />
-                </div>
-                <h5>Abstraction & Extensibility</h5>
-                <p>
-                  Decouples HW and SW with flexible layers and enables
-                  project-specific extensions of the stack.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Quality.svg" alt="" />
-                </div>
-                <h5>Quality & Efficiency</h5>
-                <p>
-                  A lean, no-frills solution using modern languages,
-                  readable specs, and safe open source processes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    
 
     <div class="section esc-our-contributors-container">
       <section class="esc-section esc-our-contributors-container-section">
