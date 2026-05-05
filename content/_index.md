@@ -132,7 +132,7 @@ extra_scripts:
                                 <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">How to get started</h5>
                                 <p class="card-text">A detailed “how-to-guide” introducing core concepts and walking through application building step-by-step.</p>
                                 <div class="mt-auto pt-3">
-                                    <a href="training-modules.html" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Read the Guide</a>
+                                    <a href="https://eclipse-score.github.io/score/main/handbook/index.html#" target="_blank" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Read the Guide</a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@ extra_scripts:
                                 <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">Latest Release</h5>
                                 <p class="card-text">Get an overview of all features and functions available in the first S-CORE release Milestones.</p>
                                 <div class="mt-auto pt-3">
-                                    <a href="https://eclipse-score.github.io/score/main/" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">View Release Notes</a>
+                                    <a href="https://eclipse-score.github.io/score/main/score_releases/index.html#releases" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">View Release Notes</a>
                                 </div>
                             </div>
                         </div>
@@ -462,7 +462,7 @@ extra_scripts:
           <div class="esc-header esc-header-news mb-5">
             <div class="w-100">
               <h2 class="h2">
-                The focus of S-CORE are safety-critical in-car components
+                S-CORE Focuses on Safety-Critical In-Car Components
               </h2>
             </div>
           </div>
