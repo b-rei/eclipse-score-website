@@ -22,7 +22,6 @@ extra_scripts:
   - "js/contributor-slider.js"
   - "js/loading.js"
 ---
-
 <main class="main-section homepage-main-section p-0 min-vh-100 d-flex flex-column">
   <div>
     <div class="section main-header-container">
@@ -100,7 +99,7 @@ extra_scripts:
                   
                   <div class="cta-buttons d-flex flex-wrap gap-2">
                     <a href="news.html" class="btn btn-outline-primary button secondary">Upcoming Events</a>
-                    <a href="reference-implementation.html" class="btn btn-outline-primary button secondary">Get Involved</a>
+                    <a href="training-modules.html" class="btn btn-outline-primary button secondary">Get Involved</a>
                     <a href="https://github.com/eclipse-score" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary button tertiary">Visit Our Github</a>
                   </div>
                 </div>
@@ -113,6 +112,64 @@ extra_scripts:
         </section>
       </header>
     </div>
+    
+    <!-- ========== Begin Updated Teaser Section with Background ========== -->
+    <div class="section esc-news--container">
+        <section class="esc-section">
+            <div class="container">
+                <div class="esc-header mb-5">
+                    <div class="w-100">
+                      <h2 class="h2">Getting Started</h2>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 d-flex flex-column">
+                            <div class="card-body text-center d-flex flex-column">
+                                <div class="icon mb-3">
+                                    <img src="images/home/icons/Speed.svg" alt="How to get started icon" style="height: 48px;"/>
+                                </div>
+                                <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">How to get started</h5>
+                                <p class="card-text">A detailed “how-to-guide” introducing core concepts and walking through application building step-by-step.</p>
+                                <div class="mt-auto pt-3">
+                                    <a href="training-modules.html" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Read the Guide</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 d-flex flex-column">
+                            <div class="card-body text-center d-flex flex-column">
+                                <div class="icon mb-3">
+                                    <img src="images/icons/release.png" alt="Latest release icon" style="height: 48px;"/>
+                                </div>
+                                <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">Latest Release</h5>
+                                <p class="card-text">Get an overview of all features and functions available in the first S-CORE release Milestones.</p>
+                                <div class="mt-auto pt-3">
+                                    <a href="https://eclipse-score.github.io/score/main/" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">View Release Notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 d-flex flex-column">
+                            <div class="card-body text-center d-flex flex-column">
+                                <div class="icon mb-3">
+                                    <img src="images/home/icons/Abstraction.svg" alt="GitHub icon" style="height: 48px;"/>
+                                </div>
+                                <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">Explore on GitHub</h5>
+                                <p class="card-text">Get an overview of all features and functions available in the Eclipse S-CORE Github Repo.</p>
+                                <div class="mt-auto pt-3">
+                                    <a href="https://github.com/eclipse-score" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Go to GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ========== End Updated Teaser Section ========== -->
 
     <div class="section esc-section-needed-container">
       <section class="esc-section esc-needed-section">
@@ -122,7 +179,6 @@ extra_scripts:
               <h2 class="h2">Why is S-CORE Needed</h2>
             </div>
           </div>
-
           <div class="row g-4 justify-content-center">
             <div class="col-12 col-md-6 col-xl-3">
               <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
@@ -136,7 +192,6 @@ extra_scripts:
                 </p>
               </div>
             </div>
-
             <div class="col-12 col-md-6 col-xl-3">
               <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
                 <div class="icon d-flex align-items-center justify-content-center">
@@ -149,7 +204,6 @@ extra_scripts:
                 </p>
               </div>
             </div>
-
             <div class="col-12 col-md-6 col-xl-3">
               <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
                 <div class="icon d-flex align-items-center justify-content-center">
@@ -162,7 +216,6 @@ extra_scripts:
                 </p>
               </div>
             </div>
-
             <div class="col-12 col-md-6 col-xl-3">
               <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
                 <div class="icon d-flex align-items-center justify-content-center">
@@ -179,7 +232,6 @@ extra_scripts:
         </div>
       </section>
     </div>
-
     <div class="section esc-news--container">
       <section class="esc-section esc-news-section">
         <div class="container">
@@ -190,7 +242,6 @@ extra_scripts:
               <img src="images/icons/top-right-arrow.svg" alt="" />
             </a>
           </div>
-
           <div class="esc-content">
             <div class="owl-carousel-wrapper position-relative">
               <div class="owl-carousel news-slider">
@@ -237,7 +288,6 @@ extra_scripts:
                     </a>
                   </div>
                 </div>
-
                 <div class="card">
                   <div class="card-img">
                     <img src="images/icons/QC joins.png" alt="" />
@@ -306,7 +356,6 @@ extra_scripts:
                   <p>OEMS</p>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-3">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -315,7 +364,6 @@ extra_scripts:
                   <p>Tiers</p>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-3">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -324,7 +372,6 @@ extra_scripts:
                   <p>SW-Supplier</p>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-3">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -334,14 +381,12 @@ extra_scripts:
                 </div>
               </div>
             </div>
-
             <h4 class="h4 fw-bold">...we´re shaping an open-source and code-based SW-platform...</h4>
             <p>S-CORE solves the requirements of a future SDV with a collaborative, open, and modular approach.
               Developed by and for the industry, it delivers a robust core architecture that reduces integration effort,
               enhances safety, and accelerates development. <br />
               Rather than fostering competition through proprietary,
               stacks, S-CORE enables collaboration through standardisation.</p>
-
             <div class="row g-4 justify-content-center mb-5">
               <div class="col-12 col-md-6 col-xl-4">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
@@ -350,7 +395,6 @@ extra_scripts:
                   </div>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-4">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -359,7 +403,6 @@ extra_scripts:
                   <p>Open Source</p>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-4">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -369,13 +412,11 @@ extra_scripts:
                 </div>
               </div>
             </div>
-
             <h4 class="h4 fw-bold">...for "dynamic core" components with strict requirements of a future SDV.</h4>
             <p>
               S-CORE bridges the OS–application gap and is being developed as a modular,
               standards-oriented middleware. The goal: enable predictable, safe, and reusable execution
               environments across diverse hardware and ECU types – without prescribing a fixed implementation.<br />
-
               Its architecture is designed for safety-critical contexts – especially ADAS, Body, and Chassis – and supports compliance with ISO 26262 and ISO/SAE 21434.
             </p>
             <div class="row g-4 justify-content-center">
@@ -386,7 +427,6 @@ extra_scripts:
                   </div>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-3">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -395,7 +435,6 @@ extra_scripts:
                   <p>Quality (ASPICE)</p>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-3">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -404,7 +443,6 @@ extra_scripts:
                   <p>Safety (ISO 26262)</p>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 col-xl-3">
                 <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -484,9 +522,7 @@ extra_scripts:
         </div>
       </section>
     </div>
-
     
-
     <div class="section esc-our-contributors-container">
       <section class="esc-section esc-our-contributors-container-section">
         <div class="container">
@@ -580,7 +616,6 @@ extra_scripts:
         </div>
       </section>
     </div>
-
     <div class="section no-fullpage-footer">
       <footer class="footer-section">
         <div class="container">
