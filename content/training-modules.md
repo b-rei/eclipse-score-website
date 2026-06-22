@@ -54,7 +54,7 @@ breadcrumb_html: |
                           <h5 class="card-title fw-bold">User´s Guide</h5>
                           <p class="card-text">A detailed “how-to-guide” introducing core concepts and walking through application building step-by-step.</p>
                           <div class="mt-auto pt-3">
-                              <a href="training-modules.html" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Read the Guide</a>
+                              <a href="https://eclipse-score.github.io/score/main/users_guide/index.html" target="_blank" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Read the Guide</a>
                           </div>
                       </div>
                   </div>
