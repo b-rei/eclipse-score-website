@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="main-section p-0 min-vh-100 d-flex flex-column">
+  <section class="esc-section">
+    <div class="container py-5">
+      <h1 class="h2 fw-bold mb-3">{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="mb-4">{{ . }}</div>
+      {{ end }}
+      <ul class="list-unstyled d-flex flex-column gap-2">
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          </li>
+        {{ else }}
+          <li>No entries found.</li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+</main>
+{{ end }}

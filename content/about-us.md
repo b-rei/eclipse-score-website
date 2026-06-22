@@ -19,6 +19,7 @@ extra_scripts:
   - "js/zoom.js"
   - "js/about-us.js"
   - "js/contributor-slider.js"
+  - "js/member-logos.js"
   - "js/loading.js"
 use_shared_header: true
 use_shared_footer: true
@@ -136,71 +137,6 @@ breadcrumb_html: |
           <div class="contributor-slider-content mt-5">
             <div class="owl-carousel-wrapper position-relative">
               <div class="owl-carousel contributor-slider">
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1009-web.png" alt="Member 2" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1134-web.png" alt="Member 3" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1550-web.png" alt="Member 4" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/AUMOVIO.png" alt="Member 5" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1568-web.png" alt="Member 6" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/731-web.png" alt="Member 1" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1572-web.png" alt="Member 7" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1693-web.png" alt="Member 8" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1702-web.jpg" alt="Member 9" />
-                  </div>                  
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/1607-web.png" alt="Member 10" />
-                  </div>
-                </div>
-                                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/capgemini.jpg" alt="Member 10" />
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/IAV.png" alt="Member 10" />
-                  </div>
-                </div>
-                  <div class="card">
-                  <div class="icon contributor-icon">
-                    <img src="images/about-us/members/validas.png" alt="Member 10" />
-                  </div>
-                </div>
               </div>
               <button class="custom-prev" style="display: none">
                 <img src="images/icons/chevron-left.svg" alt="" />
