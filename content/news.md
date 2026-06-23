@@ -19,7 +19,6 @@ active_nav: "news"
 header_class: "news-page-header"
 header_title: "News & Events"
 breadcrumb_html: |
-  
                   <li class="breadcrumb-item">
                     <a href="index.html" class="breadcrumb-link text-white"
                       >Home</a
@@ -59,25 +58,32 @@ breadcrumb_html: |
           </div>
         </div>
       </section>
-
       <section
         class="esc-section esc-news-container-section pt-0 min-vh-100 mt-4"
       >
         <div class="container">
           
           <div class="row w-100 g-4">
+            
+            <!-- ========== START: DYNAMISCHE ECLIPSE FOUNDATION EVENT-DATENBANK ========== -->
+            <efsc-collection pagesize="2" autoscroll="true">
+              <efsc-event-filters></efsc-event-filters>
+              <efsc-event-list publishtarget="sdv"></efsc-event-list>
+              <efsc-pagination maxvisible="5" justify="center"></efsc-pagination>
+            </efsc-collection>
+            <!-- ========== END: DYNAMISCHE ECLIPSE FOUNDATION EVENT-DATENBANK ========== -->
+
             <div class="col-12 col-xl-8 gap-3 mt-0">
               <div class="d-flex flex-column gap-3">
                 
                 <div class="main-blog-item-card d-flex flex-column gap-3">
                     <h5 class="h5 fw-semibold mb-3">Upcoming Conferences</h5>
-
+                  
                   <!-- BESTEHENDER UPCOMING EVENT: OCX 2026 -->
                   <div class="main-blog-item-card d-flex flex-column gap-3">
                     <div class="blog-img d-flex align-items-center justify-content-center">
                       <img src="images/news/OCX26.png" alt="" />
                     </div>
-
                     <div class="blog-item-content">
                       <div
                         class="top-pick-date d-flex align-items-center gap-2 mb-2"
@@ -102,9 +108,8 @@ breadcrumb_html: |
                       </a>
                     </div>
                   </div>
-                     
+                      
                 </div> <!-- /main-blog-item-card for Upcoming Conferences -->
-
               </div>
               <div class="text-center mt-3">
                 <a
@@ -120,9 +125,7 @@ breadcrumb_html: |
                
                 <div class="top-picks-container">
                   <h5 class="h5 fw-semibold mb-3">Previous Conferences</h5>
-
                   <aside class="top-picks-our-blogs">
-
                     <!-- MOVED EVENT: Open Chain and Friends in Stuttgart -->
                     <a href="https://openchainproject.org/news/2025/12/09/openchain-and-friends-2026"
                     class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
@@ -145,7 +148,6 @@ breadcrumb_html: |
                       </p>
                     </div>
                   </a>
-
                     <!-- NEUER PREVIOUS EVENT: SDV Community Days at T-Systems -->
                     <a href="https://www.eclipse-foundation.events/event/SDV-Community-Days-2026/home"
                     class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
@@ -169,7 +171,6 @@ breadcrumb_html: |
                       </p>
                     </div>
                   </a>  
-
                     <!-- VERSCHOBENER EVENT: SIA 2026 -->
                     <a href="https://www.sia.fr/evenements/404-study-day-future-proofing-sdv"
                     class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
@@ -193,7 +194,6 @@ breadcrumb_html: |
                       </p>
                     </div>
                   </a>
-
                     <!-- BESTEHENDE EVENTS (unverändert) -->
                     <a href="https://www.eventbrite.com/e/eclipse-sdv-community-meetup-japan-co-hosted-by-bosch-group-tickets-1540218427779"
                     class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
@@ -217,7 +217,6 @@ breadcrumb_html: |
                       </p>
                     </div>
                   </a>  
-
                   <a href="https://www.eventbrite.com/e/eclipse-sdv-south-korea-lg-tickets-1742261403759"
                       class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
                       <div class="top-pick-img">
@@ -265,7 +264,6 @@ breadcrumb_html: |
                         </p>
                       </div>
                     </a>  
-
                     <a
                       href="https://www.vdi-wissensforum.de/eliv/"
                       class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
@@ -289,7 +287,6 @@ breadcrumb_html: |
                         </p>
                       </div>
                     </a>   
-
  
                     <a
                       href="#"
