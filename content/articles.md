@@ -10,6 +10,51 @@ editorial_description = "Project releases, community stories, and perspectives f
 extra_styles = ["css/editorial.css"]
 
 [[articles.items]]
+date = "September 7, 2026"
+title = "Eclipse S-CORE 0.9 Milestone"
+body = """
+We are happy to announce the release of the Eclipse S-CORE 0.9 milestone. This update introduces architectural enhancements, new capabilities, and stability improvements.
+
+#### What's New in 0.9?
+
+This milestone represents a significant step forward in improving platform integration, build reproducibility, and system configuration capabilities. It focuses on implementing our unified integration strategy, introducing a dedicated configuration management service, and updating our toolchains. Here are some of the highlights from this release:
+
+#### Core Platform Enhancements
+
+- **Configuration Management:** Newly integrated into the platform, providing a dedicated configuration daemon and proxy API for platform-wide configuration handling.
+- **Baselibs:** Our foundational libraries have been updated with stability fixes and now include an integrated workaround patch for QNX 8 event polling.
+- **Persistency:** This release introduces stability improvements to the persistency module, ensuring reliable non-volatile key-value data storage.
+- **Logging:** The logging framework has been updated, alongside a new logging demo application in the reference integration to demonstrate diagnostic workflows.
+- **Time:** The time abstraction module has been updated to align timing APIs with the latest foundational libraries.
+- **Kyron:** Maintained at stable baselines for deterministic time synchronization and service management.
+
+#### Developer Experience, Integration, and Tooling
+
+- **Reference Integration:** Updated to Bazel 8.6.0 and includes the new logging demo.
+- **Bazel Platforms:** Reached its first major version, establishing a stable baseline for target hardware and operating system definitions.
+- **Docs-as-Code:** The documentation-as-code toolchain has received a major version upgrade, improving documentation generation and traceability.
+- **ITF (Integration Testing Framework):** Enhanced integration test runners and execution fixtures across local, containerized, and emulated target environments.
+- **Process Description:** Updated and renamed to `score_process_description` in the Bazel registry for consistent governance across the project.
+- **Tooling:** Development utilities have been upgraded with an integration patch to maintain continuous support for `rust_coverage_report`.
+- **Bazel CPP Toolchain:** Maintained to ensure seamless compilation across supported target toolchains.
+"""
+
+[[articles.items]]
+date = "July 28, 2026"
+title = "Eclipse S-CORE has reached release gate v0.8!"
+body = """
+This milestone raises the bar for what every module in scope for v1.0 has to demonstrate: complete, reviewed requirements and architecture documentation, including the safety artifacts that some modules had previously been able to defer. Meeting that bar is a multi-release effort, and v0.8 marks the point where members committed to it project-wide.
+
+It is important to note that release gate v0.8 remains within QM (quality-managed) status. It is a structured step on the roadmap toward a safety-certifiable v1.0, not the certification itself.
+
+The project's trajectory toward v1.0 is defined by exactly this kind of rigor: building the documented evidence that safety-critical use requires, one release gate at a time, rather than asserting it upfront.
+
+The current status of all modules across each process area is tracked on the public [S-CORE release roadmap](https://eclipse-score.github.io/score/main/score_releases/index.html#releases).
+
+Interested in contributing to what comes next? Visit the [Get Involved page](https://eclipse.dev/score/how_to_contribute.html) to find ways to participate.
+"""
+
+[[articles.items]]
 date = "May 12, 2026"
 title = "Eclipse S-CORE 0.7 is here!"
 action_label = "Get started with Eclipse S-CORE 0.7"
