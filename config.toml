@@ -91,19 +91,29 @@ pluralizeListTitles = false
   weight = 7
 
 [[menu.footer]]
-  name = "Terms"
+  name = "Terms of Use"
   url = "https://www.eclipse.org/legal/termsofuse.php"
   weight = 1
 
 [[menu.footer]]
-  name = "Privacy"
+  name = "Privacy Policy"
   url = "https://www.eclipse.org/legal/privacy.php"
   weight = 2
 
 [[menu.footer]]
-  name = "Legal"
-  url = "https://www.eclipse.org/legal/"
+  name = "Copyright Agent"
+  url = "https://www.eclipse.org/legal/copyright.php"
   weight = 3
+
+[[menu.footer]]
+  name = "Eclipse Public License"
+  url = "https://www.eclipse.org/legal/epl-2.0/"
+  weight = 4
+
+[[menu.footer]]
+  name = "Legal Resources"
+  url = "https://www.eclipse.org/legal/"
+  weight = 5
 
 [markup]
   [markup.goldmark]
