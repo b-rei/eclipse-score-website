@@ -14,7 +14,7 @@ image = "images/about-us/car-orange-signals.png"
 image_alt = "Automotive software and mobility"
 
 [[about_hero.links]]
-label = "Explore S-CORE Our mission"
+label = "Our mission"
 href = "#targets"
 style = "primary"
 
