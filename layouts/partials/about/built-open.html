@@ -1,0 +1,20 @@
+{{ $content := .Params.built_open }}
+<section class="about-section about-built-open">
+  <div class="score-shell about-built-grid">
+    <div>
+      <p class="about-eyebrow">{{ $content.eyebrow }}</p>
+      <h2>{{ $content.heading }}</h2>
+      <p class="about-body">{{ $content.paragraph }}</p>
+    </div>
+    <aside class="about-members-panel" aria-labelledby="about-members-heading">
+      <h3 id="about-members-heading">{{ $content.member_heading }}</h3>
+      <p class="about-member-status" data-member-status>{{ $content.member_loading }}</p>
+      <ul class="about-member-list" data-eclipse-members
+          data-api="{{ .Site.Params.eclipse_members_api }}"
+          data-loading="{{ $content.member_loading }}"
+          data-error="{{ $content.member_error }}">
+      </ul>
+      <a class="about-members-source" href="https://projects.eclipse.org/projects/automotive.score/who" target="_blank" rel="noopener noreferrer">View the member directory <span aria-hidden="true">&rarr;</span></a>
+    </aside>
+  </div>
+</section>

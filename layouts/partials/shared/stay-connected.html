@@ -1,0 +1,11 @@
+{{ $content := (.Site.GetPage "stay-connected").Params.stay_connected }}
+<section class="score-stay-connected" aria-labelledby="score-stay-connected-title">
+  <div class="score-shell">
+    <header class="score-stay-connected-heading">
+      <p class="score-stay-connected-eyebrow">{{ $content.eyebrow }}</p>
+      <h2 id="score-stay-connected-title">{{ $content.heading }}</h2>
+      <p class="score-stay-connected-description">{{ $content.description }}</p>
+    </header>
+    {{ partial "shared/feature-card-grid.html" (dict "items" $content.items "columns" 4 "variant" "inverse") }}
+  </div>
+</section>

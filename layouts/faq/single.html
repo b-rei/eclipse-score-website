@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main class="faq-page">
+  {{ partial "shared/compact-stage.html" (dict "eyebrow" .Params.stage_eyebrow "title" .Params.stage_title "description" .Params.stage_description) }}
+  {{ partial "faq/questions.html" . }}
+  {{ partial "shared/stay-connected.html" . }}
+</main>
+{{ end }}

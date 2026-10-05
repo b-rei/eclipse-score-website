@@ -1,11 +1,10 @@
 baseurl = "https://eclipse.dev/score"
 DefaultContentLanguage = "en"
 title = "Eclipse S-CORE"
-#theme = "hugo-solstice-theme"
 metaDataFormat = "yaml"
-disableKinds = []
+disableKinds = ["taxonomy", "term"]
 
-enableRobotsTXT = true
+enableRobotsTXT = false
 uglyURLs = true
 pluralizeListTitles = false
 
@@ -17,27 +16,17 @@ pluralizeListTitles = false
   news_count = 3
   gcse = "011805775785170369411:p3ec0igo0qq"
   gcse_result_url = "https://www.eclipse.org/home/search/"
-  header_wrapper_class = "header_wrapper_class"
-  call_for_action_text = "Download"
-  call_for_action_url = "//eclipse.org/downloads/"
-  call_for_action_icon = "fa-download"
+  guide_url = "https://eclipse-score.github.io/score/main/users_guide/index.html"
+  github_url = "https://github.com/eclipse-score"
+  architecture_url = "docs.html"
+  contribution_url = "how_to_contribute.html"
+  about_url = "about-us.html"
+  news_url = "articles.html"
+  eclipse_members_api = "https://membership.eclipse.org/api/projects/automotive.score/organizations"
   layout_style = "astro"
   hide_ad = false
   featured_content_publish_target = "eclipse_org"
   sidebar_layout = "default"
-# js = ""
-# styles = ""
-# logo = ""
-# favicon = ""
-# share_img = ""
-# logo_width = ""
-# header_left_classes = ""
-# main_menu_wrapper_classes = ""
-# projects_working_group = ""
-# show_events = true
-# table_classes = "table table-bordered"
-# hide_cfa_same_page = true
-# show_collapsible_menu = true
 
 [taxonomies]
   tag = "tags"
@@ -59,37 +48,62 @@ pluralizeListTitles = false
   plainIDAnchors = true
   hrefTargetBlank = true
 
-[[menu.sidebar]]
-  name = "Documentation"
-  url = "/home"
-  weight = 1
+[[menu.main]]
+  name = "Home"
   identifier = "home"
-
-[[menu.sidebar]]
-  parent ="home"
-  name = "hugo-solstice-theme"
-  url = "https://webdev.eclipse.org/docs/hugo/"
+  url = "/"
   weight = 1
-  pre = "<i class=\"fa fa-caret-right fa-fw\"></i>"
 
-[[menu.sidebar]]
-  parent ="home"
-  name = "Solstice"
-  url = "https://www.eclipse.org/eclipse.org-common/themes/solstice/docs/"
+[[menu.main]]
+  name = "About"
+  identifier = "about"
+  url = "/about-us.html"
   weight = 2
-  pre = "<i class=\"fa fa-caret-right fa-fw\"></i>"
 
-[[menu.sidebar]]
-  parent ="home"
-  name = "Hugo"
-  url = "https://gohugo.io/documentation/"
+[[menu.main]]
+  name = "News & Events"
+  identifier = "news"
+  url = "/articles.html"
   weight = 3
-  pre = "<i class=\"fa fa-caret-right fa-fw\"></i>"
 
-# Uncomment [[menu.main]] to hide the default EF menu
-# or to define your own menu links.
+[[menu.main]]
+  name = "Documentation"
+  identifier = "docs"
+  url = "/docs.html"
+  weight = 4
 
-# [[menu.main]]
+[[menu.main]]
+  name = "Get Involved"
+  identifier = "join"
+  url = "/how_to_contribute.html"
+  weight = 5
+
+[[menu.main]]
+  name = "FAQ"
+  identifier = "faq"
+  url = "/faq.html"
+  weight = 6
+
+[[menu.main]]
+  name = "GitHub"
+  identifier = "github"
+  url = "https://github.com/eclipse-score"
+  weight = 7
+
+[[menu.footer]]
+  name = "Terms"
+  url = "https://www.eclipse.org/legal/termsofuse.php"
+  weight = 1
+
+[[menu.footer]]
+  name = "Privacy"
+  url = "https://www.eclipse.org/legal/privacy.php"
+  weight = 2
+
+[[menu.footer]]
+  name = "Legal"
+  url = "https://www.eclipse.org/legal/"
+  weight = 3
 
 [markup]
   [markup.goldmark]

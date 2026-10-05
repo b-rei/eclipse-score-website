@@ -1,955 +1,127 @@
----
-title: "Eclipse S-CORE"
-render_raw: true
-extra_styles:
-  - "css/bootstrap.min.css"
-  - "css/loading.css"
-  - "css/navbar.css"
-  - "css/swiper-bundle.min.css"
-  - "css/globals.css"
-  - "css/footer.css"
-  - "css/styleguide.css"
-  - "css/campus.css"
-  - "css/about-us.css"
-external_styles:
-  - "https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
-extra_scripts:
-  - "js/jquery-3.7.1.min.js"
-  - "js/bootstrap.min.js"
-  - "js/swiper-bundle.min.js"
-  - "js/swiper.js"
-  - "js/loading.js"
-use_shared_header: true
-use_shared_footer: true
-active_nav: "faq"
-header_class: "campus-page-header"
-header_title: "Frequently Asked Questions"
-breadcrumb_html: |
-  
-                  <li class="breadcrumb-item">
-                    <a href="index.html" class="breadcrumb-link text-white"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="breadcrumb-item">
-                    <a
-                      href="faq.html"
-                      class="breadcrumb-link text-white"
-                      >FAQ</a
-                    >
-                  </li>
----
++++
+title = "Frequently Asked Questions"
+description = "Answers to common questions about Eclipse S-CORE, its platform, governance, and contribution process."
+type = "faq"
+layout = "single"
+active_nav = "faq"
+extra_scripts = ["js/faq.js"]
 
-<main class="main-section p-0 d-flex flex-column">
-      
+stage_eyebrow = "FREQUENTLY ASKED QUESTIONS"
+stage_title = "Frequently Asked Questions"
+stage_description = "Find answers about the project, its technology, governance, and how to contribute."
 
-      <section class="main-section p-0 d-flex flex-column">
-        <div class="container">
-          <div class="pages-title mb-4">
-                <br/>
-                
-                 <p class="max-w-100">
-                  Get quick answers to the most common questions about S-CORE. Whether you're just starting or deep into development, 
-                  our FAQs cover everything from training schedules to platform usage — helping you find what you need without the hassle.
-                </p>
-                
-                
-              </div>
-            </div>
-            
-            
-        </div>
-      </section>
+[faq]
+search_label = "Search questions"
+search_placeholder = "Search the FAQ"
+results_label = "questions"
+empty_message = "No questions match your search. Try another term."
 
-      <section class="esc-section esc-faq-container-section">
-        <div class="container">
-          
+[[faq.categories]]
+id = "about-governance"
+title = "About S-CORE & Governance"
 
-          
-          <ul
-            class="nav nav-pills faq-tabs rounded-tabs-container rounded-pill overflow-hidden mb-4 d-flex text-center"
-            id="faqTab"
-            role="tablist"
-          >
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                class="nav-link active w-100"
-                id="general-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#general"
-                type="button"
-                role="tab"
-              >
-                General Questions
-              </button>
-            </li>
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                class="nav-link w-100"
-                id="technical-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#technical"
-                type="button"
-                role="tab"
-              >
-                Technical Questions
-              </button>
-            </li>
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                class="nav-link w-100"
-                id="contribution-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#contribution"
-                type="button"
-                role="tab"
-              >
-                Contribution Questions
-              </button>
-            </li>
-          </ul>
+[[faq.categories.questions]]
+question = "What is the main purpose of the S-CORE project?"
+answer = "Eclipse S-CORE develops a shared, open-source software platform for onboard automotive ECUs. The platform is maintained across multiple repositories; the separate [Reference Integration](https://eclipse-score.github.io/reference_integration/main/index.html) brings modules together and verifies them as a baseline."
 
-          
-          <div class="tab-content" id="faqTabContent">
-            
-            <div class="tab-pane fade show active" id="general" role="tabpanel">
-              <div class="accordion" id="accordionGeneral">
-                <div class="row">
-                  <div class="col-md-6">
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-1">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-1"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-1"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          What is the main purpose of the S-CORE project?
+[[faq.categories.questions]]
+question = "How is work organized across communities and feature teams?"
+answer = "Communities handle cross-cutting topics such as architecture, process, infrastructure, testing, and integration. Feature Teams own specific functionality end to end, from architecture through integration testing. See the [Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html#pmp-pm-communities)."
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-1"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-1"
-                      >
-                        <div class="accordion-body">
-                          The S-CORE project serves as the central integration platform for various software modules. It ensures proper integration, provides common guidelines, mechanisms like build toolchains, and addresses overarching topics such as roadmap and milestone planning.
-                        </div>
-                      </div>
-                    </div>
+[[faq.categories.questions]]
+question = "Which leadership groups steer S-CORE?"
+answer = "The Project Lead Circle and Technical Lead Circle coordinate strategic and technical steering. Communities and Feature Teams organize work in their respective areas; their membership and responsibilities vary. See the [Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html#pmp-pm-steering-committees)."
 
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-2">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-2"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-2"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          What is the role of cross-functional teams in S-CORE?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-2"
-                      >
-                        <div class="accordion-body">
-                          Cross-functional teams are responsible for all phases of work, from defining architecture to conducting integration tests. They are usually assigned to the S-CORE main integration project or specific software modules 
-                        </div>
-                      </div>
-                    </div>
+[[faq.categories.questions]]
+question = "How is project management structured in S-CORE?"
+answer = "Project and technical steering are coordinated through the Project Lead Circle and Technical Lead Circle. Communities and Feature Teams plan and carry out work, with public meetings and notes documented through project channels. The [Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html) describes the current organization."
 
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-3">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-3"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-3"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          What are the roles within a cross-functional team?
+[[faq.categories.questions]]
+question = "How are decisions about project leads and committers made?"
+answer = "S-CORE follows Eclipse Foundation project governance. Current responsibilities and organization are described in the [Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html); committer and project-lead elections follow the applicable [Eclipse Project Handbook](https://www.eclipse.org/projects/handbook/)."
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-3"
-                      >
-                        <div class="accordion-body">
-                          A cross-functional team consists of Project Leads, Safety Managers, Quality Managers, Security Managers, Committers, and Contributors 
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-4">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-4"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-4"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          How is project management structured in S-CORE?
+[[faq.categories]]
+id = "planning-operations"
+title = "Planning & Project Operations"
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-4"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-4"
-                      >
-                        <div class="accordion-body">
-                          Project management involves coordination between various technical committees, discussing technical decisions, architectural topics, and coordination of public relations  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+[[faq.categories.questions]]
+question = "How are releases and milestones managed within S-CORE?"
+answer = "Releases baseline development activities; milestones mark scheduled project outcomes. Overall planning is coordinated by the Project and Technical Lead Circle, while teams plan their work in their project boards. See the [Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html#pmp-planning-and-tracking) and current [Reference Integration releases](https://eclipse-score.github.io/reference_integration/main/s_core_v_1/releases/releases.html)."
 
-                  <div class="col-md-6">
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-5">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-5"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-5"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          How are releases and milestones managed within S-CORE ?
+[[faq.categories.questions]]
+question = "What platforms does S-CORE use for its development processes?"
+answer = "GitHub is used for source code, issues, and pull requests; Bazel is used for builds; and project documentation is generated with Sphinx-based tooling. The exact setup is documented in the [infrastructure and tooling docs](https://eclipse-score.github.io/infrastructure/dev/index.html)."
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-5"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-5"
-                      >
-                        <div class="accordion-body">
-                          Releases and milestones are defined by Technical Leads and approved by Project Leads. Milestones mark important project stages, while releases structure development activities.
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-6">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-6"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-6"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          What platforms does S-CORE use for its development processes?
+[[faq.categories.questions]]
+question = "How are platform features documented?"
+answer = "The `score` platform repository contains platform-level features, requirements, and architecture. Each module repository owns its module requirements, architecture, implementation, and tests. The separate [Reference Integration](https://eclipse-score.github.io/reference_integration/main/index.html) publishes consolidated integration documentation and verification information."
 
+[[faq.categories.questions]]
+question = "What is the significance of the Technical Lead?"
+answer = "Technical steering is coordinated by the Technical Lead Circle together with the Project Lead Circle. Technical and project responsibilities are described in the [Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html#pmp-steering-committees)."
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-6"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-6"
-                      >
-                        <div class="accordion-body">
-                         S-CORE utilizes GitHub for hosting, versioning, and contribution, and uses tools such as Sphinx for documentation  .
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-7">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-7"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-7"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          How are platform features documented?
+[[faq.categories.questions]]
+question = "Who is responsible for maintaining the backlog and roadmap?"
+answer = "Teams plan and track their own work in GitHub Projects. The Project and Technical Lead Circle coordinate the overall top-down plan, milestones, and releases. See [Planning and Tracking in the Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html#pmp-planning-and-tracking)."
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-7"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-7"
-                      >
-                        <div class="accordion-body">
-                          Platform features are documented with requirements and architecture in the S-CORE main repository, which contains the integration repository
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="g-heading-8">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#g-collapse-8"
-                          aria-expanded="false"
-                          aria-controls="g-collapse-8"
-                          data-bs-parent="#accordionGeneral"
-                        >
-                          How are decisions about project leads and committers made?
+[[faq.categories]]
+id = "platform-technical"
+title = "Platform & Technical"
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="g-collapse-8"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="g-heading-8"
-                      >
-                        <div class="accordion-body">
-                           Project leads and committers are elected using the main integration S-CORE project mailing list, based on contributions and reputation within the project  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+[[faq.categories.questions]]
+question = "Is Eclipse S-CORE suitable for 32-bit Microcontrollers?"
+answer = "S-CORE targets high-performance automotive ECUs; do not assume a 32-bit microcontroller is supported. Suitability depends on the hardware, operating system, and selected modules. Check the current [platform assumptions](https://eclipse-score.github.io/score/main/requirements/platform_assumptions/index.html) and the [Reference Integration](https://eclipse-score.github.io/reference_integration/main/index.html) for supported configurations."
 
-            
-            <div class="tab-pane fade" id="technical" role="tabpanel">
-              <div class="accordion" id="accordionTechnical">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-1">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-1"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-1"
-                          data-bs-parent="#accordionTechnical"
-                        >Is Eclipse S-CORE suitable for 32-bit Microcontrollers?
+[[faq.categories.questions]]
+question = "What programming languages are supported by S-CORE?"
+answer = "S-CORE includes C++ and Rust modules. Required language standards and supported subsets can vary by module and toolchain; check the relevant module documentation and the [C++](https://github.com/eclipse-score/bazel_cpp_toolchains) and [Rust](https://github.com/eclipse-score/toolchains_rust) toolchain repositories for current details."
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-1"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-1"
-                      >
-                        <div class="accordion-body">
-                          Eclipse S-CORE is primarily designed and optimized for **High-Performance Computing Platforms (HCPs)** in automotive applications. The platform's components are architected to leverage dynamic memory management, process isolation, and the rich feature sets provided by safety-critical operating systems such as Linux and QNX.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-1">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-1"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-1"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                          What programming languages are supported by S-CORE?
+[[faq.categories.questions]]
+question = "What kinds of feature and component requests can I submit?"
+answer = "Feature Requests propose a new feature or a major feature change and follow the Feature Enhancement Proposal process. Component Requests cover changes within an existing feature and are handled with the responsible team. See the [contribution request guide](https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html)."
 
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-1"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-1"
-                      >
-                        <div class="accordion-body">
-                          S-CORE supports C++ with the language set of C++17, considering additional elements from C++20 as needed. Rust is also supported with its safe subset.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-2">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-2"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-2"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                          What are the Change Request types in the S-CORE project?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-2"
-                      >
-                        <div class="accordion-body">
-                          Change Request types include Feature, Feature Modification, Component, and Component Modification    .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-3">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-3"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-3"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                          How are Change Request Attributes defined in S-CORE?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-3"
-                      >
-                        <div class="accordion-body">
-                          Change Request Attributes include Unique ID, Status, Title, Description, Safety, Security, Change Request Type, Affected work products, and Milestones  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-4">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-4"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-4"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                         What tool is mainly used for development and documentation?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-4"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-4"
-                      >
-                        <div class="accordion-body">
-                          GitHub is used for hosting, versioning, contribution, and documentation via Sphinx  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-5">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-5"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-5"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                         What is the significance of the Technical Lead?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-5"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-5"
-                      >
-                        <div class="accordion-body">
-                          Technical Leads manage the platform development, control multiple modules, and handle escalations  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-6">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-6"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-6"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                         How is safety managed in the components of S-CORE?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-6"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-6"
-                      >
-                        <div class="accordion-body">
-                          Safety is ensured through assumptions of use and a general safety concept outlined in the safety documentation  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-7">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-7"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-7"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                         How are platform features and components integrated?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-7"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-7"
-                      >
-                        <div class="accordion-body">
-                          Features and components are integrated into the platform using change requests and verified through tests .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="t-heading-8">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#t-collapse-8"
-                          aria-expanded="false"
-                          aria-controls="t-collapse-8"
-                          data-bs-parent="#accordionTechnical"
-                        >
-                         What are the criteria for reporting a problem in S-CORE?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="t-collapse-8"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="t-heading-8"
-                      >
-                        <div class="accordion-body">
-                          Problems are reported through GitHub Issues, including documentation and resolution planning.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
+[[faq.categories.questions]]
+question = "Which information should an issue or request include?"
+answer = "Use the current GitHub issue template for the request type; it defines the required information. The [Project Management Plan](https://eclipse-score.github.io/score/main/platform_management_plan/project_management.html#pmp-issues) describes common tracking fields and issue categories."
 
-            
-            <div class="tab-pane fade" id="contribution" role="tabpanel">
-              <div class="accordion" id="accordionContribution">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="c-heading-1">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#c-collapse-1"
-                          aria-expanded="false"
-                          aria-controls="c-collapse-1"
-                          data-bs-parent="#accordionContribution"
-                        >
-                          What is the process for submitting a feature request in S-CORE?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="c-collapse-1"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="c-heading-1"
-                      >
-                        <div class="accordion-body">
-                          Contributions require exhaustive descriptions, requirements, and sometimes initial architecture drafts submitted as Feature Requests  
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="c-heading-2">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#c-collapse-2"
-                          aria-expanded="false"
-                          aria-controls="c-collapse-2"
-                          data-bs-parent="#accordionContribution"
-                        >
-                          How are contributions accepted or declined in the project?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="c-collapse-2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="c-heading-2"
-                      >
-                        <div class="accordion-body">
-                          Feature Requests are reviewed by the Technical Lead Circle before acceptance or declination 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="c-heading-3">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#c-collapse-3"
-                          aria-expanded="false"
-                          aria-controls="c-collapse-3"
-                          data-bs-parent="#accordionContribution"
-                        >
-                          How should contributors handle their Eclipse Foundation account?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="c-collapse-3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="c-heading-3"
-                      >
-                        <div class="accordion-body">
-                          Contributors should create an account using corporate email, link it to their employer, and ensure proper email configuration with Git  
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="c-heading-4">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#c-collapse-4"
-                          aria-expanded="false"
-                          aria-controls="c-collapse-4"
-                          data-bs-parent="#accordionContribution"
-                        >
-                          How are contributions correctly attributed to organizations?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="c-collapse-4"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="c-heading-4"
-                      >
-                        <div class="accordion-body">
-                          Proper attribution requires verifying membership information in the Eclipse Membership Portal and ensuring corporate email usage  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="c-heading-5">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#c-collapse-5"
-                          aria-expanded="false"
-                          aria-controls="c-collapse-5"
-                          data-bs-parent="#accordionContribution"
-                        >
-                          What documentation covers contribution requests?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="c-collapse-5"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="c-heading-5"
-                      >
-                        <div class="accordion-body">
-                          The Contribution Request Guideline details the process of submitting new features and tools  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                  
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="c-heading-6">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#c-collapse-6"
-                          aria-expanded="false"
-                          aria-controls="c-collapse-6"
-                          data-bs-parent="#accordionContribution"
-                        >
-                          How are contributions reviewed?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="c-collapse-6"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="c-heading-6"
-                      >
-                        <div class="accordion-body">
-                          Regular reviews occur in Technical Lead Circle meetings for accepting or declining contributions  .
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                   
-                  <div class="col-md-6">
-                    <div class="accordion-item mb-3 rounded-4 shadow-sm">
-                      <h2 class="accordion-header" id="c-heading-7">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#c-collapse-7"
-                          aria-expanded="false"
-                          aria-controls="c-collapse-7"
-                          data-bs-parent="#accordionContribution"
-                        >
-                          Who is responsible for maintaining the backlog and roadmap?
-                          <div class="icon">
-                            <img src="images/campus/arrow-down.svg" alt="" />
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="c-collapse-7"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="c-heading-7"
-                      >
-                        <div class="accordion-body">
-                          The Technical Lead Circle, together with software module project leads and community leads, maintains the backlog and roadmap.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-<section><br><br></section>
-      <section class="esc-section esc-stay-connected-container-section pt-0">
-        <div class="container">
-          <div class="stay-connected-content">
-            <div class="pages-title mb-4">
-              <h2 class="h2 mb-3 fw-semibold text-capitalize">
-                Stay Connected with S-CORE
-              </h2>
-              <p class="max-w-65">
-                Join the conversation, access exclusive resources, and follow us
-                for the latest updates.
-              </p>
-            </div>
+[[faq.categories.questions]]
+question = "How is safety managed in the components of S-CORE?"
+answer = "S-CORE publishes platform safety documentation and assumptions of use, but this does not certify a vehicle program’s final system. Integrators must assess their selected hardware, operating system, modules, and safety goals, and provide any additional verification needed. Start with the [Safety documentation](https://eclipse-score.github.io/score/main/safety/index.html) and [platform assumptions](https://eclipse-score.github.io/score/main/requirements/platform_assumptions/index.html)."
 
-            <div class="row g-3 mt-4 px-4">
-              
-              <div class="col-12 col-xl-4">
-                <div
-                  class="connected-card d-flex align-items-center justify-content-start h-100"
-                >
-                  <a href="https://projects.eclipse.org/projects/automotive.score/who" class="" download
-                    ><img
-                    src="images/campus/share.svg"
-                    alt="Join Icon"
-                    width="48"
-                    class="me-3 icon"
-                  /></a>
-                  <div>
-                    <h5 class="h5 fw-semibold mb-1">Join S-CORE</h5>
-                    <p class="text-muted mb-0">Connect With Us!</p>
-                  </div>
-                </div>
-              </div>
+[[faq.categories.questions]]
+question = "How are platform features and components integrated?"
+answer = "Platform changes are tracked through GitHub issues and pull requests. The [Reference Integration](https://eclipse-score.github.io/reference_integration/main/index.html) combines selected modules and verifies them together; system integrators still need to validate their own target configuration."
 
-              
-              <div class="col-12 col-xl-4">
-                <div
-                  class="connected-card d-flex align-items-center justify-content-start h-100"
-                >
-                  <a href="news.html" target="_blank"
-                    ><img
-                      src="images/campus/document-download.svg"
-                      alt="Download Icon"
-                      width="48"
-                      class="me-3 icon"
-                  /></a>
-                  <div>
-                    <h5 class="h5 fw-semibold mb-1">Stay up to date!</h5>
-                    <p class="text-muted mb-2">Read our latest news!</p>
-                  </div>
-                </div>
-              </div>
+[[faq.categories.questions]]
+question = "What are the criteria for reporting a problem in S-CORE?"
+answer = "Report bugs and propose improvements through GitHub Issues. Use the issue template that best matches the problem or request; the [contributor guide](https://eclipse-score.github.io/score/main/contribute/index.html) explains the project workflow."
 
-              <div class="col-12 col-xl-4">
-                <div
-                  class="connected-card d-flex align-items-center justify-content-start h-100"
-                >
-                  <div class="me-3 d-flex gap-2">
-                    <a href="https://www.linkedin.com/showcase/software-defined-vehicle/posts/?feedView=all" target="_blank">
-                      <img
-                        class="icon"
-                        src="images/campus/mage_linkedin.svg"
-                        alt="LinkedIn"
-                        width="48"
-                      />
-                    </a>
-                    <a href="https://sdvworkinggroup.slack.com/archives/C083Z4VL90B" target="_blank">
-                      <img
-                        class="icon"
-                        src="images/campus/slack.svg"
-                        alt="Slack"
-                        width="48"
-                      />
-                    </a>
-                  </div>
-                  <div>
-                    <h5 class="h5 fw-semibold mb-1">Follow Us</h5>
-                    <p class="text-muted mb-0">
-                      Stay in the loop on all platforms!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-</main>
+[[faq.categories]]
+id = "contributing"
+title = "Contributing"
+
+[[faq.categories.questions]]
+question = "What is the process for submitting a feature request in S-CORE?"
+answer = "Start with a Feature Request that describes the motivation, intended functionality, and requirements. New or major feature changes follow the [Feature Enhancement Proposal process](https://eclipse-score.github.io/score/main/contribute/contribution_request/feature_request.html#doc__feature_request_guideline); the current requests are tracked on the [Feature Request Board](https://github.com/orgs/eclipse-score/projects/4)."
+
+[[faq.categories.questions]]
+question = "How are contributions accepted or declined in the project?"
+answer = "The Architecture Community reviews Feature Enhancement Proposals through a shepherd and Final Comment Period. The Project and Technical Lead Circle triage incoming requests for project planning; Component Requests are discussed with the responsible team. See the [contribution request guide](https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html)."
+
+[[faq.categories.questions]]
+question = "How should contributors handle their Eclipse Foundation account?"
+answer = "Contributors need an Eclipse Foundation account. For contributions to be attributed to an organization, use the corporate email associated with that account for Git commits and link the account to the employer. Follow the current [contribution attribution guidance](https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html)."
+
+[[faq.categories.questions]]
+question = "Why link my Eclipse account to my employer?"
+answer = "This allows eligible contributions to be attributed to the organization in project contribution reporting. The [attribution guide](https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html) explains the account, employer, and commit-email requirements."
+
+[[faq.categories.questions]]
+question = "What documentation covers contribution requests?"
+answer = "The [contribution request guide](https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html) covers Feature Requests, Component Requests, and the pull request workflow."
+
+[[faq.categories.questions]]
+question = "How are contributions reviewed?"
+answer = "Pull requests are reviewed by automatically assigned reviewers based on repository CODEOWNERS, and must pass the applicable checks before merge. See the [pull request guidance](https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html#what-is-a-pull-request-pr)."
+
++++

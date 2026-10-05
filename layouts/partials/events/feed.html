@@ -1,0 +1,16 @@
+{{ $content := .Params.events }}
+<section class="events-feed-section" id="conference-events">
+  <div class="score-shell">
+    <header class="events-feed-heading">
+      <p class="events-feed-eyebrow">{{ $content.eyebrow }}</p>
+      <h2>{{ $content.title }}</h2>
+      <p>{{ $content.description }}</p>
+    </header>
+    <efsc-collection pagesize="3" autoscroll="true">
+      <efsc-event-filters></efsc-event-filters>
+      <efsc-event-list publishtarget="sdv"></efsc-event-list>
+      <efsc-pagination maxvisible="5" justify="center"></efsc-pagination>
+    </efsc-collection>
+    {{ partial "events/fallback.html" . }}
+  </div>
+</section>

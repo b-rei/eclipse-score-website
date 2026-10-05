@@ -1,64 +1,73 @@
 <!doctype html>
-<html lang="{{ site.Language.Lang | default "en" }}">
+<html lang="{{ .Site.Language.Lang | default "en" }}">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4, user-scalable=yes" />
-
-    {{ $defaultDescription := .Site.Params.description }}
-    {{ $pageDescription := .Description | default .Params.description | default $defaultDescription }}
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    <meta name="description" content="{{ $pageDescription }}" />
-
-    <link rel="icon" href="{{ "images/icons/logo.svg" | relURL }}" type="image/x-icon" />
-
-    {{ $styles := slice "css/bootstrap.min.css" "css/loading.css" "css/navbar.css" "css/globals.css" "css/footer.css" "css/styleguide.css" }}
-    {{ with .Params.extra_styles }}
-      {{ range . }}
-        {{ $styles = $styles | append . }}
-      {{ end }}
+    {{ $pageTitle := .Title }}
+    {{ if .IsHome }}{{ $pageTitle = .Site.Title }}{{ else if not (strings.Contains .Title .Site.Title) }}{{ $pageTitle = printf "%s | %s" .Title .Site.Title }}{{ end }}
+    {{ $pageDescription := .Description | default .Site.Params.description }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ $pageTitle }}</title>
+    <meta name="description" content="{{ $pageDescription }}">
+    {{ if or .Params.seo_noindex (in (slice "taxonomy" "term") .Kind) }}
+      <meta name="robots" content="noindex, follow">
+    {{ else }}
+      <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
-
-    {{ range uniq $styles }}
-      <link rel="stylesheet" href="{{ . | relURL }}" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:description" content="{{ $pageDescription }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
+    <meta name="twitter:description" content="{{ $pageDescription }}">
+    <link rel="icon" href="{{ "images/icons/logo.svg" | relURL }}" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+    <script defer src="{{ "js/site-navigation.js" | relURL }}"></script>
+    {{ if .IsHome }}
+      <link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/themes/default-light.css" integrity="sha384-Xg/ri5XEgSYZlqJRcmQJzCub0N7nQkWT94OeblqD+gK7ooiZvTJOgkC5GhvhBD/P" crossorigin="anonymous">
+      <script type="module" src="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/dist-cdn/solstice-components.loader.js" integrity="sha384-UcWSQMj1c1b1VRiaHycuVGCSJ7ltwyF88VcYGthnJauU0cyXHJXhPWBuMA5vHM/a" crossorigin="anonymous"></script>
+    {{ else if eq .Type "about" }}
+      <link rel="stylesheet" href="{{ "css/about.css" | relURL }}">
+    {{ else if eq .Type "involved" }}
+      <link rel="stylesheet" href="{{ "css/get-involved.css" | relURL }}">
+    {{ else if eq .Type "faq" }}
+      <link rel="stylesheet" href="{{ "css/faq.css" | relURL }}">
+    {{ else if eq .Type "events" }}
+      <link rel="stylesheet" href="{{ "css/events.css" | relURL }}">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/themes/default-light.css" integrity="sha384-Xg/ri5XEgSYZlqJRcmQJzCub0N7nQkWT94OeblqD+gK7ooiZvTJOgkC5GhvhBD/P" crossorigin="anonymous">
+      <script type="module" src="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/dist-cdn/solstice-components.loader.js" integrity="sha384-UcWSQMj1c1b1VRiaHycuVGCSJ7ltwyF88VcYGthnJauU0cyXHJXhPWBuMA5vHM/a" crossorigin="anonymous"></script>
+    {{ else if eq .Type "docs" }}
+      <link rel="stylesheet" href="{{ "css/documentation.css" | relURL }}">
+    {{ else }}
+      {{ $styles := slice "css/bootstrap.min.css" "css/loading.css" "css/navbar.css" "css/globals.css" "css/footer.css" "css/styleguide.css" }}
+      {{ with .Params.extra_styles }}{{ range . }}{{ $styles = $styles | append . }}{{ end }}{{ end }}
+      {{ range uniq $styles }}<link rel="stylesheet" href="{{ . | relURL }}">{{ end }}
+      {{ with .Params.external_styles }}{{ range . }}<link rel="stylesheet" href="{{ . }}">{{ end }}{{ end }}
     {{ end }}
-
-    {{ with .Params.external_styles }}
-      {{ range . }}
-        <link rel="stylesheet" href="{{ . }}" />
-      {{ end }}
-    {{ end }}
-
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/themes/default-light.css"
-      integrity="sha384-Xg/ri5XEgSYZlqJRcmQJzCub0N7nQkWT94OeblqD+gK7ooiZvTJOgkC5GhvhBD/P"
-      crossorigin="anonymous">
-
-    <script type="module"
-      src="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/dist-cdn/solstice-components.loader.js"
-      integrity="sha384-UcWSQMj1c1b1VRiaHycuVGCSJ7ltwyF88VcYGthnJauU0cyXHJXhPWBuMA5vHM/a"
-      crossorigin="anonymous"></script>
   </head>
-  <body>
-    {{ block "main" . }}{{ end }}
-
-    {{ $scripts := slice "js/jquery-3.7.1.min.js" "js/bootstrap.min.js" "js/loading.js" }}
-    {{ with .Params.extra_scripts }}
-      {{ range . }}
-        {{ $scripts = $scripts | append . }}
-      {{ end }}
+  <body{{ if eq .Type "editorial" }} class="editorial-type"{{ end }}>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    {{ partial "site-header.html" . }}
+    <div id="main-content" tabindex="-1">
+      {{ block "main" . }}{{ end }}
+    </div>
+    {{ partial "site-footer.html" . }}
+    {{ if eq .Type "faq" }}
+      <script src="{{ "js/faq.js" | relURL }}"></script>
+    {{ else if eq .Type "events" }}
+    {{ else if eq .Type "editorial" }}
+      <script src="{{ "js/editorial-back-to-top.js" | relURL }}"></script>
+    {{ else if not .IsHome }}
+      {{ $scripts := slice "js/jquery-3.7.1.min.js" "js/bootstrap.min.js" "js/loading.js" }}
+      {{ with .Params.extra_scripts }}{{ range . }}{{ $scripts = $scripts | append . }}{{ end }}{{ end }}
+      {{ range uniq $scripts }}<script src="{{ . | relURL }}"></script>{{ end }}
+      {{ with .Params.external_scripts }}{{ range . }}<script src="{{ . }}"></script>{{ end }}{{ end }}
     {{ end }}
-
-    {{ range uniq $scripts }}
-      <script src="{{ . | relURL }}"></script>
-    {{ end }}
-
-    {{ with .Params.external_scripts }}
-      {{ range . }}
-        <script src="{{ . }}"></script>
-      {{ end }}
-    {{ end }}
-
     {{ block "scripts" . }}{{ end }}
-
   </body>
 </html>

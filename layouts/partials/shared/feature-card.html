@@ -1,0 +1,16 @@
+{{ $item := .item }}
+{{ $variant := .variant | default "default" }}
+{{ $classes := printf "score-feature-card score-feature-card--%s" $variant }}
+{{ $href := .href }}
+{{ if and (not .external) (hasSuffix $href ".html") }}
+  {{ $href = $href | relURL }}
+{{ end }}
+{{ with .href }}
+  <a class="{{ $classes }}" href="{{ $href }}"{{ if $.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+    {{ partial "shared/feature-card-content.html" $ }}
+  </a>
+{{ else }}
+  <article class="{{ $classes }}">
+    {{ partial "shared/feature-card-content.html" . }}
+  </article>
+{{ end }}

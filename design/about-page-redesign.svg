@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="4080" viewBox="0 0 1440 4080" role="img" aria-labelledby="title desc">
+  <title id="title">Eclipse S-CORE About page redesign proposal</title>
+  <desc id="desc">A long-page visual proposal for the S-CORE About page using the shared brand header, a dark automotive hero, vision and mission, contributor ecosystem, community structure, steering committees, working groups, and a member testimonial.</desc>
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#193967"/>
+      <stop offset="1" stop-color="#102746"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0078c8"/>
+      <stop offset="1" stop-color="#42c5e8"/>
+    </linearGradient>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fbfe"/>
+      <stop offset="1" stop-color="#eaf3f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#152d49" flood-opacity=".1"/>
+    </filter>
+    <style>
+      text { font-family: Manrope, 'Segoe UI', sans-serif; }
+      .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: 3px; fill: #0078c8; }
+      .eyebrow-light { font-size: 13px; font-weight: 800; letter-spacing: 3px; fill: #42c5e8; }
+      .title { font-size: 48px; font-weight: 800; fill: #18385e; }
+      .hero-title { font-size: 64px; font-weight: 800; fill: #fff; }
+      .section-title { font-size: 34px; font-weight: 800; fill: #18385e; }
+      .card-title { font-size: 21px; font-weight: 800; fill: #193967; }
+      .white-title { font-size: 22px; font-weight: 800; fill: #fff; }
+      .body { font-size: 18px; font-weight: 500; fill: #5c6f84; }
+      .body-dark { font-size: 17px; font-weight: 500; fill: #dce8f4; }
+      .small { font-size: 14px; font-weight: 600; fill: #5c6f84; }
+      .nav { font-size: 14px; font-weight: 700; fill: #234a78; }
+      .button-text { font-size: 16px; font-weight: 800; }
+      .number { font-size: 13px; font-weight: 800; letter-spacing: 1.5px; fill: #42c5e8; }
+      .line { stroke: #d5e3ed; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="3040" fill="#f3f7fb"/>
+
+  <!-- Shared site header -->
+  <rect x="0" y="0" width="1440" height="4" fill="url(#rule)"/>
+  <rect x="0" y="4" width="1440" height="96" fill="#fff"/>
+  <image x="96" y="27" width="150" height="50" preserveAspectRatio="xMinYMid meet" href="../static/images/icons/Eclipse-S-CORE-colour-horizontal.png"/>
+  <g class="nav" text-anchor="middle">
+    <text x="710" y="60">Home</text>
+    <text x="800" y="60" fill="#193967">About</text>
+    <text x="920" y="60">News &amp; Events</text>
+    <text x="1060" y="60">Documentation</text>
+    <text x="1192" y="60">Get Involved</text>
+  </g>
+  <rect x="1260" y="30" width="92" height="42" rx="7" fill="#0078c8"/>
+  <path d="M1281 44c-7 0-12 5-12 12 0 5 3 9 8 11v-4c-3 1-4-1-4-1-1-2-2-2-2-2-2-1 0-1 0-1 1 0 2 2 2 2 2 2 4 1 4 0 0-1 1-2 1-2-3 0-5-2-5-5 0-1 0-2 1-3 0 0-1-2 0-3 0 0 2 0 3 1 2-1 4-1 5-1 2 0 3 0 5 1 1-1 3-1 3-1 1 2 0 3 0 3 1 1 1 2 1 3 0 3-2 5-5 5 1 1 1 2 1 3v4c5-2 8-6 8-11 0-7-5-12-12-12Z" transform="translate(1274 38) scale(.65)" fill="#fff"/>
+  <text x="1314" y="57" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">GitHub</text>
+  <rect x="96" y="99" width="1256" height="1" fill="#d8e3ec"/>
+  <rect x="785" y="96" width="76" height="3" rx="1.5" fill="#0078c8"/>
+
+  <!-- Hero -->
+  <rect y="100" width="1440" height="560" fill="url(#hero)"/>
+  <path d="M0 606C210 560 370 632 594 615s373-100 846-24v69H0Z" fill="#f3f7fb"/>
+  <text class="eyebrow-light" x="112" y="203">ABOUT ECLIPSE S-CORE</text>
+  <text class="hero-title" x="112" y="283">One open core.</text>
+  <text class="hero-title" x="112" y="355">Built together.</text>
+  <text class="body-dark" x="114" y="407">We unite automotive experts, technology partners, and developers</text>
+  <text class="body-dark" x="114" y="435">to build an open, safe, and scalable foundation for vehicle software.</text>
+  <rect x="112" y="478" width="184" height="52" rx="8" fill="#42c5e8"/>
+  <text class="button-text" x="204" y="510" text-anchor="middle" fill="#193967">Explore our mission</text>
+  <a href="#communities"><rect x="312" y="478" width="174" height="52" rx="8" fill="none" stroke="#bfd6e9" stroke-width="1.5"/><text class="button-text" x="399" y="510" text-anchor="middle" fill="#fff">Meet the community</text></a>
+  <g opacity=".68">
+    <path d="M800 210 930 260 1040 180 1150 234 1300 164M835 370 960 302 1085 390 1200 300 1330 360M915 490 1010 395 1150 472 1275 392" stroke="#42c5e8" stroke-opacity=".5" stroke-width="1.5" fill="none"/>
+    <path d="M930 260 960 302 1040 180 1085 390 1150 234 1200 300 1300 164 1330 360M800 210 835 370 915 490 1085 390 1275 392" stroke="#b8e8f5" stroke-opacity=".26" stroke-width="1" fill="none"/>
+    <g fill="#bff5ff"><circle cx="800" cy="210" r="4"/><circle cx="930" cy="260" r="6"/><circle cx="1040" cy="180" r="4"/><circle cx="1150" cy="234" r="5"/><circle cx="1300" cy="164" r="4"/><circle cx="835" cy="370" r="4"/><circle cx="960" cy="302" r="5"/><circle cx="1085" cy="390" r="7"/><circle cx="1200" cy="300" r="4"/><circle cx="1330" cy="360" r="5"/><circle cx="915" cy="490" r="4"/><circle cx="1010" cy="395" r="4"/><circle cx="1150" cy="472" r="5"/><circle cx="1275" cy="392" r="4"/></g>
+  </g>
+  <image x="905" y="410" width="420" height="250" preserveAspectRatio="xMidYMid meet" href="../static/images/about-us/car.png"/>
+  <rect x="104" y="620" width="1232" height="2" fill="url(#rule)"/>
+
+  <!-- Vision and mission -->
+  <g transform="translate(108 730)">
+    <text class="eyebrow" x="0" y="0">WHY WE EXIST</text>
+    <text class="title" x="0" y="62">A shared vision for mobility</text>
+    <text class="body" x="0" y="105">An open community can build the safe, scalable foundations no organization should have to reinvent alone.</text>
+    <g transform="translate(0 150)" filter="url(#shadow)">
+      <rect width="594" height="260" rx="12" fill="#fff" stroke="#dce7ef"/>
+      <rect width="6" height="260" rx="3" fill="#0078c8"/>
+      <circle cx="50" cy="52" r="20" fill="#e3f5fb"/>
+      <path d="M40 53q10-15 20 0-10 15-20 0Zm10-2v6" stroke="#0078c8" stroke-width="2" fill="none"/>
+      <text class="eyebrow" x="86" y="48">OUR VISION</text>
+      <text class="section-title" x="36" y="112" font-size="27">Build the best automotive</text>
+      <text class="section-title" x="36" y="147" font-size="27">runtime solution, only once.</text>
+      <text class="small" x="36" y="198">A common foundation. Open to all. Ready for real-world use.</text>
+    </g>
+    <g transform="translate(626 150)" filter="url(#shadow)">
+      <rect width="594" height="260" rx="12" fill="#fff" stroke="#dce7ef"/>
+      <rect width="6" height="260" rx="3" fill="#42c5e8"/>
+      <circle cx="50" cy="52" r="20" fill="#e3f5fb"/>
+      <path d="M40 52h20M50 42v20M43 45l14 14M57 45 43 59" stroke="#0078c8" stroke-width="2"/>
+      <text class="eyebrow" x="86" y="48">OUR MISSION</text>
+      <text class="section-title" x="36" y="112" font-size="27">Unite the automotive software</text>
+      <text class="section-title" x="36" y="147" font-size="27">community around one open core.</text>
+      <g transform="translate(36 190)">
+        <rect width="114" height="34" rx="17" fill="#eaf3fa"/><text class="small" x="57" y="22" text-anchor="middle" fill="#193967">Reuse</text>
+        <rect x="126" width="128" height="34" rx="17" fill="#eaf3fa"/><text class="small" x="190" y="22" text-anchor="middle" fill="#193967">Reduce</text>
+        <rect x="266" width="116" height="34" rx="17" fill="#eaf3fa"/><text class="small" x="324" y="22" text-anchor="middle" fill="#193967">Evolve</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Contributors -->
+  <rect y="1240" width="1440" height="490" fill="#193967"/>
+  <g transform="translate(108 1320)">
+    <text class="eyebrow-light" x="0" y="0">BUILT IN THE OPEN</text>
+    <text class="hero-title" x="0" y="64" font-size="42">Our contributors</text>
+    <text class="body-dark" x="0" y="104">A diverse network of automotive companies, technology providers, and open-source contributors</text>
+    <text class="body-dark" x="0" y="130">shapes the platform’s direction and helps turn shared engineering into real-world capability.</text>
+    <g transform="translate(0 190)">
+      <rect width="1224" height="166" rx="12" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".16"/>
+      <g text-anchor="middle" font-size="18" font-weight="800" fill="#f3f8ff">
+        <text x="102" y="82">BOSCH</text><text x="306" y="82">BMW GROUP</text><text x="510" y="82">ETAS</text><text x="714" y="82">Mercedes-Benz</text><text x="918" y="82">Qualcomm</text><text x="1120" y="82">Eclipse</text>
+      </g>
+      <g fill="#42c5e8"><circle cx="102" cy="112" r="3"/><circle cx="306" cy="112" r="3"/><circle cx="510" cy="112" r="3"/><circle cx="714" cy="112" r="3"/><circle cx="918" cy="112" r="3"/><circle cx="1120" cy="112" r="3"/></g>
+    </g>
+  </g>
+
+  <!-- Community structure -->
+  <g transform="translate(108 1840)">
+    <text class="eyebrow" x="0" y="0">HOW WE WORK</text>
+    <text class="title" x="0" y="62">A community with clear roles</text>
+    <text class="body" x="0" y="104">Members, technical leads, and focused teams define modules, propose requirements, and evolve the platform.</text>
+    <rect x="0" y="145" width="1224" height="360" rx="12" fill="#fff" stroke="#d9e5ee" filter="url(#shadow)"/>
+    <image x="78" y="174" width="1068" height="302" preserveAspectRatio="xMidYMid meet" href="../static/images/about-us/structure_new.png"/>
+  </g>
+
+  <!-- Steering committees -->
+  <g transform="translate(108 2420)">
+    <text class="eyebrow" x="0" y="0">PROJECT GOVERNANCE</text>
+    <text class="title" x="0" y="62">Steering committees</text>
+    <text class="body" x="0" y="104">Two connected circles guide technical direction and day-to-day project delivery.</text>
+    <g transform="translate(0 144)" filter="url(#shadow)">
+      <rect width="594" height="270" rx="12" fill="#fff" stroke="#d9e5ee"/>
+      <image x="48" y="28" width="498" height="145" preserveAspectRatio="xMidYMid meet" href="../static/images/about-us/technical-lead-circle.png"/>
+      <text class="card-title" x="36" y="203">Technical Lead Circle</text>
+      <text class="small" x="36" y="232">Owns overall technical direction and guides decisions</text>
+      <text class="small" x="36" y="252">so the project stays aligned with its goals.</text>
+    </g>
+    <g transform="translate(630 144)" filter="url(#shadow)">
+      <rect width="594" height="270" rx="12" fill="#fff" stroke="#d9e5ee"/>
+      <image x="48" y="28" width="498" height="145" preserveAspectRatio="xMidYMid meet" href="../static/images/about-us/project-lead-circle.png"/>
+      <text class="card-title" x="36" y="203">Project Lead Circle</text>
+      <text class="small" x="36" y="232">Coordinates project planning, progress, and resources</text>
+      <text class="small" x="36" y="252">to keep delivery moving.</text>
+    </g>
+  </g>
+
+  <!-- Communities -->
+  <rect y="2940" width="1440" height="590" fill="url(#surface)"/>
+  <g transform="translate(108 3020)">
+    <text class="eyebrow" x="0" y="0">GET INVOLVED</text>
+    <text class="title" x="0" y="62">Communities</text>
+    <text class="body" x="0" y="104">Every member is welcome to join a focused group, exchange ideas, and shape the outcome.</text>
+    <g transform="translate(0 145)" filter="url(#shadow)">
+      <g>
+        <rect width="228" height="240" rx="10" fill="#fff" stroke="#d9e5ee"/><rect width="228" height="5" rx="2.5" fill="#0078c8"/>
+        <circle cx="34" cy="44" r="17" fill="#e3f5fb"/><path d="M26 44h16M34 36v16M28 38l12 12M40 38 28 50" stroke="#0078c8" stroke-width="2"/>
+        <text class="card-title" x="22" y="91" font-size="18">Software</text><text class="card-title" x="22" y="116" font-size="18">Architecture</text>
+        <text class="small" x="22" y="155">Plan the overall architecture</text><text class="small" x="22" y="178">and explore upcoming platform</text><text class="small" x="22" y="201">capabilities.</text>
+      </g>
+      <g transform="translate(249 0)">
+        <rect width="228" height="240" rx="10" fill="#fff" stroke="#d9e5ee"/><rect width="228" height="5" rx="2.5" fill="#42c5e8"/>
+        <circle cx="34" cy="44" r="17" fill="#e3f5fb"/><path d="M25 38h18v14H25zM29 34h10M30 56h8" stroke="#0078c8" stroke-width="2" fill="none"/>
+        <text class="card-title" x="22" y="91" font-size="18">Software</text><text class="card-title" x="22" y="116" font-size="18">Development Process</text>
+        <text class="small" x="22" y="155">Design and improve the</text><text class="small" x="22" y="178">processes for a safety-</text><text class="small" x="22" y="201">certifiable software stack.</text>
+      </g>
+      <g transform="translate(498 0)">
+        <rect width="228" height="240" rx="10" fill="#fff" stroke="#d9e5ee"/><rect width="228" height="5" rx="2.5" fill="#0078c8"/>
+        <circle cx="34" cy="44" r="17" fill="#e3f5fb"/><path d="M25 49V40h6v9m2 0V35h6v14m2 0V43h5v6" stroke="#0078c8" stroke-width="2" fill="none"/>
+        <text class="card-title" x="22" y="104" font-size="18">Infrastructure</text>
+        <text class="small" x="22" y="155">Build the tools, CI/CD</text><text class="small" x="22" y="178">pipelines, and shared</text><text class="small" x="22" y="201">development environment.</text>
+      </g>
+      <g transform="translate(747 0)">
+        <rect width="228" height="240" rx="10" fill="#fff" stroke="#d9e5ee"/><rect width="228" height="5" rx="2.5" fill="#42c5e8"/>
+        <circle cx="34" cy="44" r="17" fill="#e3f5fb"/><path d="m25 44 6 6 12-13" stroke="#0078c8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="card-title" x="22" y="104" font-size="18">Testing</text>
+        <text class="small" x="22" y="155">Help verify platform</text><text class="small" x="22" y="178">quality through thoughtful</text><text class="small" x="22" y="201">test strategy and practice.</text>
+      </g>
+      <g transform="translate(996 0)">
+        <rect width="228" height="240" rx="10" fill="#fff" stroke="#d9e5ee"/><rect width="228" height="5" rx="2.5" fill="#0078c8"/>
+        <circle cx="34" cy="44" r="17" fill="#e3f5fb"/><path d="M25 49V40m9 9V34m9 15V38M22 52h24" stroke="#0078c8" stroke-width="2" fill="none"/>
+        <text class="card-title" x="22" y="91" font-size="18">Marketing &amp;</text><text class="card-title" x="22" y="116" font-size="18">Communication</text>
+        <text class="small" x="22" y="155">Share community outcomes</text><text class="small" x="22" y="178">and welcome more people</text><text class="small" x="22" y="201">into S-CORE.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Community voices -->
+  <g transform="translate(108 3630)">
+    <text class="eyebrow" x="0" y="0">FROM THE COMMUNITY</text>
+    <text class="title" x="0" y="62">Community voices</text>
+    <g transform="translate(0 104)" filter="url(#shadow)">
+      <rect width="1224" height="250" rx="12" fill="#fff" stroke="#d9e5ee"/>
+      <rect width="8" height="250" rx="4" fill="url(#rule)"/>
+      <text x="48" y="76" font-size="54" font-weight="800" fill="#42c5e8">“</text>
+      <text class="section-title" x="106" y="75" font-size="27">With S-CORE, we’re providing developers with a reliable,</text>
+      <text class="section-title" x="106" y="113" font-size="27">safety-grade runtime environment that lets the industry focus</text>
+      <text class="section-title" x="106" y="151" font-size="27">on innovation while reducing duplication of effort.</text>
+      <circle cx="113" cy="204" r="20" fill="#eaf3fa"/>
+      <text x="148" y="201" font-size="15" font-weight="800" fill="#193967">Mike Milinkovich</text>
+      <text x="148" y="224" font-size="13" fill="#5c6f84">Executive Director, Eclipse Foundation</text>
+    </g>
+  </g>
+
+  <rect y="4020" width="1440" height="60" fill="#f3f7fb"/>
+  <text x="108" y="4055" font-size="13" fill="#5c6f84">ABOUT PAGE CONCEPT • ALT1 DESIGN SYSTEM • CONTENT ORDER PROPOSED</text>
+</svg>

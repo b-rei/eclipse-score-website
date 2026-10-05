@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "shared/compact-stage.html" (dict "eyebrow" "NEWS & EVENTS" "title" .Params.editorial_heading "description" .Params.editorial_description) }}
+{{ partial "shared/news-section-nav.html" . }}
+<main class="editorial-page">
+  <div class="editorial-content">
+    {{ with .Params.articles }}
+      <section class="esc-news-container-section">
+        <div class="container">
+          {{ partial "shared/editorial-article-list.html" . }}
+        </div>
+      </section>
+    {{ else }}
+      {{ .RawContent | safeHTML }}
+    {{ end }}
+  </div>
+</main>
+{{ end }}

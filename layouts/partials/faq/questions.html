@@ -1,0 +1,35 @@
+{{ $content := .Params.faq }}
+<section class="faq-section" id="faq-questions">
+  <div class="score-shell">
+    <div class="faq-tools">
+      <label class="faq-search-label" for="faq-search">{{ $content.search_label }}</label>
+      <input id="faq-search" class="faq-search" type="search" placeholder="{{ $content.search_placeholder }}" autocomplete="off" data-faq-search>
+      <p class="faq-results" data-faq-results role="status" aria-live="polite"></p>
+    </div>
+
+    <nav class="faq-category-nav" aria-label="FAQ topics">
+      {{ range .Params.faq.categories }}
+        <a href="#{{ .id }}">{{ .title }}</a>
+      {{ end }}
+    </nav>
+
+    <p class="faq-empty" data-faq-empty hidden>{{ $content.empty_message }}</p>
+
+    {{ range .Params.faq.categories }}
+      <section class="faq-category" id="{{ .id }}" data-faq-category>
+        <header class="faq-category-heading">
+          <h2>{{ .title }}</h2>
+          <span data-faq-count>{{ len .questions }}</span>
+        </header>
+        <div class="faq-question-list">
+          {{ range .questions }}
+            <details class="faq-item" data-faq-item>
+              <summary>{{ .question }}</summary>
+              <div class="faq-answer">{{ .answer | markdownify }}</div>
+            </details>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  </div>
+</section>

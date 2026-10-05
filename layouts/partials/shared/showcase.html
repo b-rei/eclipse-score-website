@@ -1,0 +1,32 @@
+{{ $content := . }}
+<section class="score-section">
+  <div class="score-shell">
+    <div class="score-section-header score-section-header-stacked">
+      <div class="score-mini">{{ $content.eyebrow }}</div>
+      <h2>{{ $content.heading }}</h2>
+    </div>
+
+    <div class="score-showcase">
+      <div class="score-showcase-grid">
+        <div class="score-showcase-copy">
+          {{ with $content.title }}<h3>{{ . }}</h3>{{ end }}
+          {{ range $content.paragraphs }}<p>{{ . }}</p>{{ end }}
+          {{ with $content.action_label }}
+            {{ $href := $content.action_url }}
+            {{ if not (hasPrefix $href "#") }}{{ $href = $href | relURL }}{{ end }}
+            <a class="score-feature-action score-feature-action--inverse" href="{{ $href }}">{{ . }} <span aria-hidden="true">&rarr;</span></a>
+          {{ end }}
+        </div>
+
+        <div class="score-showcase-stack">
+          {{ range $content.items }}
+            <div class="score-stack-item">
+              <strong>{{ .title }}</strong>
+              <span>{{ .description }}</span>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

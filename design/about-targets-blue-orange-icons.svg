@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="940" viewBox="0 0 1440 940" role="img" aria-labelledby="title desc">
+  <title id="title">About targets, blue-first with orange icon accents</title>
+  <desc id="desc">A clean S-CORE blue and white target-card proposal. Orange is limited to small icon symbols; headings, metrics, navigation, and card surfaces remain blue, navy, and white.</desc>
+  <defs>
+    <linearGradient id="header-rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0078c8"/>
+      <stop offset="1" stop-color="#42c5e8"/>
+    </linearGradient>
+    <linearGradient id="icon-disc" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#fff5ed"/>
+      <stop offset="1" stop-color="#ffe5d3"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-15%" y="-15%" width="130%" height="145%">
+      <feDropShadow dx="0" dy="9" stdDeviation="13" flood-color="#193967" flood-opacity=".09"/>
+    </filter>
+    <style>
+      text { font-family: Manrope, 'Segoe UI', sans-serif; }
+      .nav { fill: #234a78; font-size: 14px; font-weight: 700; }
+      .eyebrow { fill: #0078c8; font-size: 13px; font-weight: 800; letter-spacing: 3px; }
+      .headline { fill: #18385e; font-size: 47px; font-weight: 800; }
+      .intro { fill: #5c6f84; font-size: 17px; font-weight: 500; }
+      .card-title { fill: #193967; font-size: 22px; font-weight: 800; }
+      .body { fill: #40566e; font-size: 16px; font-weight: 500; }
+      .metric { fill: #0078c8; font-size: 16px; font-weight: 800; }
+      .num { fill: #96a8ba; font-size: 12px; font-weight: 800; letter-spacing: 1.4px; }
+      .icon { fill: none; stroke: #e96812; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="940" fill="#f3f7fb"/>
+
+  <!-- Shared site header -->
+  <rect width="1440" height="4" fill="url(#header-rule)"/>
+  <rect y="4" width="1440" height="96" fill="#fff"/>
+  <image x="108" y="27" width="150" height="50" preserveAspectRatio="xMinYMid meet" href="../static/images/icons/Eclipse-S-CORE-colour-horizontal.png"/>
+  <g class="nav" text-anchor="middle">
+    <text x="704" y="60">Home</text>
+    <text x="797" y="60" fill="#193967">About</text>
+    <text x="922" y="60">News &amp; Events</text>
+    <text x="1062" y="60">Documentation</text>
+    <text x="1191" y="60">Get Involved</text>
+  </g>
+  <rect x="1260" y="30" width="92" height="42" rx="7" fill="#0078c8"/>
+  <text x="1306" y="56" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">GitHub</text>
+  <rect x="108" y="99" width="1224" height="1" fill="#d9e4ed"/>
+  <rect x="760" y="96" width="76" height="3" rx="1.5" fill="#0078c8"/>
+
+  <!-- Targets intro -->
+  <g transform="translate(108 174)">
+    <text class="eyebrow" x="0" y="0">WHY WE EXIST</text>
+    <text class="headline" x="0" y="62">What an open core makes possible</text>
+    <text class="intro" x="0" y="103">Four outcomes. One shared foundation for automotive software.</text>
+  </g>
+
+  <!-- Blue-first cards; orange is reserved for the icon symbols. -->
+  <g transform="translate(108 334)">
+    <g filter="url(#card-shadow)"><rect width="288" height="472" rx="9" fill="#fff" stroke="#d9e4ed"/></g>
+    <text class="num" x="22" y="32">01</text>
+    <circle cx="144" cy="111" r="47" fill="url(#icon-disc)"/>
+    <g class="icon" transform="translate(119 86)">
+      <path d="M5 32a20 20 0 1 1 40 0"/><path d="m25 23 13-12M10 35h30"/><circle cx="25" cy="25" r="3" fill="#e96812"/>
+    </g>
+    <text class="card-title" x="144" y="190" text-anchor="middle">Speed</text>
+    <text class="body" x="144" y="239" text-anchor="middle">
+      <tspan x="144" dy="0">Accelerate development with</tspan>
+      <tspan x="144" dy="24">open-source, code-centric</tspan>
+      <tspan x="144" dy="24">methods.</tspan>
+    </text>
+    <line x1="28" y1="340" x2="260" y2="340" stroke="#e2eaf1"/>
+    <text class="metric" x="144" y="382" text-anchor="middle"><tspan x="144">Up to 30% faster</tspan><tspan x="144" dy="23">time to market</tspan></text>
+
+    <g transform="translate(312 0)" filter="url(#card-shadow)"><rect width="288" height="472" rx="9" fill="#fff" stroke="#d9e4ed"/></g>
+    <text class="num" x="334" y="32">02</text>
+    <circle cx="456" cy="111" r="47" fill="url(#icon-disc)"/>
+    <g class="icon" transform="translate(431 86)">
+      <path d="M12 12h26l-6-6M38 38H12l6 6"/><path d="M37 12a18 18 0 0 1 3 23M13 38a18 18 0 0 1-3-23"/>
+    </g>
+    <text class="card-title" x="456" y="190" text-anchor="middle">Efficiency &amp; reuse</text>
+    <text class="body" x="456" y="239" text-anchor="middle">
+      <tspan x="456" dy="0">Share artefacts across</tspan>
+      <tspan x="456" dy="24">development, integration,</tspan>
+      <tspan x="456" dy="24">and maintenance.</tspan>
+    </text>
+    <line x1="340" y1="340" x2="572" y2="340" stroke="#e2eaf1"/>
+    <text class="metric" x="456" y="382" text-anchor="middle"><tspan x="456">Up to 40% less effort</tspan></text>
+
+    <g transform="translate(624 0)" filter="url(#card-shadow)"><rect width="288" height="472" rx="9" fill="#fff" stroke="#d9e4ed"/></g>
+    <text class="num" x="646" y="32">03</text>
+    <circle cx="768" cy="111" r="47" fill="url(#icon-disc)"/>
+    <g transform="translate(741 88)" fill="#e96812">
+      <path d="m27 0 27 12-27 12L0 12 27 0Z"/>
+      <path d="m0 25 27 12 27-12-8-4-19 9-19-9-8 4Z"/>
+    </g>
+    <text class="card-title" x="768" y="190" text-anchor="middle"><tspan x="768">Compatibility &amp;</tspan><tspan x="768" dy="27">qualification</tspan></text>
+    <text class="body" x="768" y="260" text-anchor="middle">
+      <tspan x="768" dy="0">A compatible, resilient</tspan>
+      <tspan x="768" dy="24">stack designed for reuse</tspan>
+      <tspan x="768" dy="24">across vehicle programs.</tspan>
+    </text>
+    <line x1="652" y1="365" x2="884" y2="365" stroke="#e2eaf1"/>
+    <text class="metric" x="768" y="405" text-anchor="middle"><tspan x="768">Safety-qualified to</tspan><tspan x="768" dy="23">automotive standards</tspan></text>
+
+    <g transform="translate(936 0)" filter="url(#card-shadow)"><rect width="288" height="472" rx="9" fill="#fff" stroke="#d9e4ed"/></g>
+    <text class="num" x="958" y="32">04</text>
+    <circle cx="1080" cy="111" r="47" fill="url(#icon-disc)"/>
+    <g class="icon" transform="translate(1055 86)">
+      <circle cx="16" cy="12" r="6"/><circle cx="37" cy="14" r="5"/>
+      <path d="M3 39c0-9 5-14 13-14s13 5 13 14M30 29c8-2 15 3 15 10"/>
+    </g>
+    <text class="card-title" x="1080" y="190" text-anchor="middle">Business model</text>
+    <text class="body" x="1080" y="239" text-anchor="middle">
+      <tspan x="1080" dy="0">Create services and products</tspan>
+      <tspan x="1080" dy="24">around a shared open-source</tspan>
+      <tspan x="1080" dy="24">platform.</tspan>
+    </text>
+    <line x1="964" y1="340" x2="1196" y2="340" stroke="#e2eaf1"/>
+    <text class="metric" x="1080" y="382" text-anchor="middle"><tspan x="1080">Opportunities for every</tspan><tspan x="1080" dy="23">ecosystem player</tspan></text>
+  </g>
+
+  <text x="108" y="884" font-family="Manrope, 'Segoe UI', sans-serif" font-size="13" fill="#5c6f84">Alt1 proposal • blue remains the foundation; orange is reserved for icon signals</text>
+</svg>

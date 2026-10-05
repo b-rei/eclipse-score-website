@@ -1,13 +1,3 @@
 {{ define "main" }}
-{{ if .Params.use_shared_header }}
-{{ partial "site-header.html" . }}
-{{ end }}
-{{ if .Params.render_raw }}
-{{ .RawContent | safeHTML }}
-{{ else }}
-{{ .Content }}
-{{ end }}
-{{ if .Params.use_shared_footer }}
-{{ partial "site-footer.html" . }}
-{{ end }}
+  {{ if .Params.render_raw }}{{ .RawContent | safeHTML }}{{ else }}{{ .Content }}{{ end }}
 {{ end }}

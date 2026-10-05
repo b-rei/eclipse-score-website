@@ -1,0 +1,10 @@
+{{ $content := .Params.targets }}
+<section class="about-section about-targets" id="targets">
+  <div class="score-shell">
+    <header class="about-section-heading">
+      <p class="about-eyebrow">{{ $content.eyebrow }}</p>
+      <h2>{{ $content.heading }}</h2>
+    </header>
+    {{ partial "shared/feature-card-grid.html" (dict "items" $content.items "columns" 4 "variant" "inverse") }}
+  </div>
+</section>

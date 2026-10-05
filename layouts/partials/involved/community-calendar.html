@@ -1,0 +1,21 @@
+{{ $content := .Params.community_calendar }}
+<section class="get-involved-section get-involved-calendar" aria-labelledby="community-calendar-title">
+  <div class="score-shell">
+    <header class="get-involved-heading">
+      <p class="get-involved-eyebrow">{{ $content.eyebrow }}</p>
+      <h2 id="community-calendar-title">{{ $content.heading }}</h2>
+      <p>{{ $content.description }}</p>
+    </header>
+    <div class="get-involved-calendar-frame">
+      <iframe
+        src="{{ $content.embed_url }}"
+        title="{{ $content.heading }} showing upcoming community events in the Europe/Berlin timezone"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="get-involved-calendar-links">
+      <a href="{{ $content.calendar_url }}" target="_blank" rel="noopener noreferrer">{{ $content.calendar_label }} <span aria-hidden="true">&rarr;</span></a>
+      <a href="{{ $content.ics_url }}">{{ $content.ics_label }} <span aria-hidden="true">&darr;</span></a>
+    </p>
+  </div>
+</section>

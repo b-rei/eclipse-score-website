@@ -1,0 +1,33 @@
+{{ $content := .Params.voices }}
+<section class="about-section about-voices">
+  <div class="score-shell">
+    <header class="about-section-heading">
+      <p class="about-eyebrow">{{ $content.eyebrow }}</p>
+      <h2>{{ $content.heading }}</h2>
+      <p class="about-body">{{ $content.description }}</p>
+    </header>
+    <div class="about-voices-carousel" data-about-carousel>
+      <div class="about-voices-controls">
+        <p data-voice-position aria-live="polite">1 / 1</p>
+        <div>
+          <button type="button" data-voice-prev aria-label="Previous community voices" disabled>&larr;</button>
+          <button type="button" data-voice-toggle aria-label="Pause automatic rotation" aria-pressed="false">Ⅱ</button>
+          <button type="button" data-voice-next aria-label="Next community voices">&rarr;</button>
+        </div>
+      </div>
+      <div class="about-voice-viewport" data-voice-viewport tabindex="0" aria-label="Community voices carousel">
+        <div class="about-voice-track">
+          {{ range $content.items }}
+            <figure class="about-voice-card">
+              <blockquote>“{{ .quote }}”</blockquote>
+              <figcaption>
+                <img src="{{ .image | relURL }}" alt="" loading="lazy">
+                <span><strong>{{ .name }}</strong><small>{{ .role }}</small></span>
+              </figcaption>
+            </figure>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

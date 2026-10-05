@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2280" viewBox="0 0 1440 2280" role="img" aria-labelledby="title description">
+  <title id="title">Eclipse S-CORE homepage redesign concept</title>
+  <desc id="description">A Solstice-inspired project homepage concept using the new S-CORE logo colors, standard typography, simple links, concise project content, architecture imagery, and a restrained news list.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .nav { font-size: 15px; fill: #33445d; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 1.8px; fill: #2761a6; }
+      .h1 { font-size: 52px; font-weight: 700; fill: #152542; }
+      .h2 { font-size: 34px; font-weight: 700; fill: #152542; }
+      .h3 { font-size: 21px; font-weight: 700; fill: #152542; }
+      .body { font-size: 17px; fill: #4b5b70; }
+      .small { font-size: 14px; fill: #596a7e; }
+      .link { font-size: 16px; font-weight: 700; fill: #245d9f; }
+      .white { fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="2280" fill="#ffffff"/>
+
+  <!-- Header: use the theme navigation and replace only the brand asset. -->
+  <rect width="1440" height="94" fill="#ffffff"/>
+  <rect y="93" width="1440" height="1" fill="#dce3eb"/>
+  <g transform="translate(104 27)">
+    <path d="M4 10 L45 15 L61 27 L23 22 Z" fill="#192744"/>
+    <path d="M22 25 L61 31 L45 44 L5 38 Z" fill="#2865ac"/>
+    <path d="M5 38 L21 25 L27 26 L15 36 L43 40 L34 47 Z" fill="#192744"/>
+    <text x="76" y="16" font-size="10" letter-spacing="4.5" fill="#26354c">E C L I P S E</text>
+    <text x="76" y="39" font-size="21" font-weight="700" letter-spacing="1.6" fill="#2865ac">S-CORE</text>
+  </g>
+  <text class="nav" x="730" y="56">About</text>
+  <text class="nav" x="820" y="56">News &amp; Events</text>
+  <text class="nav" x="970" y="56">Documentation</text>
+  <text class="nav" x="1135" y="56">Get Involved</text>
+  <rect x="1264" y="29" width="82" height="36" rx="3" fill="#245d9f"/>
+  <text x="1305" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">GitHub</text>
+
+  <!-- Hero: standard theme jumbotron, no bespoke hero artwork. -->
+  <rect y="94" width="1440" height="420" fill="#f3f6f9"/>
+  <rect x="104" y="151" width="46" height="4" fill="#2865ac"/>
+  <text class="eyebrow" x="104" y="184">ECLIPSE SAFE OPEN VEHICLE CORE</text>
+  <text class="h1" x="104" y="251">Open by Choice.</text>
+  <text class="h1" x="104" y="311">Safe by Design.</text>
+  <text class="body" x="106" y="359">An open, safety-oriented software platform for software-defined vehicles,</text>
+  <text class="body" x="106" y="385">developed through collaboration across the automotive ecosystem.</text>
+  <rect x="104" y="421" width="160" height="48" rx="3" fill="#245d9f"/>
+  <text x="184" y="451" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Read the Guide</text>
+  <rect x="279" y="421" width="153" height="48" rx="3" fill="#ffffff" stroke="#245d9f" stroke-width="1.5"/>
+  <text x="355" y="451" text-anchor="middle" font-size="15" font-weight="700" fill="#245d9f">Get Involved</text>
+  <text class="link" x="461" y="451">Explore GitHub  &#8594;</text>
+
+  <!-- Getting started: simple theme-native text links, not custom cards. -->
+  <rect y="514" width="1440" height="245" fill="#ffffff"/>
+  <text class="eyebrow" x="104" y="574">START HERE</text>
+  <text class="h2" x="104" y="617">Find your way into S-CORE</text>
+  <text class="small" x="104" y="649">A few direct routes for users, adopters, and contributors.</text>
+  <line x1="104" y1="681" x2="1336" y2="681" stroke="#dce3eb"/>
+  <text class="h3" x="104" y="718">User guide</text>
+  <text class="small" x="104" y="742">Build your first application</text>
+  <text class="link" x="430" y="718">Read the guide  &#8594;</text>
+  <line x1="535" y1="697" x2="535" y2="744" stroke="#dce3eb"/>
+  <text class="h3" x="584" y="718">Releases</text>
+  <text class="small" x="584" y="742">Review current milestones</text>
+  <text class="link" x="855" y="718">Release notes  &#8594;</text>
+  <line x1="970" y1="697" x2="970" y2="744" stroke="#dce3eb"/>
+  <text class="h3" x="1018" y="718">Contribute</text>
+  <text class="small" x="1018" y="742">Join the open community</text>
+  <text class="link" x="1230" y="718">Get involved  &#8594;</text>
+
+  <!-- Why S-CORE: restrained columns using the theme's normal content styles. -->
+  <rect y="759" width="1440" height="355" fill="#f3f6f9"/>
+  <text class="eyebrow" x="104" y="817">WHY S-CORE</text>
+  <text class="h2" x="104" y="861">A shared foundation for vehicle software</text>
+  <text class="body" x="104" y="895">Common industry challenges are easier to solve together, with an open and reusable platform.</text>
+  <line x1="104" y1="931" x2="1336" y2="931" stroke="#d4dde7"/>
+  <circle cx="119" cy="979" r="14" fill="#2865ac"/>
+  <text x="119" y="984" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">01</text>
+  <text class="h3" x="148" y="985">Collaboration</text>
+  <text class="small" x="148" y="1015">One common stack for shared</text>
+  <text class="small" x="148" y="1037">industry problems.</text>
+  <line x1="408" y1="960" x2="408" y2="1062" stroke="#d4dde7"/>
+  <circle cx="455" cy="979" r="14" fill="#2865ac"/>
+  <text x="455" y="984" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">02</text>
+  <text class="h3" x="484" y="985">Speed</text>
+  <text class="small" x="484" y="1015">Code-centric, iterative work</text>
+  <text class="small" x="484" y="1037">in the open.</text>
+  <line x1="711" y1="960" x2="711" y2="1062" stroke="#d4dde7"/>
+  <circle cx="758" cy="979" r="14" fill="#2865ac"/>
+  <text x="758" y="984" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">03</text>
+  <text class="h3" x="787" y="985">Extensibility</text>
+  <text class="small" x="787" y="1015">Hardware and software decoupled</text>
+  <text class="small" x="787" y="1037">through flexible layers.</text>
+  <line x1="1036" y1="960" x2="1036" y2="1062" stroke="#d4dde7"/>
+  <circle cx="1082" cy="979" r="14" fill="#2865ac"/>
+  <text x="1082" y="984" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">04</text>
+  <text class="h3" x="1111" y="985">Quality</text>
+  <text class="small" x="1111" y="1015">Readable specifications and</text>
+  <text class="small" x="1111" y="1037">open engineering processes.</text>
+
+  <!-- Project context and a straightforward platform-layer diagram. -->
+  <rect y="1114" width="1440" height="390" fill="#ffffff"/>
+  <text class="eyebrow" x="104" y="1174">THE PLATFORM</text>
+  <text class="h2" x="104" y="1218">Middleware between OS and applications</text>
+  <text class="body" x="104" y="1260">S-CORE is a collaborative, modular software platform for the</text>
+  <text class="body" x="104" y="1287">software-defined vehicle. It aims to reduce integration effort</text>
+  <text class="body" x="104" y="1314">and support reusable development across ECU hardware.</text>
+  <text class="small" x="104" y="1370">Designed for safety-critical contexts including ADAS, Body, and Chassis.</text>
+  <text class="small" x="104" y="1396">Its architecture supports compliance with ISO 26262 and ISO/SAE 21434.</text>
+  <rect x="855" y="1175" width="380" height="54" fill="#edf2f7" stroke="#cbd6e2"/>
+  <text x="1045" y="1209" text-anchor="middle" font-size="17" font-weight="700" fill="#34445a">Vehicle Applications</text>
+  <rect x="855" y="1236" width="380" height="82" fill="#245d9f"/>
+  <text x="1045" y="1272" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">S-CORE Middleware</text>
+  <text x="1045" y="1297" text-anchor="middle" font-size="13" fill="#e7f0fb">Reusable platform services and components</text>
+  <rect x="855" y="1325" width="380" height="54" fill="#edf2f7" stroke="#cbd6e2"/>
+  <text x="1045" y="1359" text-anchor="middle" font-size="17" font-weight="700" fill="#34445a">Operating System</text>
+  <rect x="855" y="1386" width="380" height="54" fill="#edf2f7" stroke="#cbd6e2"/>
+  <text x="1045" y="1420" text-anchor="middle" font-size="17" font-weight="700" fill="#34445a">SoC Board Support Package</text>
+
+  <!-- News: editorial list, avoiding a bespoke carousel. -->
+  <rect y="1504" width="1440" height="306" fill="#f3f6f9"/>
+  <text class="eyebrow" x="104" y="1565">LATEST UPDATES</text>
+  <text class="h2" x="104" y="1608">News &amp; events</text>
+  <text class="link" x="1120" y="1606">All news and events  &#8594;</text>
+  <line x1="104" y1="1640" x2="1336" y2="1640" stroke="#d4dde7"/>
+  <text class="small" x="104" y="1680">NEWS</text>
+  <text class="h3" x="245" y="1681">S-CORE project updates and releases</text>
+  <text class="link" x="1110" y="1681">Read updates  &#8594;</text>
+  <line x1="104" y1="1703" x2="1336" y2="1703" stroke="#d4dde7"/>
+  <text class="small" x="104" y="1744">COMMUNITY</text>
+  <text class="h3" x="245" y="1745">Upcoming events and working sessions</text>
+  <text class="link" x="1110" y="1745">See the calendar  &#8594;</text>
+  <line x1="104" y1="1767" x2="1336" y2="1767" stroke="#d4dde7"/>
+
+  <!-- Architecture imagery: theme figure treatment and full-size affordance. -->
+  <rect y="1810" width="1440" height="286" fill="#ffffff"/>
+  <text class="eyebrow" x="104" y="1867">ARCHITECTURE</text>
+  <text class="h2" x="104" y="1910">Explore the platform</text>
+  <text class="body" x="104" y="1949">See the in-car scope, platform layers,</text>
+  <text class="body" x="104" y="1976">and the project's complementary deliverables.</text>
+  <text class="link" x="104" y="2020">View architecture  &#8594;</text>
+  <rect x="679" y="1840" width="657" height="220" fill="#f7f9fb" stroke="#dce3eb"/>
+  <image href="../static/images/home/platform-layers-3x.png" x="704" y="1850" width="607" height="184" preserveAspectRatio="xMidYMid meet"/>
+  <text class="small" x="1007" y="2050" text-anchor="middle">Platform layers · Open full-size diagram</text>
+
+  <!-- Contributors and standard Eclipse footer. -->
+  <rect y="2096" width="1440" height="184" fill="#f3f6f9"/>
+  <text class="eyebrow" x="104" y="2147">BUILT IN THE OPEN</text>
+  <text class="h2" x="104" y="2188">A community effort</text>
+  <text class="body" x="104" y="2221">Automotive companies, technology providers, and contributors shape S-CORE together.</text>
+  <text class="link" x="104" y="2253">Meet the community  &#8594;</text>
+  <text x="1336" y="2254" text-anchor="end" font-size="13" fill="#53647a">Eclipse Foundation  ·  Privacy  ·  Legal</text>
+</svg>

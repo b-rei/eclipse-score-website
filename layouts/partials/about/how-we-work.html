@@ -1,0 +1,24 @@
+{{ $content := .Params.work }}
+<section class="about-section about-work">
+  <div class="score-shell">
+    <header class="about-section-heading">
+      <p class="about-eyebrow">{{ $content.eyebrow }}</p>
+      <h2>{{ $content.heading }}</h2>
+      <p class="about-body">{{ $content.description }}</p>
+    </header>
+    <div class="about-work-layout">
+      <figure class="about-structure-figure">
+        <img src="{{ $content.structure_image | relURL }}" alt="Diagram: The X-CORE Platform Council provides guidance to Project Leads and Technical Leads. Eclipse S-CORE contributors work through five open working groups." loading="lazy">
+      </figure>
+      <div class="about-principles">
+        {{ range $index, $principle := $content.principles }}
+          <div class="about-principle">
+            <span>0{{ add $index 1 }}</span>
+            <h3>{{ $principle.title }}</h3>
+            <p>{{ $principle.description }}</p>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

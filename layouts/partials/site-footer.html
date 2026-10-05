@@ -1,43 +1,10 @@
-<footer class="footer-section">
-  <div class="container">
-    <div class="row justify-content-start mb-3">
-      <div class="col-12 text-start">
-        <span class="footer-copyright fw-bold text-white"
-          >Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</span
-        >
-      </div>
-    </div>
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-auto d-flex justify-content-start gap-3">
-        <a
-          href="https://www.eclipse.org/legal/termsofuse.php"
-          class="footer-policy-link text-white text-decoration-none"
-          >Terms of Use</a
-        >
-        <a
-          href="https://www.eclipse.org/legal/privacy.php"
-          class="footer-policy-link text-white text-decoration-none"
-          >Privacy Policy</a
-        >
-        <a
-          href="https://www.eclipse.org/legal/copyright.php"
-          class="footer-policy-link text-white text-decoration-none"
-          >Copyright Agent</a
-        >
-        <a
-          href="https://www.eclipse.org/legal/epl-2.0/"
-          class="footer-policy-link text-white text-decoration-none"
-          >Eclipse Public License</a
-        >
-        <a
-          href="https://www.eclipse.org/legal/"
-          class="footer-policy-link text-white text-decoration-none"
-          >Legal Resources</a
-        >
-      </div>
-    </div>
+<footer class="score-footer">
+  <div class="score-shell score-footer-inner">
+    <span>Copyright &copy; Eclipse Foundation AISBL</span>
+    <nav aria-label="Legal links">
+      {{ range .Site.Menus.footer }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
   </div>
 </footer>
-<div id="loading-screen">
-  <img src="{{ "images/icons/logo.svg" | relURL }}" alt="Logo" class="loading-logo" />
-</div>

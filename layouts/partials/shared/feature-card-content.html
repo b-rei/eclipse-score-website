@@ -1,0 +1,6 @@
+{{ $item := .item }}
+<span class="score-feature-icon" style="--feature-icon: url('{{ $item.icon | relURL }}')" aria-hidden="true"></span>
+<h3>{{ $item.title }}</h3>
+<p>{{ $item.description }}</p>
+{{ with $item.metric }}<strong class="score-feature-metric">{{ . }}</strong>{{ end }}
+{{ with .action }}<span class="score-feature-action">{{ . }} <span aria-hidden="true">&rarr;</span></span>{{ end }}

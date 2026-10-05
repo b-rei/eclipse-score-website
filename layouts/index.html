@@ -1,7 +1,10 @@
 {{ define "main" }}
-{{ if .Params.render_raw }}
-{{ .RawContent | safeHTML }}
-{{ else }}
-{{ .Content }}
-{{ end }}
+<main class="score-page">
+  {{ partial "homepage/hero.html" . }}
+  {{ partial "homepage/start-here.html" . }}
+  {{ partial "homepage/why-score.html" . }}
+  {{ partial "homepage/platform.html" . }}
+  {{ partial "homepage/safety-note.html" . }}
+  {{ partial "homepage/news.html" . }}
+</main>
 {{ end }}

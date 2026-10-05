@@ -1,0 +1,23 @@
+{{ $content := .Params.first_steps }}
+<section class="get-involved-section get-involved-next-steps">
+  <div class="score-shell">
+    <header class="get-involved-heading">
+      <p class="get-involved-eyebrow">{{ $content.eyebrow }}</p>
+      <h2>{{ $content.heading }}</h2>
+      {{ with $content.description }}{{ . | markdownify }}{{ end }}
+    </header>
+    <ol class="get-involved-steps">
+      {{ range $index, $step := $content.items }}
+        <li>
+          <span class="get-involved-step-number">{{ printf "%02d" (add $index 1) }}</span>
+          <h3>{{ $step.title }}</h3>
+          <p>{{ $step.description }}</p>
+        </li>
+      {{ end }}
+    </ol>
+    {{ $contextParts := split $content.context_url "#" }}
+    {{ $contextURL := index $contextParts 0 | relURL }}
+    {{ if gt (len $contextParts) 1 }}{{ $contextURL = printf "%s#%s" $contextURL (index $contextParts 1) }}{{ end }}
+    <p class="get-involved-about-link">{{ $content.context_prefix }} <a class="score-feature-action score-feature-action--inverse" href="{{ $contextURL }}">{{ $content.context_label }} <span aria-hidden="true">&rarr;</span></a></p>
+  </div>
+</section>

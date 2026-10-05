@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main class="events-page">
+  {{ partial "shared/compact-stage.html" (dict "eyebrow" .Params.hero.eyebrow "title" .Params.title "description" .Params.description) }}
+  {{ partial "shared/news-section-nav.html" . }}
+  {{ partial "events/feed.html" . }}
+</main>
+{{ end }}

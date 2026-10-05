@@ -1,0 +1,11 @@
+<section class="score-section" id="start_here">
+  {{ $content := .Params.start_here }}
+  <div class="score-shell">
+    <div class="score-section-header score-section-header-stacked">
+      <div class="score-mini">{{ $content.eyebrow }}</div>
+      <h2>{{ $content.heading }}</h2>
+    </div>
+
+    {{ partial "shared/feature-card-grid.html" (dict "items" $content.items "columns" 3 "actionLabel" $content.link_label) }}
+  </div>
+</section>

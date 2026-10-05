@@ -1,0 +1,17 @@
+<section class="score-section score-live-events-section">
+  {{ $content := .Params.news }}
+  <div class="score-shell">
+    <div class="score-section-header score-section-header-stacked">
+      <div class="score-mini">{{ $content.eyebrow }}</div>
+      <h2>{{ $content.heading }}</h2>
+    </div>
+    <div class="score-live-events">
+      <efsc-collection pagesize="3" autoscroll="true">
+        <efsc-event-filters></efsc-event-filters>
+        <efsc-event-list publishtarget="sdv"></efsc-event-list>
+      </efsc-collection>
+      {{ partial "events/fallback.html" . }}
+    </div>
+    <a class="score-feature-action score-feature-action--inverse" href="{{ "articles.html" | relURL }}">{{ $content.link_label }} <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>

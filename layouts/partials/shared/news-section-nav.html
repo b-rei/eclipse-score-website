@@ -1,0 +1,14 @@
+{{ $items := slice
+  (dict "key" "articles" "label" "Articles & News" "href" "articles.html")
+  (dict "key" "press" "label" "Press Releases" "href" "press_releases.html")
+  (dict "key" "conferences" "label" "Conferences" "href" "conferences.html")
+  (dict "key" "townhalls" "label" "Townhalls" "href" "townhalls.html")
+}}
+<nav class="news-section-nav" aria-label="News and events categories">
+  <div class="score-shell">
+    {{ range $items }}
+      {{ $href := .href | relURL }}
+      <a href="{{ $href }}"{{ if eq $.Params.news_section .key }} aria-current="page"{{ end }}>{{ .label }}</a>
+    {{ end }}
+  </div>
+</nav>

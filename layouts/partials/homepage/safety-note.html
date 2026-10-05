@@ -1,0 +1,13 @@
+{{ $content := .Params.safety_note }}
+<aside class="score-safety-note" aria-labelledby="safety-note-heading">
+  <div class="score-shell score-safety-note-inner">
+    <div>
+      <p class="score-safety-note-eyebrow">{{ $content.eyebrow }}</p>
+      <h2 id="safety-note-heading">{{ $content.heading }}</h2>
+      <p>{{ $content.description }}</p>
+    </div>
+    <a href="{{ $content.href }}" target="_blank" rel="noopener noreferrer">
+      {{ $content.label }} <span aria-hidden="true">&rarr;</span>
+    </a>
+  </div>
+</aside>

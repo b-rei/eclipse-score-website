@@ -1,0 +1,11 @@
+{{ $content := .Params.communities }}
+<section class="about-section about-communities" id="communities">
+  <div class="score-shell">
+    <header class="about-section-heading">
+      <p class="about-eyebrow">{{ $content.eyebrow }}</p>
+      <h2>{{ $content.heading }}</h2>
+      <p class="about-body">{{ $content.description }}</p>
+    </header>
+    {{ partial "shared/feature-card-grid.html" (dict "items" $content.items "columns" 3 "variant" "inverse" "actionLabel" "Explore this community") }}
+  </div>
+</section>

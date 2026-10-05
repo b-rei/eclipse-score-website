@@ -1,0 +1,18 @@
+{{ $items := .items }}
+{{ $columns := .columns | default 3 }}
+{{ $variant := .variant | default "default" }}
+<div class="score-card-grid score-card-grid--{{ $columns }}">
+  {{ range $items }}
+    {{ $item := . }}
+    {{ $href := $item.href | default $item.url | default $.href }}
+    {{ $external := $.external }}
+    {{ if isset $item "external" }}{{ $external = $item.external }}{{ end }}
+    {{ $action := "" }}
+    {{ with $href }}{{ $action = $item.action | default $.actionLabel }}{{ end }}
+    {{ $card := dict "item" $item "variant" $variant "action" $action }}
+    {{ with $href }}
+      {{ $card = merge $card (dict "href" . "external" $external) }}
+    {{ end }}
+    {{ partial "shared/feature-card.html" $card }}
+  {{ end }}
+</div>

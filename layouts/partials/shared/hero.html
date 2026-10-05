@@ -1,0 +1,27 @@
+{{ $content := . }}
+<section class="score-hero">
+  <div class="score-shell score-hero-grid{{ if not $content.image }} score-hero-grid--text-only{{ end }}">
+    <div class="score-hero-copy">
+      <p class="score-hero-eyebrow">{{ $content.eyebrow }}</p>
+      <h1>{{ range $index, $line := $content.headline }}{{ if $index }}<br>{{ end }}{{ $line }}{{ end }}</h1>
+      <p class="score-hero-lead">{{ $content.description }}</p>
+      {{ with $content.links }}
+        <div class="score-hero-actions">
+          {{ range . }}
+            {{ $href := .href }}
+            {{ if not (hasPrefix $href "#") }}{{ $href = $href | relURL }}{{ end }}
+            <a class="score-hero-link score-hero-link--{{ .style | default "secondary" }}" href="{{ $href }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+              {{ with .icon }}<img src="{{ . | relURL }}" alt="" aria-hidden="true">{{ end }}
+              <span>{{ .label }}</span>
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    {{ with $content.image }}
+      <div class="score-hero-visual"{{ if not $content.image_alt }} aria-hidden="true"{{ end }}>
+        <img src="{{ . | relURL }}" alt="{{ $content.image_alt }}" fetchpriority="high">
+      </div>
+    {{ end }}
+  </div>
+</section>

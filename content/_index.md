@@ -1,576 +1,108 @@
----
-title: "Eclipse S-CORE"
-render_raw: true
-extra_styles:
-  - "css/bootstrap.min.css"
-  - "css/owl.carousel.min.css"
-  - "css/navbar.css"
-  - "css/globals.css"
-  - "css/footer.css"
-  - "css/styleguide.css"
-  - "css/loading.css"
-  - "css/news.css"
-  - "css/style.css"
-  - "css/contributor-slider.css"
-extra_scripts:
-  - "js/jquery-3.7.1.min.js"
-  - "js/bootstrap.min.js"
-  - "js/owl.carousel.min.js"
-  - "js/panzoom.min.js"
-  - "js/zoom.js"
-  - "js/news.js"
-  - "js/contributor-slider.js"
-  - "js/member-logos.js"
-  - "js/loading.js"
----
-<main class="main-section homepage-main-section p-0 min-vh-100 d-flex flex-column">
-  <div>
-    <div class="section main-header-container">
-      <header class="main-header w-100">
-        <nav class="navbar navbar-expand-xl navbar-light bg-light frame w-100" style="min-height: 64px">
-          <div class="container px-3">
-            <div class="navbar-content">
-              <a class="navbar-brand d-flex align-items-center logo" href="index.html">
-                <div class="logo-icon me-0">
-                  <img class="logo-text" src="images/icons/logo.svg" alt="Logo" />
-                </div>
-                <span class="logo-title h1 mb-0 fw-semibold">Eclipse S-CORE</span>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation-links">
-                  <li class="nav-item active">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <div class="active-indicator d-none d-lg-block" aria-hidden="true"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="news.html">News/Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="training-modules.html">Join us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://eclipse-score.github.io/score/main/" target="_blank">Docs</a>
-                  </li>
-                </ul>
-                <div class="search-form-container d-flex align-items-center gap-2">
-                  <a href="https://github.com/eclipse-score" class="github-link ms-2" aria-label="Visit our GitHub" target="_blank" rel="noopener noreferrer">
-                    <div class="github-icon" aria-hidden="true">
-                      <img src="images/icons/github.svg" alt="GitHub Icon" class="img-fluid" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <section class="header-content w-100 flex-grow-1 d-flex align-items-center py-5">
-          <div class="container">
-            <div class="row g-4 w-100 align-items-center">
-              <div class="col-12 col-lg-7 mb-4 mb-lg-0 text-content">
-                <h2 class="main-heading mb-3">
-                  <span>Eclipse S-CORE</span>
-                </h2>
-                <p class="description">
-                  The industry has long tackled software challenges
-                  independently – often duplicating efforts and building
-                  closed, incompatible systems.<br /><br />
-                  S-CORE changes this by uniting OEMs, suppliers and
-                  developers around a common SW-platform. The goal of S-CORE
-                  is to reduce complexity, promote re-use, gain speed &amp;
-                  enable scalable innovation.
-                </p>
-                <div class="cta-section mt-4">
-                  <p class="cta-text">
-                    Join our global community building a common,
-                    safety-critical runtime foundation for automotive
-                    innovation.
-                  </p>
-                  <h2 class="main-heading mb-3">
-                  <span>Open by Choice. <br />Safe by Design.</span>
-                </h2>
-                  
-                  <div class="cta-buttons d-flex flex-wrap gap-2">
-                    <a href="news.html" class="btn btn-outline-primary button secondary">Upcoming Events</a>
-                    <a href="training-modules.html" class="btn btn-outline-primary button secondary">Get Involved</a>
-                    <a href="https://github.com/eclipse-score" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary button tertiary">Visit Our Github</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-5 d-flex align-items-center">
-                <img class="img-fluid" src="images/home/header-img.png" alt="3D illustration of a futuristic car with floating cubes" />
-              </div>
-            </div>
-          </div>
-        </section>
-      </header>
-    </div>
-    
-    <!-- ========== Begin Updated Teaser Section with Background ========== -->
-    <div class="section esc-news--container">
-        <section class="esc-section">
-            <div class="container">
-                <div class="esc-header mb-5">
-                    <div class="w-100">
-                      <h2 class="h2">Getting Started</h2>
-                    </div>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 d-flex flex-column">
-                            <div class="card-body text-center d-flex flex-column">
-                                <div class="icon mb-3">
-                                    <img src="images/home/icons/Speed.svg" alt="How to get started icon" style="height: 48px;"/>
-                                </div>
-                                <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">How to get started</h5>
-                                <p class="card-text">A detailed “how-to-guide” introducing core concepts and walking through application building step-by-step.</p>
-                                <div class="mt-auto pt-3">
-                                    <a href="https://eclipse-score.github.io/score/main/users_guide/index.html" target="_blank" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Read the Guide</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 d-flex flex-column">
-                            <div class="card-body text-center d-flex flex-column">
-                                <div class="icon mb-3">
-                                    <img src="images/icons/release.png" alt="Latest release icon" style="height: 48px;"/>
-                                </div>
-                                <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">Latest Release</h5>
-                                <p class="card-text">Get an overview of all features and functions available in the first S-CORE release Milestones.</p>
-                                <div class="mt-auto pt-3">
-                                    <a href="https://eclipse-score.github.io/reference_integration/main/s_core_v_1/releases/releases.html" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">View Release Notes</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 d-flex flex-column">
-                            <div class="card-body text-center d-flex flex-column">
-                                <div class="icon mb-3">
-                                    <img src="images/home/icons/Abstraction.svg" alt="GitHub icon" style="height: 48px;"/>
-                                </div>
-                                <h5 class="card-title" style="font-weight: bold; color: #6a1b9a;">Explore on GitHub</h5>
-                                <p class="card-text">Get an overview of all features and functions available in the Eclipse S-CORE Github Repo.</p>
-                                <div class="mt-auto pt-3">
-                                    <a href="https://github.com/eclipse-score" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #6a1b9a; color: white; border-color: #6a1b9a;">Go to GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!-- ========== End Updated Teaser Section ========== -->
++++
+title = "Eclipse S-CORE"
+description = "Eclipse S-CORE is an open-source software platform for software-defined vehicles, developed collaboratively for high-performance automotive ECUs."
 
-    <div class="section esc-section-needed-container">
-      <section class="esc-section esc-needed-section">
-        <div class="container">
-          <div class="esc-header esc-header-needed mb-5">
-            <div class="w-100">
-              <h2 class="h2">Why is S-CORE Needed</h2>
-            </div>
-          </div>
-          <div class="row g-4 justify-content-center">
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Collaboration.svg" alt="" />
-                </div>
-                <h5>Common Stack & Collaboration</h5>
-                <p>
-                  A common full-stack software runtime addressing shared
-                  industry problems through joint solutions.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Speed.svg" alt="" />
-                </div>
-                <h5>Speed</h5>
-                <p>
-                  Accelerates development by working in open source with
-                  code-centric, iterative methods.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Abstraction.svg" alt="" />
-                </div>
-                <h5>Abstraction & Extensibility</h5>
-                <p>
-                  Decouples HW and SW with flexible layers and enables
-                  project-specific extensions of the stack.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="main-transparent-card needed-card d-flex align-items-center justify-content-center flex-column gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <img src="images/home/icons/Quality.svg" alt="" />
-                </div>
-                <h5>Quality & Efficiency</h5>
-                <p>
-                  A lean, no-frills solution using modern languages,
-                  readable specs, and safe open source processes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="section esc-news--container">
-      <section class="esc-section esc-news-section">
-        <div class="container">
-          <div class="esc-header esc-header-news mb-5">
-            <h2 class="h2">Latest News & Events</h2>
-            <a href="news.html" class="d-inline-flex ms-auto align-items-center justify-content-center header-link gap-2">
-              Discover more News/Events
-              <img src="images/icons/top-right-arrow.svg" alt="" />
-            </a>
-          </div>
-          <div class="esc-content">
-            <div class="owl-carousel-wrapper position-relative">
-              <div class="owl-carousel news-slider">
-                <!-- ========== Begin Card ========== -->
-                <div class="card">
-                  <div class="card-img">
-                    <img src="images/home/2026-02-23_s-corev060_milestone_architecture.jpg" alt="" />
-                  </div>
-                  <div class="card-body p-0 py-4">
-                    <h4 class="title mb-2">Eclipse S-CORE v0.6.0 Released (Revoked)</h4>
-                    <p class="desc">
-                      We're excited to announce the third milestone release of Eclipse S-CORE (v0.6.0), the open-source automotive middleware platform developed within the Eclipse SDV Working Group!
-                    </p>
-                    <h4 class="title mb-2">Eclipse S-CORE: <br>
-                      Open by Choice. Safe by Design.</h4>
-                  </div>
-                  <div class="card-actions">
-                    <a class="learn-more" href="articles.html" rel="noopener noreferrer">Learn More
-                      <div class="icon">
-                        <img src="images/icons/right-arrow.svg" alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <!-- ========== End Card ========== -->
-                <div class="card">
-                  <div class="card-img">
-                    <img src="images/home/S_CORE_0_5.png" alt="" />
-                  </div>
-                  <div class="card-body p-0 py-4">
-                    <h4 class="title mb-2">Coming soon: Eclipse S-CORE 0.5</h4>
-                    <p class="desc">
-                      The automotive industry’s first open, safety-ready software stack is almost here. <br>
-                      Eclipse S-CORE brings the community one step closer to a shared foundation for software-defined vehicles.
-                    </p>
-                    <h4 class="title mb-2">Eclipse S-CORE: <br>
-                      Open by Choice. Safe by Design.</h4>
-                  </div>
-                  <div class="card-actions">
-                    <a class="learn-more" href="articles.html" rel="noopener noreferrer">Learn More
-                      <div class="icon">
-                        <img src="images/icons/right-arrow.svg" alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img src="images/icons/QC joins.png" alt="" />
-                  </div>
-                  <div class="card-body p-0 py-4">
-                    <h4 class="title mb-2">Nov 12, 2025</h4>
-                    <p class="desc">
-                      Eclipse S-CORE (Eclipse Safe Open Vehicle Core) Project unites with Qualcomm to Advance Open-Source Middleware for Next-Gen Vehicles
-                    </p>
-                  </div>
-                  <div class="card-actions">
-                    <a class="learn-more" href="https://eclipse.dev/score/press_releases.html" target="_blank" rel="noopener noreferrer">Learn More
-                      <div class="icon">
-                        <img src="images/icons/right-arrow.svg" alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img src="images/news/EclipseMeetupJapan.jfif" alt="" />
-                  </div>
-                  <div class="card-body p-0 py-4">
-                    <h4 class="title mb-2">Eclipse Community Meetup, Japan/ Yokohama</h4>
-                    <p class="desc">
-                      Introduction and update about recent S-CORE developments.
-                    </p>
-                  </div>
-                  <div class="card-actions">
-                    <a class="learn-more" href="https://www.eventbrite.com/e/eclipse-sdv-community-meetup-japan-co-hosted-by-bosch-group-tickets-1540218427779" target="_blank" rel="noopener noreferrer">Learn More
-                      <div class="icon">
-                        <img src="images/icons/right-arrow.svg" alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <button class="custom-prev" style="display: none">
-                <img src="images/icons/chevron-left.svg" alt="" />
-              </button>
-              <button class="custom-next" style="display: none">
-                <img src="images/icons/chevron-right.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="section esc-nutshell-container">
-      <section class="esc-section esc-nutshell-section">
-        <div class="container">
-          <div class="esc-header esc-header-nutshell mb-5">
-            <h2 class="h2">S-CORE In A Nutshell</h2>
-          </div>
-          <div class="esc-content">
-            <h4 class="h4 fw-bold">Together...</h4>
-            <p>S-CORE began in 2024 with five initial members:
-              Accenture, BMW, ETAS, Mercedes-Benz, and Qorix – “the coalition of the willing”.<br />
-              Since then, both active participation and global interest have grown significantly.</p>
-            <div class="row g-4 justify-content-center mb-5">
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/OEMS.svg" alt="" />
-                  </div>
-                  <p>OEMS</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/Tiers.svg" alt="" />
-                  </div>
-                  <p>Tiers</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/SW-Supplier.svg" alt="" />
-                  </div>
-                  <p>SW-Supplier</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/Check.svg" alt="" />
-                  </div>
-                  <p>Service Provider</p>
-                </div>
-              </div>
-            </div>
-            <h4 class="h4 fw-bold">...we´re shaping an open-source and code-based SW-platform...</h4>
-            <p>S-CORE solves the requirements of a future SDV with a collaborative, open, and modular approach.
-              Developed by and for the industry, it delivers a robust core architecture that reduces integration effort,
-              enhances safety, and accelerates development. <br />
-              Rather than fostering competition through proprietary,
-              stacks, S-CORE enables collaboration through standardisation.</p>
-            <div class="row g-4 justify-content-center mb-5">
-              <div class="col-12 col-md-6 col-xl-4">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="image d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/sw-platform.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-4">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/open-source.svg" alt="" />
-                  </div>
-                  <p>Open Source</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-4">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/code-based.svg" alt="" />
-                  </div>
-                  <p>Code Based</p>
-                </div>
-              </div>
-            </div>
-            <h4 class="h4 fw-bold">...for "dynamic core" components with strict requirements of a future SDV.</h4>
-            <p>
-              S-CORE bridges the OS–application gap and is being developed as a modular,
-              standards-oriented middleware. The goal: enable predictable, safe, and reusable execution
-              environments across diverse hardware and ECU types – without prescribing a fixed implementation.<br />
-              Its architecture is designed for safety-critical contexts – especially ADAS, Body, and Chassis – and supports compliance with ISO 26262 and ISO/SAE 21434.
-            </p>
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="image d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/static.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/like.svg" alt="" />
-                  </div>
-                  <p>Quality (ASPICE)</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/protect.svg" alt="" />
-                  </div>
-                  <p>Safety (ISO 26262)</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-3">
-                <div class="main-white-card nutshell-card d-flex align-items-center justify-content-center flex-column gap-3">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="images/home/icons/lock.svg" alt="" />
-                  </div>
-                  <p>Security (ISO 21434)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="section esc-safety-critical-container">
-      <section class="esc-section esc-safety-critical-section">
-        <div class="container">
-          <div class="esc-header esc-header-news mb-5">
-            <div class="w-100">
-              <h2 class="h2">
-                S-CORE Focuses on Safety-Critical In-Car Components
-              </h2>
-            </div>
-          </div>
-          <div class="esc-content">
-            <div class="zoom-image-wrapper">
-              <div class="panzoom-container">
-                <img src="images/home/safety-critical.png" alt="" class="zoom-image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="section esc-platform-layers-container">
-      <section class="esc-section esc-platform-layers-section">
-        <div class="container">
-          <div class="esc-header esc-header-news mb-5">
-            <div class="w-100">
-              <h2 class="h2">
-                S-CORE aims to build-up all SW-platform layers below the
-                application layer and above the board support package of the
-                SoC.
-              </h2>
-            </div>
-          </div>
-          <div class="esc-content">
-            <div class="zoom-image-wrapper">
-              <div class="panzoom-container">
-                <img src="images/home/platform-layers-3x.png" alt="" class="zoom-image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="section esc-deliverables-layers-container">
-      <section class="esc-section esc-deliverables-layers-section">
-        <div class="container">
-          <div class="esc-header esc-header-deliverables mb-5">
-            <div class="w-100">
-              <h2 class="h2">
-                What are the deliverables of S-CORE?
-              </h2>
-              <p class="header-desc-md">
-                Besides describing the SW-platform, S-CORE provides a huge
-                load of complementary deliverables.
-              </p>
-            </div>
-          </div>
-          <div class="esc-content">
-            <div class="zoom-image-wrapper">
-              <div class="panzoom-container">
-                <img src="images/home/deliverables.png" alt="" class="zoom-image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    
-    <div class="section esc-our-contributors-container">
-      <section class="esc-section esc-our-contributors-container-section">
-        <div class="container">
-          <div class="pages-title">
-            <h2 class="h2 fw-bold mb-3">Our Contributors</h2>
-            <p>
-              S-CORE is backed by a diverse network of leading automotive
-              companies, technology providers, and open-source contributors.
-              These members play a vital role in driving innovation, shaping the
-              platform’s direction, and ensuring its success across real-world
-              applications.
-            </p>
-          </div>
-          <div class="contributor-slider-content mt-5">
-            <div class="owl-carousel-wrapper position-relative">
-              <div class="owl-carousel contributor-slider">
-              </div>
-              <button class="custom-prev" style="display: none">
-                <img src="images/icons/chevron-left.svg" alt="" />
-              </button>
-              <button class="custom-next" style="display: none">
-                <img src="images/icons/chevron-right.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="section no-fullpage-footer">
-      <footer class="footer-section">
-        <div class="container">
-          <div class="row justify-content-start mb-3">
-            <div class="col-12 text-start">
-              <span class="footer-copyright fw-bold text-white">Copyright © Eclipse Foundation AISBL. All Rights Reserved.</span>
-            </div>
-          </div>
-          <div class="row justify-content-start">
-            <div class="col-12 col-md-auto d-flex justify-content-start flex-wrap gap-3">
-              <a href="https://www.eclipse.org/legal/termsofuse.php" class="footer-policy-link text-white text-decoration-none">Terms of Use</a>
-              <a href="https://www.eclipse.org/legal/privacy.php" class="footer-policy-link text-white text-decoration-none">Privacy Policy</a>
-              <a href="https://www.eclipse.org/legal/copyright.php" class="footer-policy-link text-white text-decoration-none">Copyright Agent</a>
-              <a href="https://www.eclipse.org/legal/epl-2.0/" class="footer-policy-link text-white text-decoration-none">Eclipse Public License</a>
-              <a href="https://www.eclipse.org/legal/" class="footer-policy-link text-white text-decoration-none">Legal Resources</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </div>
-</main>
+[hero]
+eyebrow = "Eclipse Safe Open Vehicle Core"
+headline = ["Open by Choice.", "Safe by Design."]
+description = "Eclipse S-CORE brings the automotive ecosystem together around a shared, open, safety-oriented software platform for software-defined vehicles."
+image = "images/home/hero-platform-stack.svg"
+image_alt = ""
+
+[[hero.links]]
+label = "Start using"
+href = "#start_here"
+style = "primary"
+
+
+[[hero.links]]
+label = "Start contributing"
+href = "how_to_contribute.html"
+style = "secondary"
+
+[[hero.links]]
+label = "Start exploring"
+href = "https://github.com/eclipse-score"
+style = "tertiary"
+icon = "images/icons/github.svg"
+external = true
+
+[start_here]
+eyebrow = "Explore S-CORE"
+heading = "Find your way into Eclipse S-CORE"
+link_label = "Learn more"
+
+[[start_here.items]]
+title = "User guide"
+description = "Follow a practical path to understand the platform and build your first application."
+icon = "images/home/icons/book.svg"
+url = "https://eclipse-score.github.io/score/main/users_guide/index.html"
+external = true
+
+[[start_here.items]]
+title = "Releases"
+description = "Review current milestones, compatibility notes, and the newest platform capabilities."
+icon = "images/home/icons/packages.svg"
+url = "https://github.com/eclipse-score/reference_integration/releases"
+external = true
+
+[[start_here.items]]
+title = "Functional safety"
+description = "Discover how Eclipse S-CORE supports precise safety governance and technical transparency."
+icon = "images/home/icons/protect.svg"
+url = "https://eclipse-score.github.io/score/main/safety/index.html"
+external = true
+
+[safety_note]
+eyebrow = "IMPORTANT FOR SERIES PROGRAMS"
+heading = "A joined safety ready core to start a series project"
+description = "Eclipse S-CORE provides an open and joined software foundation. Each series project remains responsible for the compliance of its final system, including applicable functional-safety, cybersecurity, and process requirements."
+label = "Read the S-CORE safety documentation"
+href = "https://eclipse-score.github.io/score/main/safety/index.html"
+
+[why_score]
+eyebrow = "Why Eclipse S-CORE"
+heading = "A shared foundation for vehicle software"
+title = "Collaboration for a safer, faster automotive future."
+paragraphs = ["Eclipse S-CORE unites OEMs, suppliers, and innovators around a common software runtime, reducing duplication and improving reuse across the software-defined vehicle stack."]
+action_label = "Learn more"
+action_url = "about-us.html"
+
+[[why_score.items]]
+title = "Collaboration"
+description = "One common stack for shared industry problems."
+
+[[why_score.items]]
+title = "Speed"
+description = "Code-centric, iterative work in the open."
+
+[[why_score.items]]
+title = "Quality"
+description = "Readable specs and disciplined engineering."
+
+[platform]
+eyebrow = "The platform"
+heading = "Middleware between OS and applications"
+paragraphs = ["Built for modularity, integration flexibility, and future-ready vehicle software, Eclipse S-CORE gives teams a reusable base for automotive functionality while keeping system constraints and domain requirements explicit.", "The architecture balances safety-critical demands with practical extensibility across hardware and software layers."]
+action_label = "Explore architecture"
+action_url = "docs.html"
+
+[[platform.items]]
+title = "Vehicle applications"
+description = "Domain-specific features live above the shared platform layer."
+
+[[platform.items]]
+title = "Eclipse S-CORE"
+description = "Common middleware designed for reuse and interoperability."
+
+[[platform.items]]
+title = "Operating system"
+description = "Reliable, hardware-conscious base for the software stack."
+
+[news]
+eyebrow = "Stay connected"
+heading = "Latest News & Events"
+link_label = "More News & Events"
++++
+
+

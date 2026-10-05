@@ -1,0 +1,21 @@
+{{ range .items }}
+  {{ $item := . }}
+  <article class="main-blog-item-card editorial-article-card">
+    {{ with $item.image }}
+      <div class="editorial-article-image">
+        <img src="{{ . | relURL }}" alt="{{ $item.image_alt }}" loading="lazy">
+      </div>
+    {{ end }}
+    <div class="editorial-article-content">
+      <p class="editorial-article-date">{{ $item.date }}</p>
+      <h2>{{ $item.title }}</h2>
+      {{ with $item.source }}<p class="editorial-article-source">{{ . }}</p>{{ end }}
+      {{ with $item.summary }}<p class="editorial-article-summary">{{ . }}</p>{{ end }}
+      {{ with $item.body }}<div class="editorial-article-body">{{ . | markdownify }}</div>{{ end }}
+      {{ with $item.action_url }}
+        <a class="editorial-article-action" href="{{ . }}"{{ if $item.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $item.action_label }} <span aria-hidden="true">&rarr;</span></a>
+      {{ end }}
+      <a class="editorial-back-to-top" href="#page-top">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </div>
+  </article>
+{{ end }}

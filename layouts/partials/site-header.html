@@ -1,116 +1,26 @@
-{{ $active := .Params.active_nav | default "" }}
-{{ $headerClass := .Params.header_class | default "about-page-header" }}
-{{ $headerTitle := .Params.header_title | default .Title }}
-<header class="main-pages-header {{ $headerClass }} w-100">
-  <nav
-    class="navbar navbar-expand-xl navbar-light bg-light frame w-100"
-    style="min-height: 64px"
-  >
-    <div class="container px-3">
-      <div class="navbar-content">
-        <a
-          class="navbar-brand d-flex align-items-center logo"
-          href="{{ "index.html" | relURL }}"
-        >
-          <div class="logo-icon me-0">
-            <img class="logo-text" src="{{ "images/icons/logo.svg" | relURL }}" alt="Logo" />
-          </div>
-          <span class="logo-title h1 mb-0 fw-semibold">Eclipse S-CORE</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation-links">
-            <li class="nav-item{{ if eq $active "home" }} active{{ end }}">
-              <a class="nav-link{{ if eq $active "home" }} active{{ end }}" href="{{ "index.html" | relURL }}">Home</a>
-              {{ if eq $active "home" }}
-              <div class="active-indicator d-none d-lg-block" aria-hidden="true"></div>
-              {{ end }}
-            </li>
-            <li class="nav-item{{ if eq $active "news" }} active{{ end }}">
-              <a class="nav-link{{ if eq $active "news" }} active{{ end }}" href="{{ "news.html" | relURL }}">News/Events</a>
-              {{ if eq $active "news" }}
-              <div class="active-indicator d-none d-lg-block" aria-hidden="true"></div>
-              {{ end }}
-            </li>
-            <li class="nav-item{{ if eq $active "join" }} active{{ end }}">
-              <a class="nav-link{{ if eq $active "join" }} active{{ end }}" href="{{ "training-modules.html" | relURL }}">Join us</a>
-              {{ if eq $active "join" }}
-              <div class="active-indicator d-none d-lg-block" aria-hidden="true"></div>
-              {{ end }}
-            </li>
-            <li class="nav-item{{ if eq $active "about" }} active{{ end }}">
-              <a class="nav-link{{ if eq $active "about" }} active{{ end }}" href="{{ "about-us.html" | relURL }}">About us</a>
-              {{ if eq $active "about" }}
-              <div class="active-indicator d-none d-lg-block" aria-hidden="true"></div>
-              {{ end }}
-            </li>
-            <li class="nav-item{{ if eq $active "faq" }} active{{ end }}">
-              <a class="nav-link{{ if eq $active "faq" }} active{{ end }}" href="{{ "faq.html" | relURL }}">FAQ</a>
-              {{ if eq $active "faq" }}
-              <div class="active-indicator d-none d-lg-block" aria-hidden="true"></div>
-              {{ end }}
-            </li>
-            <li class="nav-item{{ if eq $active "docs" }} active{{ end }}">
-              <a class="nav-link{{ if eq $active "docs" }} active{{ end }}" href="https://eclipse-score.github.io/score/main/" target="_blank" rel="noopener noreferrer">Docs</a>
-              {{ if eq $active "docs" }}
-              <div class="active-indicator d-none d-lg-block" aria-hidden="true"></div>
-              {{ end }}
-            </li>
-          </ul>
-          <div class="search-form-container d-flex align-items-center gap-2">
-            <a
-              href="https://github.com/eclipse-score"
-              class="github-link ms-2"
-              aria-label="Visit our GitHub"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="github-icon" aria-hidden="true">
-                <img
-                  src="{{ "images/icons/github.svg" | relURL }}"
-                  alt="GitHub Icon"
-                  class="img-fluid"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+<header class="score-header">
+  <div class="score-shell">
+    <div class="score-topbar">
+      <a class="score-brand" href="{{ .Site.Home.RelPermalink }}" aria-label="Eclipse S-CORE home">
+        <span class="score-brand-mark" aria-hidden="true"><img src="{{ "images/icons/logo.svg" | relURL }}" alt=""></span>
+        <span class="score-brand-name">Eclipse S-CORE</span>
+      </a>
+      <button class="score-nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" hidden>Menu</button>
+      <nav class="score-nav" id="main-navigation" aria-label="Main navigation">
+        {{ range .Site.Menus.main }}
+          {{ $url := .URL }}
+          {{ $active := false }}
+          {{ if eq .Identifier "home" }}
+            {{ $url = $.Site.Home.RelPermalink }}
+            {{ $active = $.IsHome }}
+          {{ else if not (hasPrefix .URL "http") }}
+            {{ $url = .URL | relURL }}
+            {{ $active = eq $.RelPermalink $url }}
+          {{ end }}
+          {{ if and (ne .Identifier "") $.Params.active_nav (eq $.Params.active_nav .Identifier) }}{{ $active = true }}{{ end }}
+          <a href="{{ $url }}"{{ if $active }} aria-current="page"{{ end }}{{ if eq .Identifier "github" }} class="score-nav-cta" target="_blank" rel="noopener noreferrer"{{ end }}>{{ if eq .Identifier "github" }}<img class="score-nav-icon" src="{{ "images/icons/github.svg" | relURL }}" alt="" aria-hidden="true">{{ end }}<span>{{ .Name }}</span></a>
+        {{ end }}
+      </nav>
     </div>
-  </nav>
-  <section
-    class="pages-header-content w-100 flex-grow-1 d-flex align-items-end py-5"
-  >
-    <div class="container">
-      <div class="pages-title">
-        <h2 class="h2 text-white">{{ $headerTitle }}</h2>
-      </div>
-      <div class="bredcrumb-container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            {{ with .Params.breadcrumb_html }}
-            {{ . | safeHTML }}
-            {{ else }}
-            <li class="breadcrumb-item">
-              <a href="{{ "index.html" | relURL }}" class="breadcrumb-link text-white">Home</a>
-            </li>
-            <li class="breadcrumb-item active text-white" aria-current="page">
-              {{ $headerTitle }}
-            </li>
-            {{ end }}
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </section>
+  </div>
 </header>

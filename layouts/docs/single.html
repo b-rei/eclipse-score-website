@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{ partial "shared/compact-stage.html" (dict "eyebrow" .Params.stage_eyebrow "title" .Params.stage_title "description" .Params.stage_description) }}
+<main class="documentation-page">
+  <section class="documentation-start">
+    <div class="score-shell documentation-start-inner">
+      <div>
+        <p class="documentation-eyebrow">{{ .Params.start.eyebrow }}</p>
+        <h2>{{ .Params.start.title }}</h2>
+        <p>{{ .Params.start.description }}</p>
+      </div>
+      <a class="documentation-primary-link" href="{{ .Params.start.href }}" target="_blank" rel="noopener noreferrer">
+        {{ .Params.start.label }} <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="documentation-map">
+    <div class="score-shell">
+      <div class="documentation-section-heading">
+        <p class="documentation-eyebrow">{{ .Params.repository_map.eyebrow }}</p>
+        <h2>{{ .Params.repository_map.title }}</h2>
+        <p>{{ .Params.repository_map.description }}</p>
+      </div>
+      <div class="documentation-repository-grid">
+        {{ range .Params.repository_map.repositories }}
+          <article class="documentation-repository">
+            <h3>{{ .name }}</h3>
+            <p>{{ .role }}</p>
+            <a href="{{ .href }}" target="_blank" rel="noopener noreferrer">{{ .label }} <span aria-hidden="true">&rarr;</span></a>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="documentation-index">
+    <div class="score-shell">
+      <div class="documentation-section-heading">
+        <p class="documentation-eyebrow">CHOOSE A PATH</p>
+        <h2>Where would you like to start?</h2>
+        <p>Follow a path into the documentation maintained by the teams closest to each topic.</p>
+      </div>
+      <nav class="documentation-topic-nav" aria-label="Documentation topics">
+        {{ range $index, $section := .Params.doc_sections }}
+          <a href="#docs-topic-{{ $index }}"><span>{{ printf "%02d" (add $index 1) }}</span>{{ $section.nav_label }}</a>
+        {{ end }}
+      </nav>
+      <div class="documentation-topic-grid">
+        {{ range $index, $section := .Params.doc_sections }}
+          <section class="documentation-topic" id="docs-topic-{{ $index }}">
+            <div class="documentation-topic-intro">
+              <span class="documentation-topic-number" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
+              <div>
+                <h3>{{ $section.title }}</h3>
+                <p class="documentation-topic-description">{{ $section.description }}</p>
+              </div>
+            </div>
+            <div class="documentation-link-list{{ if eq (len $section.links) 3 }} documentation-link-list--three{{ end }}">
+              {{ range $section.links }}
+                <a class="documentation-link" href="{{ .href }}" target="_blank" rel="noopener noreferrer">
+                  <span class="documentation-link-copy">
+                    <strong>{{ .title }}</strong>
+                    <span>{{ .description }}</span>
+                  </span>
+                  <span class="documentation-link-action">{{ .label }} <span aria-hidden="true">&rarr;</span></span>
+                </a>
+              {{ end }}
+            </div>
+          </section>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
