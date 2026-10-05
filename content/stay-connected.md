@@ -1,6 +1,6 @@
 +++
 title = "Stay Connected Content"
-_build = { render = "never", list = "never" }
+build = { render = "never", list = "never" }
 
 [stay_connected]
 eyebrow = "STAY CONNECTED"
