@@ -204,7 +204,7 @@ body:has(.about-page) {
 }
 
 .about-governance {
-  background: #eaf3f9;
+  background: var(--score-surface);
 }
 
 .about-governance-grid {

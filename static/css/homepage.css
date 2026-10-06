@@ -49,10 +49,6 @@ html {
 
 .score-showcase {
   margin-top: 12px;
-  background: linear-gradient(180deg, #edf5fb, #e8f1f9);
-  border-radius: 24px;
-  padding: 28px 24px 24px;
-  border: 1px solid rgba(24, 63, 102, 0.08);
 }
 
 .score-showcase-grid {
@@ -82,7 +78,7 @@ html {
 
 .score-stack-item {
   padding: 18px 20px;
-  border-radius: 16px;
+  border-radius: 8px;
   background: #ffffff;
   border: 1px solid rgba(25, 57, 103, 0.1);
   box-shadow: 0 8px 20px rgba(12, 42, 68, 0.04);

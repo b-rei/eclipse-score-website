@@ -49,7 +49,7 @@
 .get-involved-next-steps {
   margin-top: 38px;
   padding: 58px 0 72px;
-  background: #eaf3f9;
+  background: var(--score-surface);
 }
 
 .get-involved-calendar {

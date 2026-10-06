@@ -1,4 +1,5 @@
 .documentation-page {
+  background: var(--score-surface);
   color: var(--score-text);
   font-family: var(--score-font);
 }
@@ -16,7 +17,7 @@
 
 .documentation-start {
   padding: 44px 0;
-  background: #fff;
+  background: var(--score-surface);
 }
 
 .documentation-start-inner {
@@ -90,7 +91,7 @@
 
 .documentation-map {
   padding: 48px 0 54px;
-  background: #eaf3f9;
+  background: var(--score-surface);
 }
 
 .documentation-section-heading {
