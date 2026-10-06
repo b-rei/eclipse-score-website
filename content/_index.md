@@ -35,6 +35,7 @@ link_label = "Learn more"
 [[start_here.items]]
 title = "User guide"
 description = "Follow a practical path to understand the platform and build your first application."
+action = "Read the user guide"
 icon = "images/home/icons/book.svg"
 url = "https://eclipse-score.github.io/score/main/users_guide/index.html"
 external = true
@@ -42,6 +43,7 @@ external = true
 [[start_here.items]]
 title = "Releases"
 description = "Review current milestones, compatibility notes, and the newest platform capabilities."
+action = "Explore releases"
 icon = "images/home/icons/packages.svg"
 url = "https://github.com/eclipse-score/reference_integration/releases"
 external = true
@@ -49,14 +51,15 @@ external = true
 [[start_here.items]]
 title = "Functional safety"
 description = "Discover how Eclipse S-CORE supports precise safety governance and technical transparency."
+action = "Read safety documentation"
 icon = "images/home/icons/protect.svg"
 url = "https://eclipse-score.github.io/score/main/safety/index.html"
 external = true
 
 [safety_note]
 eyebrow = "IMPORTANT FOR SERIES PROGRAMS"
-heading = "A joined safety ready core to start a series project"
-description = "Eclipse S-CORE provides an open and joined software foundation. Each series project remains responsible for the compliance of its final system, including applicable functional-safety, cybersecurity, and process requirements."
+heading = "A joint safety-ready core to start a series project"
+description = "Eclipse S-CORE provides an open and joint software foundation. Each series project remains responsible for the compliance of its final system, including applicable functional-safety, cybersecurity, and process requirements."
 label = "Read the S-CORE safety documentation"
 href = "https://eclipse-score.github.io/score/main/safety/index.html"
 
