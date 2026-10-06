@@ -1,0 +1,54 @@
+name: Publish fork preview
+
+on:
+  push:
+    branches:
+      - website_update
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fork-pages-preview
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'b-rei/eclipse-score-website' && github.ref == 'refs/heads/website_update'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f
+        with:
+          hugo-version: "0.144.2"
+          extended: true
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build fork preview
+        run: hugo --minify --baseURL=https://b-rei.github.io/eclipse-score-website/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    if: github.repository == 'b-rei/eclipse-score-website' && github.ref == 'refs/heads/website_update'
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy fork preview
+        id: deployment
+        uses: actions/deploy-pages@v4
