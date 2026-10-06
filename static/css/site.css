@@ -273,6 +273,10 @@ body {
   filter: drop-shadow(0 18px 30px rgba(0, 14, 38, 0.24));
 }
 
+.score-hero-visual img[src*="hero-contributors"] {
+  mix-blend-mode: normal;
+}
+
 .score-hero-visual img[src*="hero_s-core_home_2-transparent"] {
   mix-blend-mode: normal;
   filter: drop-shadow(0 18px 30px rgba(0, 14, 38, 0.24));

@@ -9,8 +9,8 @@ active_nav = "join"
 eyebrow = "GET INVOLVED"
 headline = ["Build S-CORE", "with the community."]
 description = "Whether you want to explore the platform, contribute code, or help shape a working group, there is a clear place to start."
-image = "images/home/hero-network.svg"
-image_alt = ""
+image = "images/home/hero-contributors.svg"
+image_alt = "Three contributors connected to a shared software module."
 
 [[hero.links]]
 label = "Choose how to contribute"
