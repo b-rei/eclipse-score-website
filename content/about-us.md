@@ -10,8 +10,8 @@ extra_scripts = ["js/about-members.js", "js/about-voices.js"]
 eyebrow = "ABOUT ECLIPSE S-CORE"
 headline = ["One open core.", "Built together."]
 description = "We unite automotive experts, technology partners, developers, and innovators to build an open, safe, and scalable foundation for vehicle software."
-image = "images/about-us/car-orange-signals.png"
-image_alt = "Automotive software and mobility"
+image = "images/about-us/hero-automotive-platform-original.svg"
+image_alt = "A low, left-facing automotive coupe with connected vertical software signal lines."
 
 [[about_hero.links]]
 label = "Our mission"

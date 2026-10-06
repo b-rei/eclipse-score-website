@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" fill="none">
+  <g stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-opacity=".45">
+    <path d="M103 226v-48m52 120V156m65 180V100m64 226V69m56 220V120m53 154V43m59 236V133m55 165V91m59 223V152m65 180V81m44 263V170"/>
+    <path d="M103 320v-49m117 51v-75m120 43v-89m112 93v-61m114 87v-64m109 90v-62"/>
+  </g>
+  <g fill="#fff" fill-opacity=".8">
+    <circle cx="103" cy="178" r="3"/><circle cx="155" cy="156" r="3"/>
+    <circle cx="220" cy="100" r="3"/><circle cx="340" cy="120" r="3"/>
+    <circle cx="452" cy="133" r="3"/><circle cx="566" cy="152" r="3"/>
+    <circle cx="675" cy="170" r="3"/>
+  </g>
+  <g stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m55 369 21-18c25-19 67-31 114-36l50-5 45-27c48-30 89-48 135-49 73-2 130 15 191 36l75 16 23-6-15 18 1 19-9 15 13 28-3 38-23 18-35 6c0-35-23-63-56-63s-58 27-59 64H252c-1-35-23-64-57-64-35 0-61 28-62 64l-64-2-17-8 10-23-7-21Z" fill="#fff" fill-opacity=".05"/>
+    <path d="M267 308c60-37 105-61 154-61 51 0 102 11 149 29l-32 17c-25 10-55 13-85 14l-186 1Z" fill="#fff" fill-opacity=".12" stroke-width="2"/>
+    <path d="m387 251-20 56m68-60-9 60" stroke-width="2" stroke-opacity=".7"/>
+    <path d="m79 360 38-8-15 16-38 7m586-52 37 6-8 9-27-3" stroke-width="2"/>
+    <path d="m261 320-9 50 12 24 225-1 10-66m-128-18-4 88" stroke-width="2" stroke-opacity=".6"/>
+    <path d="m280 374 192-8m-207 39 231-1m-378-24-47 12m578-27 31 3" stroke-width="2" stroke-opacity=".55"/>
+    <path d="M350 324h20m94-3h20" stroke-width="3"/>
+    <path d="m306 305-13 3 1 9 22-4-10-8Z" fill="#fff" fill-opacity=".16" stroke-width="2"/>
+    <circle cx="195" cy="408" r="46" fill="#fff" fill-opacity=".06"/>
+    <circle cx="577" cy="408" r="46" fill="#fff" fill-opacity=".06"/>
+    <g stroke-width="2" stroke-opacity=".65">
+      <circle cx="195" cy="408" r="29"/><circle cx="577" cy="408" r="29"/>
+      <path d="M195 379v58m-29-29h58m-49-20 40 40m-40 0 40-40M577 379v58m-29-29h58m-49-20 40 40m-40 0 40-40"/>
+    </g>
+  </g>
+  <g stroke="#ff9b54" stroke-width="2" stroke-linecap="round">
+    <path d="M284 283V69m109 165V43m114 223V91m124 188V81" stroke-opacity=".7"/>
+    <path d="m651 343 32 5m-422 60 235-1"/>
+  </g>
+  <g fill="#ff9b54">
+    <circle cx="284" cy="69" r="3"/><circle cx="393" cy="43" r="3"/>
+    <circle cx="507" cy="91" r="3"/><circle cx="631" cy="81" r="3"/>
+  </g>
+</svg>
