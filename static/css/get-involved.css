@@ -34,7 +34,7 @@
 .get-involved-heading > p:last-child:not(.get-involved-eyebrow) {
   max-width: 740px;
   margin: 16px 0 0;
-  color: var(--score-muted);
+  color: var(--score-body);
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -126,7 +126,7 @@
 
 .get-involved-steps p {
   margin: 0;
-  color: var(--score-muted);
+  color: var(--score-body);
   font-size: 0.92rem;
   line-height: 1.65;
 }

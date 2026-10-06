@@ -47,26 +47,27 @@ html {
   font-weight: 800;
 }
 
-.score-showcase {
-  margin-top: 12px;
+.score-section:has(.score-showcase) .score-section-header {
+  margin-bottom: 16px;
 }
 
 .score-showcase-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.95fr;
   gap: 24px;
-  align-items: center;
+  align-items: start;
 }
 
 .score-showcase-copy h3 {
   margin: 0 0 14px;
   font-size: clamp(1.8rem, 2.4vw, 2.8rem);
+  line-height: 1.08;
   letter-spacing: -0.05em;
 }
 
 .score-showcase-copy p {
   margin: 0 0 18px;
-  color: var(--score-muted);
+  color: var(--score-body);
   line-height: 1.8;
   font-size: 1.02rem;
 }
@@ -94,7 +95,7 @@ html {
 }
 
 .score-stack-item span {
-  color: var(--score-muted);
+  color: var(--score-body);
   line-height: 1.6;
 }
 
@@ -189,7 +190,7 @@ html {
 
 .score-safety-note-inner p:last-child {
   margin: 0;
-  color: var(--score-muted);
+  color: var(--score-body);
   font-size: 0.92rem;
   line-height: 1.65;
 }

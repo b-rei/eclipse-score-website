@@ -174,7 +174,7 @@
 
 .faq-answer {
   padding: 0 20px 20px;
-  color: var(--score-muted);
+  color: var(--score-body);
   font-size: 0.94rem;
   line-height: 1.7;
 }

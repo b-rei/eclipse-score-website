@@ -31,7 +31,7 @@
 
 .events-feed-heading p:last-child {
   margin: 12px 0 0;
-  color: var(--score-muted);
+  color: var(--score-body);
   font-size: 0.98rem;
   line-height: 1.65;
 }

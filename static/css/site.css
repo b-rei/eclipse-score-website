@@ -10,6 +10,7 @@
   --score-surface: #f3f7fb;
   --score-card: #ffffff;
   --score-text: #18385e;
+  --score-body: #465a70;
   --score-muted: #5c6f84;
   --score-border: rgba(25, 57, 103, 0.11);
   --score-font: "Manrope", "Segoe UI", sans-serif;
@@ -544,7 +545,7 @@ body {
 }
 
 .score-feature-card--inverse p {
-  color: var(--score-muted);
+  color: var(--score-body);
 }
 
 .score-feature-metric {
@@ -636,7 +637,7 @@ a.score-feature-action:hover span {
 
 .score-stay-connected-description {
   margin: 10px 0 0;
-  color: var(--score-muted);
+  color: var(--score-body);
   line-height: 1.65;
 }
 

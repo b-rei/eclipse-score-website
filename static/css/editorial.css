@@ -103,7 +103,7 @@
 
 .editorial-article-body {
   width: 100%;
-  color: var(--score-muted);
+  color: var(--score-body);
   font-size: 0.94rem;
   line-height: 1.7;
 }
@@ -181,6 +181,12 @@
 .editorial-page .main-blog-item-card li {
   color: var(--score-muted);
   line-height: 1.7;
+}
+
+.editorial-page .editorial-article-body p,
+.editorial-page .editorial-article-body li,
+.editorial-page .editorial-article-summary {
+  color: var(--score-body);
 }
 
 .editorial-page .main-blog-item-card a.read-more {
