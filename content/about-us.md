@@ -30,6 +30,10 @@ paragraph = "Eclipse S-CORE is developed collaboratively under the Eclipse Found
 member_heading = "Active contributors in the past 3 months"
 member_loading = "Loading current member organizations…"
 member_error = "Member organizations are provided by the Eclipse Foundation."
+engagement_heading = "Eclipse S-CORE Engagement Program"
+engagement_paragraph = "The program recognizes organizational participation and commitment through Silver, Gold, and Platinum levels. Each level has defined contributor requirements and recognition. Platinum also offers eligibility to participate in the X-CORE Platform Council, subject to a successful application and Eclipse SDV Steering Committee approval."
+engagement_link_label = "View participation levels and requirements"
+engagement_url = "https://eclipsesdv.org/platform-council/"
 
 [targets]
 eyebrow = "Our Mission"

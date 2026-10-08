@@ -53,6 +53,9 @@ description = "Your first contribution does not need to be a code change. Improv
 context_prefix = "Looking for a working group?"
 context_url = "about-us.html#communities"
 context_label = "Explore the working groups"
+engagement_prefix = "Representing an organization?"
+engagement_url = "about-us.html#engagement-program"
+engagement_label = "Learn about the Engagement Program"
 
 [[first_steps.items]]
 title = "Choose a topic"

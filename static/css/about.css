@@ -88,6 +88,45 @@ body:has(.about-page) {
   background: rgba(255, 255, 255, 0.055);
 }
 
+.about-engagement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 38px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(215, 239, 249, 0.2);
+}
+
+.about-engagement h3 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.about-engagement p {
+  max-width: 760px;
+  margin: 0;
+  color: rgba(240, 248, 255, 0.82);
+  line-height: 1.65;
+}
+
+.about-engagement a {
+  flex: 0 0 auto;
+  color: var(--score-orange-light);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-engagement a:hover {
+  text-decoration: underline;
+}
+
+.about-engagement a:focus-visible {
+  outline: 3px solid var(--score-orange-light);
+  outline-offset: 4px;
+}
+
 .about-members-panel h3 {
   margin: 0 0 14px;
   color: #fff;
@@ -448,5 +487,11 @@ body:has(.about-page) {
 
   .about-members-panel {
     padding: 17px;
+  }
+
+  .about-engagement {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 }
