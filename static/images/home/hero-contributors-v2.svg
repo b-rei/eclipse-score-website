@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 700" fill="none">
+  <defs>
+    <mask id="people-cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="760" height="700">
+      <rect width="760" height="700" fill="#fff"/>
+      <g fill="#000" stroke="#000" stroke-width="6">
+        <circle cx="380" cy="59.5" r="24"/>
+        <path d="M336 129v-11a44 44 0 0 1 88 0v11Z"/>
+        <circle cx="124" cy="315" r="24"/>
+        <path d="M80 385v-11a44 44 0 0 1 88 0v11Z"/>
+        <circle cx="636" cy="315" r="24"/>
+        <path d="M592 385v-11a44 44 0 0 1 88 0v11Z"/>
+        <circle cx="380" cy="571.5" r="24"/>
+        <path d="M336 641v-11a44 44 0 0 1 88 0v11Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-opacity=".65">
+      <path d="M380 129v97M168 355h91l33-35M592 355h-91l-33-35M380 393v154.5"/>
+      <circle cx="380" cy="315" r="256" stroke-dasharray="2 9" mask="url(#people-cutout)"/>
+    </g>
+    <g fill="#fff" fill-opacity=".08">
+      <circle cx="380" cy="59.5" r="24"/>
+      <path d="M336 129v-11a44 44 0 0 1 88 0v11Z"/>
+      <circle cx="124" cy="315" r="24"/>
+      <path d="M80 385v-11a44 44 0 0 1 88 0v11Z"/>
+      <circle cx="636" cy="315" r="24"/>
+      <path d="M592 385v-11a44 44 0 0 1 88 0v11Z"/>
+      <circle cx="380" cy="571.5" r="24"/>
+      <path d="M336 641v-11a44 44 0 0 1 88 0v11Z"/>
+    </g>
+    <path d="m380 226 88 51-88 51-88-51 88-51Z" fill="#fff" fill-opacity=".18"/>
+    <path d="M292 277v65l88 51 88-51v-65M380 328v65" fill="#fff" fill-opacity=".06"/>
+    <g fill="#fff" stroke="none">
+      <circle cx="380" cy="198" r="5"/>
+      <circle cx="245" cy="327" r="5"/>
+      <circle cx="515" cy="327" r="5"/>
+      <circle cx="380" cy="431" r="5"/>
+    </g>
+  </g>
+  <g transform="translate(329.345 226.9564) scale(.4)" fill="#fff">
+    <path d="M134.682866 122.240876 184.557866 142.391829 186.185521 143.045314 184.429866 153.010829 183.351995 159.156834 123.918521 183.168829 127.603521 162.267829 159.321866 149.452829 131.841866 138.349876 134.682866 122.240876Z M129.356533 72.04917 125.671533 92.95017 93.9531877 105.76517 121.433188 116.868124 118.592188 132.977124 68.7171877 112.82617 67.0895327 112.172685 68.8451877 102.20717 69.9230593 96.0611651 129.356533 72.04917Z"/>
+  </g>
+  <g stroke="#ff9b54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m292 342 88 51 88-51"/>
+  </g>
+</svg>

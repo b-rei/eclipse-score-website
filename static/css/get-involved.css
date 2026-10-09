@@ -52,6 +52,69 @@
   background: var(--score-surface);
 }
 
+.get-involved-engagement {
+  padding: 58px 0 68px;
+  background: #eaf3f9;
+}
+
+.engagement-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.engagement-tier {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid rgba(20, 55, 84, 0.16);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.engagement-tier h3 {
+  margin: 0 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--score-orange);
+  color: var(--score-text);
+  font-size: 1.35rem;
+}
+
+.engagement-tier section + section {
+  margin-top: 18px;
+}
+
+.engagement-tier h4 {
+  margin: 0 0 7px;
+  color: var(--score-text);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.engagement-tier ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--score-body);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.engagement-tier .score-feature-action {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+@media (max-width: 1000px) {
+  .engagement-tier-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .get-involved-calendar {
   padding-bottom: 60px;
 }
@@ -163,6 +226,10 @@
   .get-involved-steps {
     grid-template-columns: 1fr;
     gap: 22px;
+  }
+
+  .engagement-tier-grid {
+    grid-template-columns: 1fr;
   }
 
   .get-involved-next-steps {

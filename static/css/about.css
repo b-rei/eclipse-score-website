@@ -61,9 +61,26 @@ body:has(.about-page) {
 
 .about-built-grid {
   display: grid;
+  grid-template-areas:
+    "copy members"
+    "divider divider"
+    "engagement levels";
   grid-template-columns: 0.95fr 1.05fr;
-  gap: 64px;
-  align-items: center;
+  grid-template-rows: auto 1px auto;
+  column-gap: 64px;
+  row-gap: 24px;
+  align-items: start;
+}
+
+.about-built-copy {
+  grid-area: copy;
+  min-width: 0;
+}
+
+.about-built-grid::before {
+  grid-area: divider;
+  background: rgba(215, 239, 249, 0.2);
+  content: "";
 }
 
 .about-built-open .about-eyebrow {
@@ -81,6 +98,7 @@ body:has(.about-page) {
 }
 
 .about-members-panel {
+  grid-area: members;
   min-width: 0;
   padding: 22px;
   border: 1px solid rgba(215, 239, 249, 0.2);
@@ -89,13 +107,8 @@ body:has(.about-page) {
 }
 
 .about-engagement {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  margin-top: 38px;
-  padding-top: 28px;
-  border-top: 1px solid rgba(215, 239, 249, 0.2);
+  grid-area: engagement;
+  max-width: 540px;
 }
 
 .about-engagement h3 {
@@ -105,14 +118,12 @@ body:has(.about-page) {
 }
 
 .about-engagement p {
-  max-width: 760px;
-  margin: 0;
+  margin: 0 0 14px;
   color: rgba(240, 248, 255, 0.82);
   line-height: 1.65;
 }
 
 .about-engagement a {
-  flex: 0 0 auto;
   color: var(--score-orange-light);
   font-weight: 700;
   text-decoration: none;
@@ -125,6 +136,35 @@ body:has(.about-page) {
 .about-engagement a:focus-visible {
   outline: 3px solid var(--score-orange-light);
   outline-offset: 4px;
+}
+
+.about-levels-panel {
+  grid-area: levels;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid rgba(215, 239, 249, 0.2);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.about-levels-panel h3 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.about-program-participants + .about-program-participants {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(215, 239, 249, 0.16);
+}
+
+.about-program-participants h4 {
+  margin: 0 0 10px;
+  color: var(--score-orange-light);
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .about-members-panel h3 {
@@ -451,7 +491,15 @@ body:has(.about-page) {
   }
 
   .about-built-grid {
-    gap: 28px;
+    grid-template-areas:
+      "copy"
+      "members"
+      "divider"
+      "engagement"
+      "levels";
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto 1px auto auto;
+    row-gap: 24px;
   }
 
   .about-voice-card {
@@ -489,9 +537,12 @@ body:has(.about-page) {
     padding: 17px;
   }
 
-  .about-engagement {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 16px;
+  .about-levels-panel {
+    padding: 17px;
+  }
+
+  .about-levels-list li {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
   }
 }

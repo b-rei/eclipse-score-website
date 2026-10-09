@@ -32,8 +32,17 @@ member_loading = "Loading current member organizations…"
 member_error = "Member organizations are provided by the Eclipse Foundation."
 engagement_heading = "Eclipse S-CORE Engagement Program"
 engagement_paragraph = "The program recognizes organizational participation and commitment through Silver, Gold, and Platinum levels. Each level has defined contributor requirements and recognition. Platinum also offers eligibility to participate in the X-CORE Platform Council, subject to a successful application and Eclipse SDV Steering Committee approval."
-engagement_link_label = "View participation levels and requirements"
-engagement_url = "https://eclipsesdv.org/platform-council/"
+engagement_link_label = "Explore levels and requirements"
+engagement_url = "how_to_contribute.html#engagement-program"
+engagement_participants_heading = "Engagement Program participants"
+
+[[built_open.engagement_participants]]
+level = "Platinum"
+organizations = ["Accenture GmbH", "BMW Group", "ETAS GmbH", "Mercedes-Benz Tech Innovation GmbH", "Qorix GmbH"]
+
+[[built_open.engagement_participants]]
+level = "Gold"
+organizations = ["Red Hat, LLC."]
 
 [targets]
 eyebrow = "Our Mission"

@@ -1,7 +1,7 @@
 {{ $content := .Params.built_open }}
 <section class="about-section about-built-open">
   <div class="score-shell about-built-grid">
-    <div>
+    <div class="about-built-copy">
       <p class="about-eyebrow">{{ $content.eyebrow }}</p>
       <h2>{{ $content.heading }}</h2>
       <p class="about-body">{{ $content.paragraph }}</p>
@@ -16,14 +16,21 @@
       </ul>
       <a class="about-members-source" href="https://projects.eclipse.org/projects/automotive.score/who" target="_blank" rel="noopener noreferrer">View the member directory <span aria-hidden="true">&rarr;</span></a>
     </aside>
-  </div>
-  <div class="score-shell">
     <div class="about-engagement" id="engagement-program">
-      <div>
-        <h3>{{ $content.engagement_heading }}</h3>
-        <p>{{ $content.engagement_paragraph }}</p>
-      </div>
+      <h3>{{ $content.engagement_heading }}</h3>
+      <p>{{ $content.engagement_paragraph }}</p>
       <a href="{{ $content.engagement_url }}" target="_blank" rel="noopener noreferrer">{{ $content.engagement_link_label }} <span aria-hidden="true">&rarr;</span></a>
     </div>
+    <section class="about-levels-panel" aria-labelledby="about-participants-heading">
+      <h3 id="about-participants-heading">{{ $content.engagement_participants_heading }}</h3>
+      {{ range $content.engagement_participants }}
+        <div class="about-program-participants">
+          <h4>{{ .level }}</h4>
+          <ul class="about-member-list">
+            {{ range .organizations }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </section>
   </div>
 </section>

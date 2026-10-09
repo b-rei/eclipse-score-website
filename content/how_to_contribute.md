@@ -9,8 +9,8 @@ active_nav = "join"
 eyebrow = "GET INVOLVED"
 headline = ["Build S-CORE", "with the community."]
 description = "Whether you want to explore the platform, contribute code, or help shape a working group, there is a clear place to start."
-image = "images/home/hero-contributors.svg"
-image_alt = "Three contributors connected to a shared software module."
+image = "images/home/hero-contributors-v2.svg"
+image_alt = "Four contributors connected to a shared software module, with dotted links between all four."
 
 [[hero.links]]
 label = "Choose how to contribute"
@@ -45,6 +45,34 @@ icon = "images/home/icons/discussion.svg"
 href = "https://github.com/eclipse-score/score/discussions"
 action = "Open discussions"
 external = true
+
+[engagement_program]
+eyebrow = "FOR ORGANIZATIONS"
+heading = "Eclipse S-CORE Engagement Program"
+description = "The program recognizes organizational participation and commitment through Silver, Gold, and Platinum levels. Each level has defined benefits, requirements, and recognition."
+enrol_url = "https://eclipsesdv.org/platform-council/#my_application_form"
+enrol_label = "Enrol now"
+
+[[engagement_program.levels]]
+name = "Platinum"
+benefits = ["Play a strategic role in shaping the future of Eclipse S-CORE", "Become eligible to participate in the X-CORE Platform Council", "Influence governance and the platform's long-term direction", "Achieve maximum visibility across Eclipse S-CORE and Eclipse SDV channels", "Be recognised as a top-tier ecosystem leader and strategic partner"]
+audience = ["Strategic partners influencing long-term direction and governance"]
+requirements = ["Minimum of three active contributors", "At least one employee serving as a Committer on an Eclipse S-CORE-related project", "Strategic or Participant member of the Eclipse SDV Working Group", "Successful application to join the Platform Council", "Approval by the Eclipse SDV Steering Committee"]
+recognition = ["Eligibility for Platform Council participation", "Maximum visibility across S-CORE and Eclipse SDV marketing channels"]
+
+[[engagement_program.levels]]
+name = "Gold"
+benefits = ["Be recognised as a key technical leader within the Eclipse S-CORE ecosystem", "Gain high-level visibility on the Eclipse S-CORE website", "Influence technical direction through active contribution and Committer rights", "Showcase expertise in maintaining and evolving core platform components", "Strengthen your position within the automotive software ecosystem"]
+audience = ["Organisations driving the technical roadmap", "Contributors maintaining core project components"]
+requirements = ["Strategic or Participant member of the Eclipse SDV Working Group", "Minimum of three active contributors", "At least one employee serving as a Committer on an Eclipse S-CORE-related project"]
+recognition = ["Company logo on the X-CORE Platform Council and Eclipse S-CORE webpages"]
+
+[[engagement_program.levels]]
+name = "Silver"
+benefits = ["Position your organisation as an active contributor to Eclipse S-CORE", "Strengthen credibility through visible participation in project development", "Leverage Silver Engagement Level branding in your marketing", "Demonstrate thought leadership within the automotive and SDV ecosystem", "Deepen integration of engineering teams into an open-source initiative"]
+audience = ["Companies integrating engineering teams into the project's technical workflow"]
+requirements = ["Strategic or Participant member of the Eclipse SDV Working Group", "At least one active contributor to the Eclipse S-CORE project"]
+recognition = ["Company logo on the X-CORE Platform Council and Eclipse S-CORE webpages"]
 
 [first_steps]
 eyebrow = "YOUR FIRST CONTRIBUTION"
