@@ -34,7 +34,7 @@ engagement_heading = "Eclipse S-CORE Engagement Program"
 engagement_paragraph = "The program recognizes organizational participation and commitment through Silver, Gold, and Platinum levels. Each level has defined contributor requirements and recognition. Platinum also offers eligibility to participate in the X-CORE Platform Council, subject to a successful application and Eclipse SDV Steering Committee approval."
 engagement_link_label = "Explore levels and requirements"
 engagement_url = "how_to_contribute.html#engagement-program"
-engagement_participants_heading = "Engagement Program participants"
+engagement_participants_heading = "Acknowledged Engagement Program Organizations"
 
 [[built_open.engagement_participants]]
 level = "Platinum"
