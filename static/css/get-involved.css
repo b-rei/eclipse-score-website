@@ -39,6 +39,10 @@
   line-height: 1.7;
 }
 
+.get-involved-calendar .get-involved-heading > p:last-child {
+  margin-top: 10px;
+}
+
 .get-involved-heading > p a {
   color: var(--score-blue);
   font-weight: 700;

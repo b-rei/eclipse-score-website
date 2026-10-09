@@ -19,9 +19,5 @@
     {{ $contextURL := index $contextParts 0 | relURL }}
     {{ if gt (len $contextParts) 1 }}{{ $contextURL = printf "%s#%s" $contextURL (index $contextParts 1) }}{{ end }}
     <p class="get-involved-about-link">{{ $content.context_prefix }} <a class="score-feature-action score-feature-action--inverse" href="{{ $contextURL }}">{{ $content.context_label }} <span aria-hidden="true">&rarr;</span></a></p>
-    {{ $engagementParts := split $content.engagement_url "#" }}
-    {{ $engagementURL := index $engagementParts 0 | relURL }}
-    {{ if gt (len $engagementParts) 1 }}{{ $engagementURL = printf "%s#%s" $engagementURL (index $engagementParts 1) }}{{ end }}
-    <p class="get-involved-about-link">{{ $content.engagement_prefix }} <a class="score-feature-action score-feature-action--inverse" href="{{ $engagementURL }}">{{ $content.engagement_label }} <span aria-hidden="true">&rarr;</span></a></p>
   </div>
 </section>
