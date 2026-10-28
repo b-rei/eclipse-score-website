@@ -110,7 +110,7 @@ metric = "Ready for AI-assisted engineering"
 [work]
 eyebrow = "HOW WE WORK"
 heading = "Clear ownership, open collaboration"
-description = "S-CORE brings members, technical leads, and focused communities together to define modules, propose requirements, and evolve the platform with clarity and purpose."
+description = "S-CORE works in two parallel tracks. On the non-technical side, the X-CORE Platform Council provides strategy and guidance, steering the project without managing it. On the technical side, project leads, technical leads, and contributors define modules, propose requirements, and evolve the platform in open working groups."
 structure_image = "images/about-us/community-structure-v2.svg"
 structure_alt = "Diagram with two parallel hierarchies. Non-technical X-CORE structure: Eclipse SDV Steering Committee, X-CORE Platform Council, and Engagement Program organizations. Technical project structure: Project Leads, Technical Leads, and Eclipse S-CORE contributors working in five open working groups. The Platform Council is loosely coupled to the project through steering."
 
@@ -124,26 +124,26 @@ description = "Specifications, code, and development knowledge build on one anot
 
 [[work.principles]]
 title = "Defined responsibilities"
-description = "Members, project leads, technical leads, and communities each have clear ways to contribute."
+description = "Council, leads, contributors, and working groups each have clear roles in their track."
 
 [governance]
 eyebrow = "PROJECT GOVERNANCE"
-heading = "Two circles. One shared direction."
-description = "Project leads represent their organizations and steer the project together. Technical leads support planning and operational coordination."
+heading = "Two lead circles. One shared direction."
+description = "Within the technical track, two circles lead the project. Project leads represent their organizations and coordinate direction, planning, and resources. Technical leads guide architecture and technical alignment. Strategic steering comes from the X-CORE Platform Council."
 
 [[governance.groups]]
 number = "01"
-name = "Technical Lead Circle"
-short = "Technical direction"
-description = "Guides architecture, technical decisions, and alignment with S-CORE’s goals."
-responsibilities = ["Architecture and design", "Technical decisions", "Engineering alignment"]
-
-[[governance.groups]]
-number = "02"
 name = "Project Lead Circle"
 short = "Project direction"
 description = "Coordinates project planning, resources, and progress across the participating members."
 responsibilities = ["Roadmap and planning", "Coordination", "Project health"]
+
+[[governance.groups]]
+number = "02"
+name = "Technical Lead Circle"
+short = "Technical direction"
+description = "Guides architecture, technical decisions, and alignment with S-CORE’s goals."
+responsibilities = ["Architecture and design", "Technical decisions", "Engineering alignment"]
 
 [communities]
 eyebrow = "GET INVOLVED"
