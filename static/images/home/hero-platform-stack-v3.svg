@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" fill="none">
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7890b6"/>
+      <stop offset="1" stop-color="#4c6692"/>
+    </linearGradient>
+    <linearGradient id="core-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffa868"/>
+      <stop offset="1" stop-color="#ee7420"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <g stroke="#fff" stroke-opacity=".72" stroke-width="2" stroke-linecap="round">
+    <path d="M218 126v110m324-110v110M218 279v109m324-109v109"/>
+  </g>
+
+  <g fill="#000a1e" fill-opacity=".5" filter="url(#shadow)">
+    <path d="m380 452 180-44v24l-180 60-180-60v-24l180 44Z"/>
+    <path d="m380 312 208-46v24l-208 62-208-62v-24l208 46Z"/>
+    <path d="m380 166 180-44v24l-180 60-180-60v-24l180 44Z"/>
+  </g>
+
+  <g stroke-linejoin="round">
+    <g stroke="#a9bbd8" stroke-width="1.5">
+      <path d="M186 396 380 453v26l-194-57Z" fill="#30507f"/>
+      <path d="M574 396 380 453v26l194-57Z" fill="#1c3157"/>
+      <path d="m380 340 194 56-194 57-194-57 194-56Z" fill="url(#top)"/>
+    </g>
+
+    <g stroke="#ffc08f" stroke-width="2">
+      <path d="M156 250 380 307v26l-224-57Z" fill="#cc5c0e"/>
+      <path d="M604 250 380 307v26l224-57Z" fill="#8f3a00"/>
+      <path d="m380 194 224 56-224 57-224-57 224-56Z" fill="url(#core-top)"/>
+    </g>
+
+    <g stroke="#a9bbd8" stroke-width="1.5">
+      <path d="M186 104 380 161v26l-194-57Z" fill="#30507f"/>
+      <path d="M574 104 380 161v26l194-57Z" fill="#1c3157"/>
+      <path d="m380 48 194 56-194 57-194-57 194-56Z" fill="url(#top)"/>
+    </g>
+  </g>
+
+  <g fill="#fff">
+    <circle cx="218" cy="126" r="5"/><circle cx="542" cy="126" r="5"/>
+    <circle cx="218" cy="279" r="5"/><circle cx="542" cy="279" r="5"/>
+    <circle cx="218" cy="418" r="5"/><circle cx="542" cy="418" r="5"/>
+  </g>
+
+  <g fill="#fff" font-family="Manrope, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="380" y="110" font-size="17">Application layer</text>
+    <text x="380" y="258" font-size="24" font-weight="800">Eclipse S-CORE</text>
+    <text x="380" y="402" font-size="17">Semiconductor</text>
+  </g>
+</svg>

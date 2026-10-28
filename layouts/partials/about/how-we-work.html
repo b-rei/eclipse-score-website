@@ -8,7 +8,7 @@
     </header>
     <div class="about-work-layout">
       <figure class="about-structure-figure">
-        <img src="{{ $content.structure_image | relURL }}" alt="Diagram: The X-CORE Platform Council provides guidance to Project Leads and Technical Leads. Eclipse S-CORE contributors work through five open working groups." loading="lazy">
+        <img src="{{ $content.structure_image | relURL }}" alt="{{ $content.structure_alt }}" loading="lazy">
       </figure>
       <div class="about-principles">
         {{ range $index, $principle := $content.principles }}

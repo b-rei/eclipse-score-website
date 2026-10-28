@@ -4,7 +4,7 @@
     <header class="get-involved-heading">
       <p class="get-involved-eyebrow">{{ $content.eyebrow }}</p>
       <h2>{{ $content.heading }}</h2>
-      {{ with $content.description }}{{ . | markdownify }}{{ end }}
+      {{ with $content.description }}<p>{{ . | markdownify }}</p>{{ end }}
     </header>
     <ol class="get-involved-steps">
       {{ range $index, $step := $content.items }}

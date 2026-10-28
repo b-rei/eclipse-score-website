@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1365" height="768" viewBox="0 0 1365 768" role="img" aria-labelledby="title description">
+  <title id="title">Eclipse S-CORE project leadership and working groups</title>
+  <desc id="description">The X-CORE Platform Council provides strategy and guidance. Project Leads and Technical Leads coordinate the project and technical planning. Eclipse S-CORE contributors collaborate through five open working groups: Architecture, Development Process, Infrastructure, Testing, and Marketing and Communication.</desc>
+  <defs>
+    <style>
+      text { font-family: Manrope, "Segoe UI", sans-serif; }
+      .node { fill: #ffffff; stroke: #193967; stroke-width: 2.5; }
+      .node-title { fill: #193967; font-size: 24px; font-weight: 700; }
+      .node-copy { fill: #5c6f84; font-size: 15px; font-weight: 500; }
+      .connector { fill: none; stroke: #234a78; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .connector-accent { fill: none; stroke: #e96812; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .panel-back { fill: #f3f7fb; }
+      .groups-panel { fill: #193967; }
+      .groups-heading { fill: #ffffff; font-size: 13px; font-weight: 800; letter-spacing: 1.8px; }
+      .group-tile { fill: #234a78; stroke: #52739a; stroke-width: 1.25; }
+      .group-label { fill: #ffffff; font-size: 15px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect class="panel-back" x="0" y="490" width="1365" height="250" rx="24"/>
+
+  <path class="connector" d="M682.5 141v39H366v48M682.5 180H1010v48"/>
+  <path class="connector" d="M366 332v57h316.5M1010 332v57H682.5"/>
+  <path class="connector-accent" d="M682.5 389v74"/>
+  <path class="connector-accent" d="M420 463v28M945 463v28"/>
+
+  <rect class="node" x="488" y="46" width="389" height="95" rx="16"/>
+  <text class="node-title" x="682.5" y="83" text-anchor="middle">X-CORE Platform Council</text>
+  <text class="node-copy" x="682.5" y="111" text-anchor="middle">Strategy and guidance</text>
+
+  <rect class="node" x="123" y="228" width="390" height="104" rx="16"/>
+  <text class="node-title" x="318" y="271" text-anchor="middle">Project Leads</text>
+  <text class="node-copy" x="318" y="300" text-anchor="middle">Project direction and coordination</text>
+
+  <rect class="node" x="852" y="228" width="390" height="104" rx="16"/>
+  <text class="node-title" x="1047" y="271" text-anchor="middle">Technical Leads</text>
+  <text class="node-copy" x="1047" y="300" text-anchor="middle">Technical alignment and planning</text>
+
+  <rect class="node" x="488" y="342" width="389" height="95" rx="16"/>
+  <text class="node-title" x="682.5" y="379" text-anchor="middle">Eclipse S-CORE Contributors</text>
+  <text class="node-copy" x="682.5" y="407" text-anchor="middle">Contribute, collaborate, and shape the project</text>
+
+  <rect class="groups-panel" x="130" y="496" width="1105" height="170" rx="20"/>
+  <text class="groups-heading" x="682.5" y="529" text-anchor="middle">OPEN WORKING GROUPS</text>
+
+  <g>
+    <rect class="group-tile" x="161" y="552" width="198" height="64" rx="11"/>
+    <circle cx="184" cy="584" r="7" fill="#e96812"/>
+    <text class="group-label" x="204" y="590">Architecture</text>
+
+    <rect class="group-tile" x="383" y="552" width="208" height="64" rx="11"/>
+    <circle cx="406" cy="584" r="7" fill="#e96812"/>
+    <text class="group-label" x="426" y="579">Development</text>
+    <text class="group-label" x="426" y="598">process</text>
+
+    <rect class="group-tile" x="615" y="552" width="177" height="64" rx="11"/>
+    <circle cx="638" cy="584" r="7" fill="#e96812"/>
+    <text class="group-label" x="658" y="590">Infrastructure</text>
+
+    <rect class="group-tile" x="816" y="552" width="151" height="64" rx="11"/>
+    <circle cx="839" cy="584" r="7" fill="#e96812"/>
+    <text class="group-label" x="859" y="590">Testing</text>
+
+    <rect class="group-tile" x="991" y="552" width="214" height="64" rx="11"/>
+    <circle cx="1014" cy="584" r="7" fill="#e96812"/>
+    <text class="group-label" x="1034" y="579">Marketing &amp;</text>
+    <text class="group-label" x="1034" y="598">Communication</text>
+  </g>
+</svg>

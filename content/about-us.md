@@ -25,24 +25,53 @@ style = "secondary"
 
 [built_open]
 eyebrow = "BUILT IN THE OPEN"
-heading = "Shared work. Shared progress."
+heading = ["Shared work.", "Shared progress."]
 paragraph = "Eclipse S-CORE is developed collaboratively under the Eclipse Foundation. Member organizations contribute to a common codebase, align on transparent processes, and build reusable automotive software together."
 member_heading = "Active contributors in the past 3 months"
 member_loading = "Loading current member organizations…"
 member_error = "Member organizations are provided by the Eclipse Foundation."
+member_total = "More than 35 organizations have contributed to Eclipse S-CORE so far."
+
+[commitment]
+eyebrow = "COMMITMENT & BACKING"
+heading = "Committed organizations, industry-wide support"
 engagement_heading = "Eclipse S-CORE Engagement Program"
 engagement_paragraph = "The program recognizes organizational participation and commitment through Silver, Gold, and Platinum levels. Each level has defined contributor requirements and recognition. Platinum also offers eligibility to participate in the X-CORE Platform Council, subject to a successful application and Eclipse SDV Steering Committee approval."
 engagement_link_label = "Explore levels and requirements"
 engagement_url = "how_to_contribute.html#engagement-program"
 engagement_participants_heading = "Acknowledged Engagement Program Organizations"
 
-[[built_open.engagement_participants]]
+[[commitment.engagement_participants]]
 level = "Platinum"
 organizations = ["Accenture GmbH", "BMW Group", "ETAS GmbH", "Mercedes-Benz Tech Innovation GmbH", "Qorix GmbH"]
 
-[[built_open.engagement_participants]]
+[[commitment.engagement_participants]]
 level = "Gold"
 organizations = ["Red Hat, LLC."]
+
+[commitment.mou]
+heading = "Backed by an industry-wide Memorandum of Understanding"
+paragraph = "In June 2025, automotive companies signed a Memorandum of Understanding (MoU), supported by the German Association of the Automotive Industry (VDA), for cooperation in open-source software development. This development takes place in the vendor-independent environment of the Eclipse Foundation as and target e.g. the S-CORE project. By January 2026, the MoU had grown to 32 companies across the global automotive value chain, with Eclipse S-CORE at the centre of the collaboration."
+
+[[commitment.mou.facts]]
+value = "32"
+label = "MoU signatories by January 2026"
+
+[[commitment.mou.facts]]
+value = "Up to 40%"
+label = "Less effort for development and maintenance"
+
+[[commitment.mou.facts]]
+value = "Up to 30%"
+label = "Faster time to market"
+
+[[commitment.mou.links]]
+label = "VDA press release, June 2025"
+url = "https://www.vda.de/en/press/press-releases/2025/250624_PM_Automotive_industry_signs_Memorandum_of_Understanding"
+
+[[commitment.mou.links]]
+label = "VDA press release, January 2026"
+url = "https://www.vda.de/en/press/press-releases/2026/260107_Automotive-innovation-through-open-collaboration--Momentum-builds-around-open-source-software-as-a-key-driver-of-efficiency-and-success"
 
 [targets]
 eyebrow = "Our Mission"
@@ -50,8 +79,8 @@ heading = "Benefits of an open and joined core"
 
 [[targets.items]]
 icon = "images/about-us/icons/speed.svg"
-title = "Speed"
-description = "Accelerate development with open-source, code-centric methods."
+title = "Speed & competitiveness"
+description = "Accelerate development with open-source, code-centric methods and stay competitive."
 metric = "Up to 30% faster time to market"
 
 [[targets.items]]
@@ -72,14 +101,21 @@ title = "Business model"
 description = "Create services and products around a shared open-source platform."
 metric = "Opportunities for every ecosystem player"
 
+[[targets.items]]
+icon = "images/about-us/icons/ai.svg"
+title = "AI enabled"
+description = "X-as-code creates the basis for automation and AI-assisted delivery."
+metric = "Ready for AI-assisted engineering"
+
 [work]
 eyebrow = "HOW WE WORK"
 heading = "Clear ownership, open collaboration"
 description = "S-CORE brings members, technical leads, and focused communities together to define modules, propose requirements, and evolve the platform with clarity and purpose."
-structure_image = "images/about-us/community-structure-council.svg"
+structure_image = "images/about-us/community-structure-v2.svg"
+structure_alt = "Diagram with two parallel hierarchies. Non-technical X-CORE structure: Eclipse SDV Steering Committee, X-CORE Platform Council, and Engagement Program organizations. Technical project structure: Project Leads, Technical Leads, and Eclipse S-CORE contributors working in five open working groups. The Platform Council is loosely coupled to the project through steering."
 
 [[work.principles]]
-title = "Open decisions"
+title = "Transparent decisions"
 description = "Direction is shaped in public, with proposals and outcomes visible to contributors."
 
 [[work.principles]]

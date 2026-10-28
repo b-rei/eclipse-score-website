@@ -1,11 +1,11 @@
 +++
-title = "Conferences & Events"
+title = "Events"
 description = "Browse upcoming and past conferences, meetups, and community events from across Eclipse S-CORE."
 type = "events"
 layout = "single"
-aliases = ["news.html"]
+aliases = ["news.html", "conferences.html"]
 active_nav = "news"
-news_section = "conferences"
+news_section = "events"
 
 [hero]
 eyebrow = "News & EVENTS"
@@ -19,6 +19,6 @@ style = "primary"
 
 [events]
 eyebrow = "ECLIPSE FOUNDATION EVENT FEED"
-title = "Conferences & Events"
+title = "Events"
 description = "Use the event controls to switch between upcoming and past events. Event details and registration links are provided by the Eclipse Foundation."
 +++

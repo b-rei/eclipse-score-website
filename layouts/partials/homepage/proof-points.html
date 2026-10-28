@@ -1,0 +1,18 @@
+{{ $content := .Params.proof_points }}
+<section class="score-section score-proof-points" aria-labelledby="proof-points-heading">
+  <div class="score-shell">
+    <div class="score-section-header score-section-header-stacked">
+      <div class="score-mini">{{ $content.eyebrow }}</div>
+      <h2 id="proof-points-heading">{{ $content.heading }}</h2>
+    </div>
+    <ol class="score-proof-grid">
+      {{ range $index, $item := $content.items }}
+        <li class="score-proof-item">
+          <h3><span class="score-proof-number">{{ printf "%02d" (add $index 1) }}</span> {{ $item.title }}</h3>
+          <p>{{ $item.description | markdownify }}</p>
+        </li>
+      {{ end }}
+    </ol>
+    {{ with $content.claim }}<p class="score-proof-claim">{{ $content.eyebrow }} | <strong>{{ . }}</strong></p>{{ end }}
+  </div>
+</section>

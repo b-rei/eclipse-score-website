@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" fill="none">
+  <g stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-opacity=".72" stroke-width="2">
+      <path d="M218 154v61m324-61v61M218 270v61m324-61v61"/>
+      <path d="M218 184h-48v46m372-46h48v46M218 300h-48v46m372-46h48v46"/>
+    </g>
+
+    <g fill="#fff" stroke="none">
+      <circle cx="170" cy="230" r="5"/><circle cx="590" cy="230" r="5"/>
+      <circle cx="170" cy="346" r="5"/><circle cx="590" cy="346" r="5"/>
+      <circle cx="218" cy="154" r="5"/><circle cx="542" cy="154" r="5"/>
+      <circle cx="218" cy="270" r="5"/><circle cx="542" cy="270" r="5"/>
+      <circle cx="218" cy="386" r="5"/><circle cx="542" cy="386" r="5"/>
+    </g>
+
+    <g stroke-width="2.5">
+      <path d="m380 78 194 56-194 57-194-57 194-56Z" fill="#fff" fill-opacity=".16"/>
+      <path d="M186 134v20l194 58 194-58v-20" fill="#fff" fill-opacity=".07"/>
+      <path d="m380 194 224 56-224 57-224-57 224-56Z" fill="#fff" fill-opacity=".42" stroke-width="3.5"/>
+      <path d="M156 250v20l224 58 224-58v-20" fill="#fff" fill-opacity=".2" stroke-width="3.5"/>
+      <path d="m380 310 194 56-194 57-194-57 194-56Z" fill="#fff" fill-opacity=".16"/>
+      <path d="M186 366v20l194 58 194-58v-20" fill="#fff" fill-opacity=".07"/>
+    </g>
+
+  </g>
+  <path d="m156 250 224 57 224-57" stroke="#ff9b54" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fff" font-family="Manrope, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="380" y="151" font-size="17">Vehicle applications</text>
+    <text x="380" y="263" font-size="22" font-weight="800">Eclipse S-CORE</text>
+    <text x="380" y="377" font-size="18">Operating system</text>
+  </g>
+</svg>

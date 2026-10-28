@@ -1,0 +1,37 @@
+{{ $content := .Params.commitment }}
+<section class="about-section about-commitment" aria-labelledby="about-commitment-heading">
+  <div class="score-shell">
+    <header class="about-section-heading">
+      <p class="about-eyebrow">{{ $content.eyebrow }}</p>
+      <h2 id="about-commitment-heading">{{ $content.heading }}</h2>
+    </header>
+    <div class="about-commitment-grid">
+      <article class="about-commitment-card" id="engagement-program">
+        <h3>{{ $content.engagement_heading }}</h3>
+        <p>{{ $content.engagement_paragraph }}</p>
+        <h4 class="about-commitment-subheading">{{ $content.engagement_participants_heading }}</h4>
+        {{ range $content.engagement_participants }}
+          <div class="about-program-participants">
+            <h5>{{ .level }}</h5>
+            <ul class="about-commitment-chips">
+              {{ range .organizations }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        <a class="about-commitment-link" href="{{ $content.engagement_url }}" target="_blank" rel="noopener noreferrer">{{ $content.engagement_link_label }} <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      {{ with $content.mou }}
+        <article class="about-commitment-card" id="mou">
+          <h3>{{ .heading }}</h3>
+          <p>{{ .paragraph }}</p>
+          <dl class="about-mou-facts">
+            {{ range .facts }}<div><dt>{{ .value }}</dt><dd>{{ .label }}</dd></div>{{ end }}
+          </dl>
+          <ul class="about-mou-links">
+            {{ range .links }}<li><a class="about-commitment-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }} <span aria-hidden="true">&rarr;</span></a></li>{{ end }}
+          </ul>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
