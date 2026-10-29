@@ -4,7 +4,7 @@ description = "Meet the people, goals, governance, and communities building Ecli
 type = "about"
 layout = "single"
 active_nav = "about"
-extra_scripts = ["js/about-members.js", "js/about-voices.js"]
+extra_scripts = ["js/about-members.js", "js/about-voices.js", "js/project-leads.js"]
 
 [about_hero]
 eyebrow = "ABOUT ECLIPSE S-CORE"
@@ -137,6 +137,7 @@ name = "Project Lead Circle"
 short = "Project direction"
 description = "Coordinates project planning, resources, and progress across the participating members."
 responsibilities = ["Roadmap and planning", "Coordination", "Project health"]
+show_project_leads = true
 
 [[governance.groups]]
 number = "02"
@@ -144,6 +145,12 @@ name = "Technical Lead Circle"
 short = "Technical direction"
 description = "Guides architecture, technical decisions, and alignment with S-CORE’s goals."
 responsibilities = ["Architecture and design", "Technical decisions", "Engineering alignment"]
+member_usernames = ["larsb", "andreasmittag", "fschol", "antonkri", "johannesacn", "philippqorix"]
+members_url = "https://github.com/orgs/eclipse-score/discussions/categories/technical-lead-circle"
+members_link_label = "Join the Technical Lead Circle discussion"
+
+[[governance.groups.manual_members]]
+name = "M Langerwisch"
 
 [communities]
 eyebrow = "GET INVOLVED"

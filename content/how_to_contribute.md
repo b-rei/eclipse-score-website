@@ -103,4 +103,31 @@ calendar_url = "https://calendar.google.com/calendar/u/0/embed?src=c_2ampi2bmoka
 ics_url = "https://calendar.google.com/calendar/ical/c_2ampi2bmoka3qter4dceap1d5g%40group.calendar.google.com/public/basic.ics"
 calendar_label = "Open the calendar"
 ics_label = "Subscribe with an .ics link"
+
+[contacts]
+eyebrow = "GET IN TOUCH"
+heading = "Contact the community"
+
+[[contacts.items]]
+title = "Mailing list"
+icon = "images/about-us/icons/communication.svg"
+description = "General questions and development conversations with the S-CORE community."
+href = "https://accounts.eclipse.org/mailing-list/score-dev"
+action = "Join score-dev"
+external = true
+
+[[contacts.items]]
+title = "Technical discussions"
+icon = "images/icons/github.svg"
+description = "Discuss technical questions and contribution ideas with other contributors."
+href = "https://github.com/eclipse-score/score/discussions"
+action = "Open GitHub Discussions"
+external = true
+
+[[contacts.items]]
+title = "Project leadership"
+icon = "images/about-us/icons/business.svg"
+description = "Meet the Project Lead Circle responsible for project direction and coordination."
+href = "about-us.html#project-lead-circle"
+action = "Meet the project leads"
 +++

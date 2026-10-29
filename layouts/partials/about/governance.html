@@ -8,7 +8,7 @@
     </header>
     <div class="about-governance-grid">
       {{ range $content.groups }}
-        <article class="about-governance-card">
+        <article class="about-governance-card"{{ if .show_project_leads }} id="project-lead-circle"{{ end }}>
           <span class="about-governance-number">{{ .number }}</span>
           <p class="about-governance-label">{{ .short }}</p>
           <h3>{{ .name }}</h3>
@@ -16,6 +16,30 @@
           <ul>
             {{ range .responsibilities }}<li>{{ . }}</li>{{ end }}
           </ul>
+          {{ if or .show_project_leads .member_usernames .manual_members }}
+            <div class="about-project-leads">
+              <h4>{{ if .show_project_leads }}Project leads{{ else }}Technical leads{{ end }}</h4>
+              {{ if or .show_project_leads .member_usernames }}<p data-leads-status role="status">Loading circle members...</p>{{ end }}
+              <ul class="about-leads-list"{{ if or .show_project_leads .member_usernames }} data-project-leads data-api="https://projects.eclipse.org/api/projects/automotive.score"{{ end }}{{ with .member_usernames }} data-member-usernames="{{ delimit . "," }}"{{ end }}>
+                {{ range .manual_members }}
+                  {{ $name := strings.TrimSpace .name }}
+                  {{ if $name }}
+                    <li data-manual-member>
+                      {{ if .profile_url }}<a href="{{ .profile_url }}" target="_blank" rel="noopener noreferrer">{{ else }}<div class="about-lead-person">{{ end }}
+                        {{ with .image }}
+                          <img src="{{ . | relURL }}" alt="" width="44" height="44" loading="lazy">
+                        {{ else }}
+                          <span class="about-lead-initials" aria-hidden="true">{{ range first 2 (split (replaceRE `\s+` " " $name) " ") }}{{ substr . 0 1 | upper }}{{ end }}</span>
+                        {{ end }}
+                        <span>{{ $name }}</span>
+                      {{ if .profile_url }}</a>{{ else }}</div>{{ end }}
+                    </li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+              <a class="about-commitment-link" href="{{ .members_url | default "https://projects.eclipse.org/projects/automotive.score/who" }}" target="_blank" rel="noopener noreferrer">{{ .members_link_label | default "View project leadership" }} <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          {{ end }}
         </article>
       {{ end }}
     </div>

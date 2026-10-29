@@ -361,6 +361,8 @@ body:has(.about-page) {
 
 .about-governance-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 26px 28px;
   border: 1px solid rgba(25, 57, 103, 0.1);
   border-radius: 9px;
@@ -415,6 +417,91 @@ body:has(.about-page) {
   color: var(--score-navy-2);
   font-size: 0.78rem;
   font-weight: 700;
+}
+
+.about-project-leads {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--score-border);
+}
+
+.about-project-leads > .about-commitment-link {
+  margin-top: auto;
+}
+
+.about-project-leads h4 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: var(--score-text);
+}
+
+.about-project-leads [role="status"] {
+  color: var(--score-muted);
+  font-size: 0.88rem;
+}
+
+.about-project-leads [role="status"]:empty {
+  display: none;
+}
+
+.about-project-leads .about-leads-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.about-leads-list li {
+  min-width: 0;
+  padding: 0;
+  background: none;
+}
+
+.about-leads-list a,
+.about-lead-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--score-text);
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.about-leads-list a:hover {
+  text-decoration: underline;
+}
+
+.about-leads-list a:focus-visible {
+  outline: 3px solid var(--score-orange);
+  outline-offset: 3px;
+}
+
+.about-leads-list img {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-lead-initials {
+  display: grid;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--score-orange-wash);
+  color: var(--score-orange-dark);
+  font-weight: 800;
+}
+
+.about-leads-list span {
+  overflow-wrap: anywhere;
 }
 
 .about-voices {

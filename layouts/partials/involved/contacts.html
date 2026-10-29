@@ -1,0 +1,10 @@
+{{ $content := .Params.contacts }}
+<section class="get-involved-section" id="contacts" aria-labelledby="contacts-heading">
+  <div class="score-shell">
+    <header class="get-involved-heading">
+      <p class="get-involved-eyebrow">{{ $content.eyebrow }}</p>
+      <h2 id="contacts-heading">{{ $content.heading }}</h2>
+    </header>
+    {{ partial "shared/feature-card-grid.html" (dict "items" $content.items "columns" 3 "variant" "inverse") }}
+  </div>
+</section>
