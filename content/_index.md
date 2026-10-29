@@ -94,7 +94,7 @@ description = "First **free and open-source software platform** for safety-criti
 
 [[proof_points.items]]
 title = "Fast & reliable"
-description = "**OSS works for automotive:** from project definition to series-ready S-CORE **in two years**."
+description = "**OSS works for automotive:** from project definition to ready for adoption S-CORE **in two years**."
 
 [[proof_points.items]]
 title = "International"

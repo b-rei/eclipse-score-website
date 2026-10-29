@@ -145,7 +145,7 @@ name = "Technical Lead Circle"
 short = "Technical direction"
 description = "Guides architecture, technical decisions, and alignment with S-CORE’s goals."
 responsibilities = ["Architecture and design", "Technical decisions", "Engineering alignment"]
-member_usernames = ["larsb", "andreasmittag", "fschol", "antonkri", "johannesacn", "philippqorix"]
+member_usernames = ["larsb", "andreasmittag", "fschol", "antonkri", "philippqorix"]
 members_url = "https://github.com/orgs/eclipse-score/discussions/categories/technical-lead-circle"
 members_link_label = "Join the Technical Lead Circle discussion"
 
