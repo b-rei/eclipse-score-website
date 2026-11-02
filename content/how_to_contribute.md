@@ -21,7 +21,7 @@ style = "primary"
 [ways]
 eyebrow = "CHOOSE YOUR NEXT STEP"
 heading = "Find your way to contribute"
-description = "Choose a starting point that fits what you want to do: learn the workflow, find a task, or talk through an idea."
+description = "Choose a starting point that fits what you want to do: learn or practice the workflow, find a task, or talk through an idea."
 
 [[ways.items]]
 title = "Read the contributor guide"
@@ -45,6 +45,14 @@ description = "Ask questions, share ideas, and connect with contributors in GitH
 icon = "images/home/icons/discussion.svg"
 href = "https://github.com/eclipse-score/score/discussions"
 action = "Open discussions"
+external = true
+
+[[ways.items]]
+title = "Try the contributor training"
+description = "Practice the S-CORE workflow for quality, safety, and security work products. Self-paced, about five working days; no tutor or support is provided."
+icon = "images/home/icons/book.svg"
+href = "https://github.com/eclipse-score/contributor_training/blob/main/TRAINING.md"
+action = "Start the training"
 external = true
 
 [engagement_program]
