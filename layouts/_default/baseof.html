@@ -58,10 +58,10 @@
       <script type="module" src="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/dist-cdn/solstice-components.loader.js" integrity="sha384-UcWSQMj1c1b1VRiaHycuVGCSJ7ltwyF88VcYGthnJauU0cyXHJXhPWBuMA5vHM/a" crossorigin="anonymous"></script>
     {{ else if eq .Type "docs" }}
       <link rel="stylesheet" href="{{ "css/documentation.css" | relURL }}">
+    {{ else if eq .Type "editorial" }}
+      {{ range .Params.extra_styles }}<link rel="stylesheet" href="{{ . | relURL }}">{{ end }}
     {{ else }}
-      {{ $styles := slice "css/bootstrap.min.css" "css/loading.css" "css/navbar.css" "css/globals.css" "css/footer.css" "css/styleguide.css" }}
-      {{ with .Params.extra_styles }}{{ range . }}{{ $styles = $styles | append . }}{{ end }}{{ end }}
-      {{ range uniq $styles }}<link rel="stylesheet" href="{{ . | relURL }}">{{ end }}
+      {{ with .Params.extra_styles }}{{ range . }}<link rel="stylesheet" href="{{ . | relURL }}">{{ end }}{{ end }}
       {{ with .Params.external_styles }}{{ range . }}<link rel="stylesheet" href="{{ . }}">{{ end }}{{ end }}
     {{ end }}
   </head>

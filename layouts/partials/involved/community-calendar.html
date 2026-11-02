@@ -6,13 +6,11 @@
       <h2 id="community-calendar-title">{{ $content.heading }}</h2>
       <p>{{ $content.description }}</p>
     </header>
-    <div class="get-involved-calendar-frame">
-      <iframe
-        src="{{ $content.embed_url }}"
-        title="{{ $content.heading }} showing upcoming community events in the Europe/Berlin timezone"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="get-involved-calendar-consent">
+      <p class="get-involved-calendar-host-note">The calendar is hosted by Google. Loading it connects your browser to Google and shares technical connection data.</p>
+      <button class="get-involved-calendar-load" type="button" data-calendar-load data-embed-url="{{ $content.embed_url }}" data-title="{{ $content.heading }} showing upcoming community events in the Europe/Berlin timezone" aria-controls="community-calendar-embed" aria-expanded="false">Load Google Calendar</button>
     </div>
+    <div class="get-involved-calendar-frame" id="community-calendar-embed" data-calendar-frame></div>
     <p class="get-involved-calendar-links">
       <a href="{{ $content.calendar_url }}" target="_blank" rel="noopener noreferrer">{{ $content.calendar_label }} <span aria-hidden="true">&rarr;</span></a>
       <a href="{{ $content.ics_url }}">{{ $content.ics_label }} <span aria-hidden="true">&darr;</span></a>

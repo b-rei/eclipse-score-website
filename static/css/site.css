@@ -374,26 +374,11 @@ body {
   text-decoration: none;
 }
 
-.score-brand-mark {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  flex: 0 0 36px;
-  place-items: center;
-  border-radius: 6px;
-  background: var(--score-navy);
-}
-
-.score-brand-mark img {
+.score-brand-logo {
   display: block;
-  width: 27px;
-  height: 27px;
-}
-
-.score-brand-name {
-  font-size: 0.96rem;
-  font-weight: 800;
-  white-space: nowrap;
+  width: 150px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .score-nav {

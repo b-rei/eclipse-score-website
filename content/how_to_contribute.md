@@ -4,6 +4,7 @@ description = "Find practical ways to use, contribute to, and join the Eclipse S
 type = "involved"
 layout = "single"
 active_nav = "join"
+extra_scripts = ["js/community-calendar.js"]
 
 [hero]
 eyebrow = "GET INVOLVED"
