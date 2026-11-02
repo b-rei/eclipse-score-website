@@ -52,7 +52,9 @@ For an isolated build that does not write into the repository, set a destination
 - `layouts/`: Hugo page templates and reusable partials.
 - `static/css/`: site-wide and page-specific stylesheets.
 - `static/js/`: page behavior such as navigation and interactive components.
+- `static/fonts/`: self-hosted webfonts and their license files.
 - `static/images/`: logos, illustrations, icons, and other website assets.
+- `design/`: editable design sources, including the social-preview SVG; the published PNG is in `static/images/seo/`.
 - `config.toml`: site metadata, navigation menus, and Hugo configuration.
 
 The shared Stay Connected content is in `content/stay-connected.md`; it is rendered on multiple pages and is not published as a standalone page. Hero images and other assets are referenced from Markdown front matter or layouts. Keep existing assets when adding a replacement that should remain available as a fallback.
