@@ -18,15 +18,30 @@
     <meta property="og:title" content="{{ $pageTitle }}">
     <meta property="og:description" content="{{ $pageDescription }}">
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="{{ .Site.Params.social_preview_image | absURL }}">
+    <meta property="og:image:alt" content="{{ .Site.Params.social_preview_image_alt }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $pageTitle }}">
     <meta name="twitter:description" content="{{ $pageDescription }}">
+    <meta name="twitter:image" content="{{ .Site.Params.social_preview_image | absURL }}">
+    <meta name="twitter:image:alt" content="{{ .Site.Params.social_preview_image_alt }}">
+    {{ if .IsHome }}
+      {{ $software := dict "@context" "https://schema.org" "@type" "SoftwareSourceCode" "name" .Site.Title "description" .Description "url" .Permalink "codeRepository" .Site.Params.github_url "publisher" (dict "@type" "Organization" "name" "Eclipse Foundation" "url" "https://www.eclipse.org/") }}
+      <script type="application/ld+json">{{ $software | jsonify | safeJS }}</script>
+    {{ end }}
     <link rel="icon" href="{{ "images/icons/logo.svg" | relURL }}" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="{{ "fonts/manrope/manrope-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
     <script defer src="{{ "js/site-navigation.js" | relURL }}"></script>
+    <noscript>
+      <style>
+        .score-nav-toggle { display: none !important; }
+        #main-navigation { display: flex !important; }
+      </style>
+    </noscript>
     {{ if .IsHome }}
       <link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eclipsefdn/solstice-components@0.9.0/themes/default-light.css" integrity="sha384-Xg/ri5XEgSYZlqJRcmQJzCub0N7nQkWT94OeblqD+gK7ooiZvTJOgkC5GhvhBD/P" crossorigin="anonymous">
@@ -63,9 +78,7 @@
     {{ else if eq .Type "editorial" }}
       <script src="{{ "js/editorial-back-to-top.js" | relURL }}"></script>
     {{ else if not .IsHome }}
-      {{ $scripts := slice "js/jquery-3.7.1.min.js" "js/bootstrap.min.js" "js/loading.js" }}
-      {{ with .Params.extra_scripts }}{{ range . }}{{ $scripts = $scripts | append . }}{{ end }}{{ end }}
-      {{ range uniq $scripts }}<script src="{{ . | relURL }}"></script>{{ end }}
+      {{ with .Params.extra_scripts }}{{ range . }}<script src="{{ . | relURL }}"></script>{{ end }}{{ end }}
       {{ with .Params.external_scripts }}{{ range . }}<script src="{{ . }}"></script>{{ end }}{{ end }}
     {{ end }}
     {{ block "scripts" . }}{{ end }}

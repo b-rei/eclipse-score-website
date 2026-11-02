@@ -44,7 +44,7 @@
 }
 
 .get-involved-heading > p a {
-  color: var(--score-blue);
+  color: var(--score-orange-dark);
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -147,7 +147,7 @@
 }
 
 .get-involved-calendar-links a {
-  color: var(--score-blue);
+  color: var(--score-orange-dark);
   text-decoration: none;
 }
 

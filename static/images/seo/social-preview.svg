@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#193967"/>
+      <stop offset="1" stop-color="#102746"/>
+    </linearGradient>
+    <style>
+      @font-face {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 400 800;
+        src: url("../../fonts/manrope/manrope-latin.woff2") format("woff2");
+      }
+      text { font-family: Manrope, "Segoe UI", Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <rect width="12" height="630" fill="#e96812"/>
+
+  <image href="../icons/logo.svg" x="66" y="54" width="48" height="48"/>
+  <text x="128" y="87" fill="#fff" font-size="25" font-weight="800">Eclipse S-CORE</text>
+
+  <text x="68" y="186" fill="#ff9b54" font-size="15" font-weight="800" letter-spacing="2">SAFE OPEN VEHICLE CORE</text>
+  <text x="66" y="278" fill="#fff" font-size="54" font-weight="800">Open by choice.</text>
+  <text x="66" y="345" fill="#ff9b54" font-size="54" font-weight="800">Safe by design.</text>
+  <text x="70" y="420" fill="#e8f0fa" font-size="23" font-weight="500">Shared, open software foundations</text>
+  <text x="70" y="454" fill="#e8f0fa" font-size="23" font-weight="500">for software-defined vehicles.</text>
+  <rect x="70" y="502" width="112" height="4" rx="2" fill="#e96812"/>
+  <text x="70" y="550" fill="#b9c9df" font-size="14" font-weight="700" letter-spacing="1.5">OPEN SOURCE  /  AUTOMOTIVE SOFTWARE</text>
+
+  <image href="../home/hero-platform-stack-v3.svg" x="545" y="88" width="650" height="462"/>
+</svg>

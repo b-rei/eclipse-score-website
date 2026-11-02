@@ -11,6 +11,8 @@ pluralizeListTitles = false
 [Params]
   google_tag_manager = "GTM-5WLCZXC"
   description = "The Eclipse Safe Open Vehicle Core project aims to develop an open-source core stack for Software Defined Vehicles (SDVs), specifically targeting embedded high-performance Electronic Control Units (ECUs)."
+  social_preview_image = "images/seo/social-preview.png"
+  social_preview_image_alt = "Eclipse S-CORE's highlighted software core between the application layer and semiconductor."
   seo_title_suffix = " | The Eclipse Foundation"
   keywords = ["eclipse", "S-CORE", "SCORE", "sdv", "software defined vehicle", "open source automotive", "automotive software", "ecu software", "embedded automotive", "iso 26262", "iso/sae 21434", "vehicle runtime", "automotive stack", "sdv platform", "real-time software", "rust automotive", "modular vehicle software", "scalable sdv", "open source", "automotive development", "functional safety", "cybersecurity compliance", "ecu integration"]
   news_count = 3

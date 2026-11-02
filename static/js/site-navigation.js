@@ -7,11 +7,9 @@
   const setOpen = open => {
     toggle.setAttribute("aria-expanded", String(open));
     toggle.textContent = open ? "Close menu" : "Menu";
-    nav.hidden = mobile.matches && !open;
   };
 
   const syncViewport = () => {
-    toggle.hidden = !mobile.matches;
     if (!mobile.matches) {
       setOpen(false);
       return;
@@ -30,7 +28,7 @@
   });
 
   document.addEventListener("keydown", event => {
-    if (event.key === "Escape" && mobile.matches && !nav.hidden) {
+    if (event.key === "Escape" && mobile.matches && toggle.getAttribute("aria-expanded") === "true") {
       setOpen(false);
       toggle.focus();
     }

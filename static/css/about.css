@@ -376,7 +376,7 @@ body:has(.about-page) {
   place-items: center;
   border-radius: 50%;
   background: #e1f4fa;
-  color: var(--score-blue);
+  color: var(--score-orange-dark);
   font-size: 0.82rem;
   font-weight: 800;
 }

@@ -5,7 +5,7 @@
         <span class="score-brand-mark" aria-hidden="true"><img src="{{ "images/icons/logo.svg" | relURL }}" alt=""></span>
         <span class="score-brand-name">Eclipse S-CORE</span>
       </a>
-      <button class="score-nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" hidden>Menu</button>
+      <button class="score-nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false">Menu</button>
       <nav class="score-nav" id="main-navigation" aria-label="Main navigation">
         {{ range .Site.Menus.main }}
           {{ $url := .URL }}
