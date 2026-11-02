@@ -57,7 +57,7 @@ jobs:
 
   deploy-preview:
     needs: build-preview
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       pull-requests: write
     environment:
@@ -86,7 +86,7 @@ jobs:
   # remove the preview page when the PR got closed
   remove-preview:
     if: github.event_name == 'pull_request_target' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       pull-requests: write
     steps:
