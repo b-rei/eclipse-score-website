@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480" role="img" aria-labelledby="title description">
+  <title id="title">Eclipse S-CORE 0.10 milestone</title>
+  <desc id="description">A milestone-focused graphic highlighting per-module testing, stakeholder-linked integration tests, and CI-generated software bills of materials. The version number is secondary.</desc>
+  <style>
+    @font-face {
+      font-family: Manrope;
+      src: url("../../fonts/manrope/manrope-latin.woff2") format("woff2");
+      font-weight: 100 900;
+    }
+    text { font-family: Manrope, Arial, sans-serif; }
+  </style>
+  <rect width="1600" height="480" fill="#f1f6f8" />
+  <path d="M0 0h520v480H0z" fill="#15334c" />
+  <path d="M0 0h12v480H0z" fill="#e47732" />
+  <path d="M462 0h58v480h-58z" fill="#1d4660" />
+
+  <text x="64" y="78" fill="#d5e5eb" font-size="20" font-weight="700">ECLIPSE S-CORE</text>
+  <path d="M64 104h64" stroke="#e47732" stroke-width="5" />
+  <text x="60" y="192" fill="#ffffff" font-size="54" font-weight="800">MILESTONE</text>
+  <rect x="66" y="216" width="76" height="30" rx="15" fill="#e47732" />
+  <text x="104" y="237" fill="#ffffff" font-size="15" font-weight="800" text-anchor="middle">0.10</text>
+  <text x="66" y="298" fill="#e7f0f3" font-size="21" font-weight="600">A stronger integration and</text>
+  <text x="66" y="330" fill="#e7f0f3" font-size="21" font-weight="600">verification workflow.</text>
+  <text x="66" y="428" fill="#b9ccd5" font-size="15" font-weight="600">MODULES  /  INTEGRATION  /  TOOLING</text>
+
+  <text x="574" y="69" fill="#15334c" font-size="21" font-weight="800">MILESTONE HIGHLIGHTS</text>
+  <circle cx="548" cy="62" r="7" fill="#e47732" />
+
+  <g>
+    <rect x="574" y="100" width="300" height="294" rx="12" fill="#ffffff" stroke="#d5e0e6" stroke-width="2" />
+    <path d="M586 101h276" stroke="#008f83" stroke-width="6" />
+    <rect x="606" y="126" width="24" height="24" rx="5" fill="#008f83" />
+    <rect x="638" y="126" width="24" height="24" rx="5" fill="#9bd8ce" />
+    <rect x="606" y="158" width="24" height="24" rx="5" fill="#9bd8ce" />
+    <rect x="638" y="158" width="24" height="24" rx="5" fill="#008f83" />
+    <path d="M618 150v8m32-8v8m-24-20h12m-12 32h12" stroke="#31556b" stroke-width="3" stroke-linecap="round" />
+    <text x="606" y="225" fill="#15334c" font-size="21" font-weight="800">Per-module</text>
+    <text x="606" y="250" fill="#15334c" font-size="21" font-weight="800">testing</text>
+    <text x="606" y="284" fill="#496174" font-size="16" font-weight="500">Run each module in its own</text>
+    <text x="606" y="307" fill="#496174" font-size="16" font-weight="500">workspace against pinned</text>
+    <text x="606" y="330" fill="#496174" font-size="16" font-weight="500">integration dependencies.</text>
+    <rect x="606" y="344" width="236" height="25" rx="12" fill="#e6f4f1" />
+    <text x="724" y="361" fill="#008f83" font-size="12" font-weight="800" text-anchor="middle">INTEGRATION STRATEGY</text>
+  </g>
+
+  <g>
+    <rect x="900" y="100" width="300" height="294" rx="12" fill="#ffffff" stroke="#d5e0e6" stroke-width="2" />
+    <path d="M912 101h276" stroke="#e47732" stroke-width="6" />
+    <g transform="translate(-11 -8)">
+      <rect x="930" y="131" width="30" height="30" rx="8" fill="#fff0e5" />
+      <rect x="982" y="131" width="30" height="30" rx="8" fill="#e6f4f1" />
+      <rect x="956" y="174" width="30" height="30" rx="8" fill="#e6f4f1" />
+      <path d="M960 146h22m-36 15 18 13m26-13-18 13" fill="none" stroke="#31556b" stroke-width="3" />
+      <circle cx="945" cy="146" r="4" fill="#e47732" />
+      <circle cx="997" cy="146" r="4" fill="#008f83" />
+      <circle cx="971" cy="189" r="4" fill="#008f83" />
+    </g>
+    <text x="930" y="225" fill="#15334c" font-size="21" font-weight="800">Stakeholder-linked</text>
+    <text x="930" y="250" fill="#15334c" font-size="21" font-weight="800">integration tests</text>
+    <text x="930" y="284" fill="#496174" font-size="16" font-weight="500">Link tests to stakeholder</text>
+    <text x="930" y="307" fill="#496174" font-size="16" font-weight="500">requirements they</text>
+    <text x="930" y="330" fill="#496174" font-size="16" font-weight="500">demonstrate.</text>
+    <rect x="930" y="344" width="236" height="25" rx="12" fill="#fff0e5" />
+    <text x="1048" y="361" fill="#b9581d" font-size="12" font-weight="800" text-anchor="middle">REQUIREMENT TRACEABILITY</text>
+  </g>
+
+  <g>
+    <rect x="1226" y="100" width="300" height="294" rx="12" fill="#ffffff" stroke="#d5e0e6" stroke-width="2" />
+    <path d="M1238 101h276" stroke="#31556b" stroke-width="6" />
+    <g transform="translate(-8 -9)">
+      <path d="M1260 128h40l15 15v55h-55z" fill="#e6f4f1" stroke="#008f83" stroke-width="3" stroke-linejoin="round" />
+      <path d="M1300 128v16h15m-43 8h29m-29 12h29m-29 12h20" fill="none" stroke="#31556b" stroke-width="3" stroke-linecap="round" />
+      <circle cx="1310" cy="180" r="18" fill="#e47732" />
+      <path d="m1302 180 6 6 11-13" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="1256" y="225" fill="#15334c" font-size="21" font-weight="800">CI-generated</text>
+    <text x="1256" y="250" fill="#15334c" font-size="21" font-weight="800">SBOM</text>
+    <text x="1256" y="284" fill="#496174" font-size="16" font-weight="500">Generate a software bill of</text>
+    <text x="1256" y="307" fill="#496174" font-size="16" font-weight="500">materials and upload it as a</text>
+    <text x="1256" y="330" fill="#496174" font-size="16" font-weight="500">build artifact.</text>
+    <rect x="1256" y="344" width="236" height="25" rx="12" fill="#e9eef2" />
+    <text x="1374" y="361" fill="#31556b" font-size="12" font-weight="800" text-anchor="middle">SOFTWARE SUPPLY CHAIN</text>
+  </g>
+
+  <text x="574" y="430" fill="#496174" font-size="15" font-weight="700">ALSO UPDATED</text>
+  <rect x="696" y="402" width="136" height="40" rx="20" fill="#dfe9ee" />
+  <text x="764" y="428" fill="#15334c" font-size="15" font-weight="800" text-anchor="middle">Bazel 8.8.2</text>
+  <rect x="846" y="402" width="220" height="40" rx="20" fill="#dfe9ee" />
+  <text x="956" y="428" fill="#15334c" font-size="15" font-weight="800" text-anchor="middle">Tools + Devcontainer</text>
+</svg>

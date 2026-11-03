@@ -10,6 +10,25 @@ editorial_description = "Project releases, community stories, and perspectives f
 extra_styles = ["css/editorial.css"]
 
 [[articles.items]]
+date = "November 3, 2026"
+title = "Eclipse S-CORE 0.10 is here!"
+image = "images/news/score-v0-10-release.svg"
+image_alt = "Eclipse S-CORE 0.10 release graphic highlighting per-module tests, stakeholder-linked integration tests, and CI-generated SBOMs."
+summary = "A new milestone release with stronger integration testing, SBOM generation, and updated modules and developer tooling."
+action_label = "Read the 0.10 release notes"
+action_url = "https://eclipse-score.github.io/reference_integration/pr-415/s_core_v_1/releases/release_note_score_v0_10.html"
+external = true
+body = """
+Eclipse S-CORE 0.10 brings together updated platform modules and a more rigorous reference-integration workflow.
+
+Highlights include per-module testing against pinned integration dependencies, platform integration tests linked to stakeholder requirements, and a software bill of materials (SBOM) generated in CI. The release also updates Bazel to 8.8.2, adds the Tools and Devcontainer infrastructure modules, and improves verification reports and documentation bundles.
+
+**Upgrading from v0.9?** Review the release notes for breaking changes to the module-test workflow, QNX image paths, Persistency's KVS API and JSON format, and Lifecycle configuration.
+
+0.10 advances the project’s quality-managed platform. It is not a production release or a safety certification; the release does not include completed safety argumentation and assessment.
+"""
+
+[[articles.items]]
 date = "September 7, 2026"
 title = "Eclipse S-CORE 0.9 Milestone"
 body = """
