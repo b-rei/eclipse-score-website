@@ -1,0 +1,93 @@
+{{ define "main" }}
+<main class="roadmap-page">
+  {{ $hero := .Params.roadmap_hero }}
+  <section class="roadmap-hero">
+    <div class="score-shell roadmap-hero-inner">
+      <div class="roadmap-hero-copy">
+        <p class="roadmap-eyebrow">{{ $hero.eyebrow }}</p>
+        <h1>{{ $hero.title }}</h1>
+        <p class="roadmap-hero-description">{{ $hero.description }}</p>
+        <div class="roadmap-hero-actions">
+          <a class="score-hero-link score-hero-link--primary" href="{{ $hero.primary_url }}" target="_blank" rel="noopener noreferrer">{{ $hero.primary_label }} <span aria-hidden="true">&rarr;</span></a>
+          <a class="score-hero-link score-hero-link--secondary" href="{{ $hero.secondary_url }}" target="_blank" rel="noopener noreferrer">{{ $hero.secondary_label }}</a>
+        </div>
+      </div>
+      <aside class="roadmap-target" aria-label="S-CORE version 1.0 target window">
+        <p>{{ $hero.target_label }}</p>
+        <strong>{{ $hero.target_date }}</strong>
+        <span>{{ $hero.target_version }}</span>
+      </aside>
+    </div>
+  </section>
+
+  {{ $release := .Params.release_section }}
+  <section class="roadmap-section roadmap-release-section">
+    <div class="score-shell">
+      <header class="roadmap-section-heading">
+        <div>
+          <p class="roadmap-section-eyebrow">{{ $release.eyebrow }}</p>
+          <h2>{{ $release.title }}</h2>
+          <p>{{ $release.description }}</p>
+        </div>
+        <span class="roadmap-range">MAY - DECEMBER</span>
+      </header>
+
+      <div class="roadmap-timeline" aria-hidden="true">
+        {{ range .Params.release_gates }}<span class="roadmap-timeline-point roadmap-timeline-point--{{ .status_class }}"></span>{{ end }}
+      </div>
+
+      <div class="roadmap-gate-grid">
+        {{ range .Params.release_gates }}
+          <article class="roadmap-gate-card roadmap-gate-card--{{ .status_class }}">
+            <p class="roadmap-gate-status roadmap-gate-status--{{ .status_class }}"><span aria-hidden="true"></span>{{ .status }}</p>
+            <h3>{{ .version }}</h3>
+            <p class="roadmap-gate-title">{{ .title }}</p>
+            <div class="roadmap-gate-details">
+              <p class="roadmap-gate-dates">{{ .dates }}</p>
+              <p class="roadmap-gate-summary">{{ .summary }}</p>
+              {{ with .release_notes_url }}
+                <a class="roadmap-gate-notes" href="{{ . }}" target="_blank" rel="noopener noreferrer">Read release notes <span aria-hidden="true">&rarr;</span></a>
+              {{ else }}
+                <span class="roadmap-gate-notes roadmap-gate-notes--upcoming">Release notes forthcoming</span>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ $goals := .Params.goals }}
+  <section class="roadmap-section roadmap-goals-section">
+    <div class="score-shell">
+      <header class="roadmap-section-heading roadmap-section-heading--compact">
+        <div>
+          <p class="roadmap-section-eyebrow">{{ $goals.eyebrow }}</p>
+          <h2>{{ $goals.title }}</h2>
+          <p>{{ $goals.description }}</p>
+        </div>
+      </header>
+      <div class="roadmap-goals-grid">
+        {{ range $goals.items }}
+          <article class="roadmap-goal roadmap-goal--{{ .tag_class }}">
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+            <span>{{ .tag }}</span>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ $plan := .Params.detailed_plan }}
+  <section class="roadmap-source-section">
+    <div class="score-shell roadmap-source-inner">
+      <div>
+        <h2>{{ $plan.title }}</h2>
+        <p>{{ $plan.description }}</p>
+      </div>
+      <a class="roadmap-button roadmap-button--source" href="{{ $hero.primary_url }}" target="_blank" rel="noopener noreferrer">{{ $plan.button_label }} <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+</main>
+{{ end }}

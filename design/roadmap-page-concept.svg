@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1180" role="img" aria-labelledby="title description">
+  <title id="title">Eclipse S-CORE roadmap page concept</title>
+  <desc id="description">A website mockup showing S-CORE release gates from v0.8 through v1.0, with shipped and in-progress statuses and links to the live planning project.</desc>
+  <style>
+    @font-face {
+      font-family: Manrope;
+      src: url("../static/fonts/manrope/manrope-latin.woff2") format("woff2");
+      font-weight: 100 900;
+    }
+    text { font-family: Manrope, Arial, sans-serif; }
+  </style>
+
+  <rect width="1440" height="1180" fill="#f3f7fb" />
+  <rect width="1440" height="82" fill="#ffffff" />
+  <path d="M0 81.5h1440" stroke="#dce4ec" />
+  <path d="M48 30h5v24h-5z" fill="#e96812" />
+  <text x="66" y="49" fill="#193967" font-size="19" font-weight="800">Eclipse S-CORE</text>
+  <text x="700" y="49" fill="#465a70" font-size="14" font-weight="700">Home</text>
+  <text x="770" y="49" fill="#465a70" font-size="14" font-weight="700">About</text>
+  <text x="846" y="49" fill="#18385e" font-size="14" font-weight="800">Roadmap</text>
+  <path d="M844 67h68" stroke="#e96812" stroke-width="3" />
+  <text x="932" y="49" fill="#465a70" font-size="14" font-weight="700">News &amp; Events</text>
+  <text x="1070" y="49" fill="#465a70" font-size="14" font-weight="700">Documentation</text>
+  <text x="1210" y="49" fill="#465a70" font-size="14" font-weight="700">Get Involved</text>
+  <text x="1350" y="49" fill="#465a70" font-size="14" font-weight="700">FAQ</text>
+
+  <rect y="82" width="1440" height="274" fill="#193967" />
+  <path d="M0 82h12v274H0z" fill="#e96812" />
+  <circle cx="1290" cy="196" r="138" fill="#234a78" />
+  <circle cx="1290" cy="196" r="102" fill="none" stroke="#42c5e8" stroke-width="2" opacity="0.7" />
+  <circle cx="1290" cy="196" r="72" fill="none" stroke="#e96812" stroke-width="2" opacity="0.9" />
+  <circle cx="1290" cy="196" r="8" fill="#ffffff" />
+  <circle cx="1189" cy="196" r="6" fill="#42c5e8" />
+  <circle cx="1362" cy="196" r="6" fill="#e96812" />
+  <text x="80" y="143" fill="#8edff1" font-size="13" font-weight="800">S-CORE PLATFORM PLAN</text>
+  <text x="80" y="204" fill="#ffffff" font-size="45" font-weight="800">The road to S-CORE 1.0</text>
+  <text x="80" y="241" fill="#e2edf7" font-size="17" font-weight="500">Release gates chart the path from feature completeness to a qualifiable platform.</text>
+  <rect x="80" y="272" width="208" height="46" rx="6" fill="#e96812" />
+  <text x="184" y="301" fill="#ffffff" font-size="14" font-weight="800" text-anchor="middle">Open live planning  ↗</text>
+  <text x="310" y="301" fill="#d5e0ed" font-size="13" font-weight="700">GitHub Project #17</text>
+  <text x="1114" y="148" fill="#c3d6e5" font-size="12" font-weight="800" text-anchor="middle">TARGET WINDOW</text>
+  <text x="1114" y="204" fill="#ffffff" font-size="42" font-weight="800" text-anchor="middle">15 DEC</text>
+  <text x="1114" y="232" fill="#8edff1" font-size="16" font-weight="800" text-anchor="middle">2026 · v1.0</text>
+
+  <text x="80" y="410" fill="#18385e" font-size="27" font-weight="800">2026 release gates</text>
+  <text x="80" y="438" fill="#5c6f84" font-size="15" font-weight="500">Milestones move the platform toward its v1.0 goals.</text>
+  <text x="1360" y="410" fill="#5c6f84" font-size="12" font-weight="800" text-anchor="end">MAY — DECEMBER</text>
+
+  <path d="M222 483h632" stroke="#008f83" stroke-width="4" />
+  <path d="M854 483h316" stroke="#e47712" stroke-width="4" />
+  <circle cx="222" cy="483" r="8" fill="#008f83" stroke="#ffffff" stroke-width="3" />
+  <circle cx="538" cy="483" r="8" fill="#008f83" stroke="#ffffff" stroke-width="3" />
+  <circle cx="854" cy="483" r="8" fill="#008f83" stroke="#ffffff" stroke-width="3" />
+  <circle cx="1170" cy="483" r="9" fill="#e96812" stroke="#ffffff" stroke-width="3" />
+
+  <g>
+    <rect x="72" y="505" width="300" height="244" rx="8" fill="#ffffff" stroke="#dce4ec" stroke-width="1.5" />
+    <path d="M80 506h284" stroke="#008f83" stroke-width="5" />
+    <rect x="96" y="529" width="83" height="24" rx="12" fill="#e4f5f2" />
+    <text x="137.5" y="545" fill="#007d73" font-size="11" font-weight="800" text-anchor="middle">SHIPPED</text>
+    <text x="96" y="592" fill="#18385e" font-size="26" font-weight="800">v0.8</text>
+    <text x="96" y="625" fill="#18385e" font-size="17" font-weight="800">Requirements +</text>
+    <text x="96" y="648" fill="#18385e" font-size="17" font-weight="800">Architecture</text>
+    <path d="M96 673h252" stroke="#e4eaf0" />
+    <text x="96" y="700" fill="#5c6f84" font-size="12" font-weight="800">MAY 13 — JUL 13</text>
+    <text x="96" y="725" fill="#465a70" font-size="13" font-weight="500">Requirements engineering and design</text>
+  </g>
+
+  <g>
+    <rect x="388" y="505" width="300" height="244" rx="8" fill="#ffffff" stroke="#dce4ec" stroke-width="1.5" />
+    <path d="M396 506h284" stroke="#008f83" stroke-width="5" />
+    <rect x="412" y="529" width="83" height="24" rx="12" fill="#e4f5f2" />
+    <text x="453.5" y="545" fill="#007d73" font-size="11" font-weight="800" text-anchor="middle">SHIPPED</text>
+    <text x="412" y="592" fill="#18385e" font-size="26" font-weight="800">v0.9</text>
+    <text x="412" y="625" fill="#18385e" font-size="17" font-weight="800">Implementation</text>
+    <path d="M412 673h252" stroke="#e4eaf0" />
+    <text x="412" y="700" fill="#5c6f84" font-size="12" font-weight="800">JUL 14 — SEP 7</text>
+    <text x="412" y="725" fill="#465a70" font-size="13" font-weight="500">Build out selected platform modules</text>
+  </g>
+
+  <g>
+    <rect x="704" y="505" width="300" height="244" rx="8" fill="#ffffff" stroke="#dce4ec" stroke-width="1.5" />
+    <path d="M712 506h284" stroke="#008f83" stroke-width="5" />
+    <rect x="728" y="529" width="83" height="24" rx="12" fill="#e4f5f2" />
+    <text x="769.5" y="545" fill="#007d73" font-size="11" font-weight="800" text-anchor="middle">SHIPPED</text>
+    <text x="728" y="592" fill="#18385e" font-size="26" font-weight="800">v0.10</text>
+    <text x="728" y="625" fill="#18385e" font-size="17" font-weight="800">Verification</text>
+    <path d="M728 673h252" stroke="#e4eaf0" />
+    <text x="728" y="700" fill="#5c6f84" font-size="12" font-weight="800">SEP 8 — NOV 2</text>
+    <text x="728" y="725" fill="#465a70" font-size="13" font-weight="500">Test and link platform requirements</text>
+  </g>
+
+  <g>
+    <rect x="1020" y="505" width="300" height="244" rx="8" fill="#ffffff" stroke="#e96812" stroke-width="2" />
+    <path d="M1028 506h284" stroke="#e96812" stroke-width="5" />
+    <rect x="1044" y="529" width="116" height="24" rx="12" fill="#fff0e4" />
+    <text x="1102" y="545" fill="#b84a00" font-size="11" font-weight="800" text-anchor="middle">IN PROGRESS</text>
+    <text x="1044" y="592" fill="#18385e" font-size="26" font-weight="800">v1.0</text>
+    <text x="1044" y="625" fill="#18385e" font-size="17" font-weight="800">Hardening + Release</text>
+    <path d="M1044 673h252" stroke="#e4eaf0" />
+    <text x="1044" y="700" fill="#5c6f84" font-size="12" font-weight="800">NOV 3 — DEC 15</text>
+    <text x="1044" y="725" fill="#465a70" font-size="13" font-weight="500">Close gaps and prepare release</text>
+  </g>
+
+  <text x="80" y="814" fill="#18385e" font-size="24" font-weight="800">What the roadmap is aiming for</text>
+  <text x="80" y="841" fill="#5c6f84" font-size="14" font-weight="500">Two outcomes guide the work toward v1.0.</text>
+  <g>
+    <rect x="80" y="873" width="618" height="130" rx="8" fill="#ffffff" stroke="#dce4ec" />
+    <path d="M80 873v130" stroke="#42c5e8" stroke-width="5" />
+    <text x="108" y="912" fill="#18385e" font-size="17" font-weight="800">Feature completeness</text>
+    <text x="108" y="944" fill="#465a70" font-size="14" font-weight="500">Selected modules implemented and tested for the target platform scope.</text>
+    <text x="108" y="973" fill="#0078c8" font-size="12" font-weight="800">SCOPE &amp; CAPABILITIES</text>
+  </g>
+  <g>
+    <rect x="722" y="873" width="638" height="130" rx="8" fill="#ffffff" stroke="#dce4ec" />
+    <path d="M722 873v130" stroke="#e96812" stroke-width="5" />
+    <text x="750" y="912" fill="#18385e" font-size="17" font-weight="800">Qualifiable state</text>
+    <text x="750" y="944" fill="#465a70" font-size="14" font-weight="500">Modules follow the process across requirements, design, verification and safety.</text>
+    <text x="750" y="973" fill="#b84a00" font-size="12" font-weight="800">PROCESS &amp; EVIDENCE</text>
+  </g>
+
+  <rect x="80" y="1040" width="1280" height="96" rx="8" fill="#e8eff5" />
+  <text x="108" y="1080" fill="#18385e" font-size="16" font-weight="800">Want the detailed plan?</text>
+  <text x="108" y="1107" fill="#465a70" font-size="13" font-weight="500">The live GitHub project is the source of truth for Product Increments and milestone status.</text>
+  <rect x="1115" y="1065" width="216" height="46" rx="6" fill="#193967" />
+  <text x="1223" y="1094" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle">Open Project #17  ↗</text>
+  <text x="80" y="1161" fill="#5c6f84" font-size="11" font-weight="600">CONCEPT ONLY · SAMPLE STATUS AND DATES REFLECT THE PUBLISHED S-CORE v1.0 ROADMAP</text>
+</svg>

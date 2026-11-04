@@ -63,34 +63,40 @@ pluralizeListTitles = false
   weight = 2
 
 [[menu.main]]
+  name = "Roadmap"
+  identifier = "roadmap"
+  url = "/roadmap.html"
+  weight = 3
+
+[[menu.main]]
   name = "News & Events"
   identifier = "news"
   url = "/articles.html"
-  weight = 3
+  weight = 4
 
 [[menu.main]]
   name = "Documentation"
   identifier = "docs"
   url = "/docs.html"
-  weight = 4
+  weight = 5
 
 [[menu.main]]
   name = "Get Involved"
   identifier = "join"
   url = "/how_to_contribute.html"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "FAQ"
   identifier = "faq"
   url = "/faq.html"
-  weight = 6
+  weight = 7
 
 [[menu.main]]
   name = "GitHub"
   identifier = "github"
   url = "https://github.com/eclipse-score"
-  weight = 7
+  weight = 8
 
 [[menu.footer]]
   name = "Terms of Use"

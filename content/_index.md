@@ -41,12 +41,12 @@ url = "https://eclipse-score.github.io/score/main/users_guide/index.html"
 external = true
 
 [[start_here.items]]
-title = "Releases"
-description = "Review current milestones, compatibility notes, and the newest platform capabilities."
-action = "Explore releases"
+title = "Roadmap & releases"
+description = "See the release gates leading to S-CORE 1.0 and explore the published platform releases."
+action = "Explore the roadmap"
 icon = "images/home/icons/packages.svg"
-url = "https://github.com/eclipse-score/reference_integration/releases"
-external = true
+url = "roadmap.html"
+external = false
 
 [[start_here.items]]
 title = "Functional safety"
