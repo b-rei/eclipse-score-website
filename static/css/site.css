@@ -340,6 +340,7 @@ body {
 
 .score-header {
   padding-top: 24px;
+  background: var(--score-card);
 }
 
 .score-topbar {
