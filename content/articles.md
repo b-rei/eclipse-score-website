@@ -16,7 +16,7 @@ image = "images/news/score-v0-10-release.svg"
 image_alt = "Eclipse S-CORE 0.10 release graphic highlighting per-module tests, stakeholder-linked integration tests, and CI-generated SBOMs."
 summary = "A new milestone release with stronger integration testing, SBOM generation, and updated modules and developer tooling."
 action_label = "Read the 0.10 release notes"
-action_url = "https://eclipse-score.github.io/reference_integration/pr-415/s_core_v_1/releases/release_note_score_v0_10.html"
+action_url = "https://eclipse-score.github.io/reference_integration/v0.10.0/s_core_v_1/releases/releases.html"
 external = true
 body = """
 Eclipse S-CORE 0.10 brings together updated platform modules and a more rigorous reference-integration workflow.
