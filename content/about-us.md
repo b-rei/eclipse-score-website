@@ -213,7 +213,7 @@ quote = "With S-CORE, we’re providing developers with a reliable, safety-grade
 [[voices.items]]
 name = "Anton Krivoborodov"
 role = "Technical Project Lead, BMW"
-image = "images/about-us/antonk.jpg"
+image = "images/about-us/anton_picture.jpg"
 quote = "With S-CORE, we can shape the future of the Safe-POSIX platform with the support of a strong open-source community."
 
 [[voices.items]]
