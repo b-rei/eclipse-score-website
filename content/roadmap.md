@@ -53,7 +53,7 @@ status_class = "shipped"
 title = "Verification"
 dates = "Sep 8 - Nov 4, 2026"
 summary = "Test and link platform requirements."
-release_notes_url = "https://eclipse-score.github.io/reference_integration/pr-415/s_core_v_1/releases/release_note_score_v0_10.html"
+release_notes_url = "https://eclipse-score.github.io/reference_integration/v0.10.0/s_core_v_1/releases/release_note_score_v0_10.html"
 
 [[release_gates]]
 version = "v1.0"
