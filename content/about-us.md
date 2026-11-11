@@ -109,7 +109,7 @@ metric = "Ready for AI-assisted engineering"
 
 [work]
 eyebrow = "HOW WE WORK"
-heading = "Clear ownership, open collaboration"
+heading = "Clear governance, open collaboration"
 description = "S-CORE works in two parallel tracks. On the non-technical side, the [X-CORE Platform Council](https://eclipsesdv.org/platform-council/) provides strategy and guidance, steering the project without managing it. On the technical side, project leads, technical leads, and contributors define modules, propose requirements, and evolve the platform in open working groups."
 council_link_label = "Find out more about the X-CORE Platform Council"
 council_link_url = "https://eclipsesdv.org/platform-council/"
