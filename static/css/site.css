@@ -36,6 +36,7 @@
 
 html {
   scrollbar-width: thin;
+  scroll-padding-top: 104px;
 }
 
 html::-webkit-scrollbar {
@@ -339,8 +340,22 @@ body {
 }
 
 .score-header {
+  position: sticky;
+  /* Lets the 24px top padding scroll away so only the bar sticks. */
+  top: -24px;
+  z-index: 100;
   padding-top: 24px;
   background: var(--score-card);
+  transition: box-shadow 160ms ease, transform 220ms ease;
+}
+
+.score-header.is-scrolled {
+  box-shadow: 0 6px 18px rgba(25, 57, 103, 0.12);
+}
+
+.score-header.is-hidden {
+  box-shadow: none;
+  transform: translateY(-100%);
 }
 
 .score-topbar {
@@ -763,6 +778,13 @@ a.score-feature-action:hover span {
     display: none;
   }
 
+  .score-nav-toggle[aria-expanded="true"] + .score-nav {
+    max-height: calc(100vh - 100px);
+    max-height: calc(100dvh - 100px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
   .score-nav a {
     width: 100%;
     justify-content: flex-start;
@@ -794,6 +816,14 @@ a.score-feature-action:hover span {
 
   .score-stay-connected {
     padding: 46px 0 56px;
+  }
+}
+
+@media print {
+  .score-header {
+    position: static;
+    box-shadow: none;
+    transform: none;
   }
 }
 

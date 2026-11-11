@@ -1,4 +1,38 @@
 (() => {
+  const header = document.querySelector(".score-header");
+  if (!header) return;
+
+  const toggle = header.querySelector(".score-nav-toggle");
+  let lastY = window.scrollY;
+  let ticking = false;
+
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY;
+    const delta = y - lastY;
+    header.classList.toggle("is-scrolled", y > 24);
+
+    const pinned = y < header.offsetHeight
+      || header.contains(document.activeElement)
+      || toggle?.getAttribute("aria-expanded") === "true";
+    if (pinned || delta < -6) header.classList.remove("is-hidden");
+    else if (delta > 6) header.classList.add("is-hidden");
+
+    // Ignore sub-threshold jitter so slow scrolling still accumulates to a direction change.
+    if (Math.abs(delta) > 6 || pinned) lastY = y;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }, { passive: true });
+  header.addEventListener("focusin", () => header.classList.remove("is-hidden"));
+  update();
+})();
+
+(() => {
   const toggle = document.querySelector(".score-nav-toggle");
   const nav = document.querySelector("#main-navigation");
   if (!toggle || !nav || !window.matchMedia) return;
