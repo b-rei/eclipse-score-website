@@ -36,7 +36,7 @@ member_total = "More than 35 organizations have contributed to Eclipse S-CORE so
 eyebrow = "COMMITMENT & BACKING"
 heading = "Committed organizations, industry-wide support"
 engagement_heading = "Eclipse S-CORE Engagement Program"
-engagement_paragraph = "The program recognizes organizational participation and commitment through Silver, Gold, and Platinum levels. Each level has defined contributor requirements and recognition. Platinum also offers eligibility to participate in the X-CORE Platform Council, subject to a successful application and Eclipse SDV Steering Committee approval."
+engagement_paragraph = "The program recognizes organizational participation and commitment through Silver, Gold, and Platinum levels. Each level has defined contributor requirements and recognition. Platinum also offers eligibility to participate in the [X-CORE Platform Council](https://eclipsesdv.org/platform-council/), subject to a successful application and Eclipse SDV Steering Committee approval."
 engagement_link_label = "Explore levels and requirements"
 engagement_url = "how_to_contribute.html#engagement-program"
 engagement_participants_heading = "Acknowledged Engagement Program Organizations"
@@ -110,9 +110,54 @@ metric = "Ready for AI-assisted engineering"
 [work]
 eyebrow = "HOW WE WORK"
 heading = "Clear ownership, open collaboration"
-description = "S-CORE works in two parallel tracks. On the non-technical side, the X-CORE Platform Council provides strategy and guidance, steering the project without managing it. On the technical side, project leads, technical leads, and contributors define modules, propose requirements, and evolve the platform in open working groups."
-structure_image = "images/about-us/community-structure-v2.svg"
-structure_alt = "Diagram with two parallel hierarchies. Non-technical X-CORE structure: Eclipse SDV Steering Committee, X-CORE Platform Council, and Engagement Program organizations. Technical project structure: Project Leads, Technical Leads, and Eclipse S-CORE contributors working in five open working groups. The Platform Council is loosely coupled to the project through steering."
+description = "S-CORE works in two parallel tracks. On the non-technical side, the [X-CORE Platform Council](https://eclipsesdv.org/platform-council/) provides strategy and guidance, steering the project without managing it. On the technical side, project leads, technical leads, and contributors define modules, propose requirements, and evolve the platform in open working groups."
+council_link_label = "Find out more about the X-CORE Platform Council"
+council_link_url = "https://eclipsesdv.org/platform-council/"
+
+[work.structure]
+label = "Eclipse S-CORE governance: non-technical and technical structure"
+groups_heading = "Open working groups"
+
+[[work.structure.tracks]]
+label = "Non-technical"
+
+[[work.structure.tracks.bodies]]
+title = "Eclipse SDV Steering Committee"
+description = "Initiates the Platform Council and approves its members"
+
+[[work.structure.tracks.bodies]]
+title = "X-CORE Platform Council"
+description = "Strategy and guidance"
+badge = "Steers the technical track"
+url = "https://eclipsesdv.org/platform-council/"
+external = true
+highlight = true
+cta_label = "Find out more"
+cta_url = "https://eclipsesdv.org/platform-council/"
+
+[[work.structure.tracks.bodies]]
+title = "Engagement Program"
+description = "Platinum, Gold, and Silver organizations"
+url = "#engagement-program"
+
+[[work.structure.tracks]]
+label = "Technical"
+show_groups = true
+
+[[work.structure.tracks.bodies]]
+title = "Project Leads"
+description = "Project direction and coordination"
+url = "#project-lead-circle"
+
+[[work.structure.tracks.bodies]]
+title = "Technical Leads"
+description = "Technical alignment and planning"
+url = "#technical-lead-circle"
+
+[[work.structure.tracks.bodies]]
+title = "Eclipse S-CORE Contributors"
+description = "Contribute, collaborate, and shape the project"
+url = "how_to_contribute.html"
 
 [[work.principles]]
 title = "Transparent decisions"
@@ -129,7 +174,7 @@ description = "Council, leads, contributors, and working groups each have clear 
 [governance]
 eyebrow = "PROJECT GOVERNANCE"
 heading = "Two lead circles. One shared direction."
-description = "Within the technical track, two circles lead the project. Project leads represent their organizations and coordinate direction, planning, and resources. Technical leads guide architecture and technical alignment. Strategic steering comes from the X-CORE Platform Council."
+description = "Within the technical track, two circles lead the project. Project leads represent their organizations and coordinate direction, planning, and resources. Technical leads guide architecture and technical alignment. Strategic steering comes from the [X-CORE Platform Council](https://eclipsesdv.org/platform-council/)."
 
 [[governance.groups]]
 number = "01"
@@ -138,6 +183,7 @@ short = "Project direction"
 description = "Coordinates project planning, resources, and progress across the participating members."
 responsibilities = ["Roadmap and planning", "Coordination", "Project health"]
 show_project_leads = true
+anchor = "project-lead-circle"
 
 [[governance.groups]]
 number = "02"
@@ -145,6 +191,7 @@ name = "Technical Lead Circle"
 short = "Technical direction"
 description = "Guides architecture, technical decisions, and alignment with S-CORE’s goals."
 responsibilities = ["Architecture and design", "Technical decisions", "Engineering alignment"]
+anchor = "technical-lead-circle"
 member_usernames = ["larsb", "andreasmittag", "fschol", "antonkri", "philippqorix"]
 members_url = "https://github.com/orgs/eclipse-score/discussions/categories/technical-lead-circle"
 members_link_label = "Join the Technical Lead Circle discussion"

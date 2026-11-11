@@ -99,29 +99,34 @@ pluralizeListTitles = false
   weight = 8
 
 [[menu.footer]]
+  name = "X-CORE Platform Council"
+  url = "https://eclipsesdv.org/platform-council/"
+  weight = 1
+
+[[menu.footer]]
   name = "Terms of Use"
   url = "https://www.eclipse.org/legal/termsofuse.php"
-  weight = 1
+  weight = 2
 
 [[menu.footer]]
   name = "Privacy Policy"
   url = "https://www.eclipse.org/legal/privacy.php"
-  weight = 2
+  weight = 3
 
 [[menu.footer]]
   name = "Copyright Agent"
   url = "https://www.eclipse.org/legal/copyright.php"
-  weight = 3
+  weight = 4
 
 [[menu.footer]]
   name = "Eclipse Public License"
   url = "https://www.eclipse.org/legal/epl-2.0/"
-  weight = 4
+  weight = 5
 
 [[menu.footer]]
   name = "Legal Resources"
   url = "https://www.eclipse.org/legal/"
-  weight = 5
+  weight = 6
 
 [markup]
   [markup.goldmark]

@@ -4,11 +4,44 @@
     <header class="about-section-heading">
       <p class="about-eyebrow">{{ $content.eyebrow }}</p>
       <h2>{{ $content.heading }}</h2>
-      <p class="about-body">{{ $content.description }}</p>
+      <p class="about-body">{{ $content.description | markdownify }}</p>
+      {{ with $content.council_link_url }}
+        <a class="about-council-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $content.council_link_label }} <span aria-hidden="true">&rarr;</span></a>
+      {{ end }}
     </header>
     <div class="about-work-layout">
-      <figure class="about-structure-figure">
-        <img src="{{ $content.structure_image | relURL }}" alt="{{ $content.structure_alt }}" loading="lazy">
+      {{ $structure := $content.structure }}
+      {{ $groups := .Params.communities.items }}
+      <figure class="about-structure-figure" aria-label="{{ $structure.label }}">
+        {{ range $structure.tracks }}
+          <div class="about-structure-track">
+            <p class="about-structure-track-label">{{ .label }}</p>
+            <ol class="about-structure-bodies">
+              {{ range .bodies }}
+                {{ $href := .url }}
+                {{ if and $href (not (hasPrefix $href "#")) (not .external) }}{{ $href = $href | relURL }}{{ end }}
+                <li class="about-structure-body{{ if .highlight }} is-highlighted{{ end }}">
+                  {{ if $href }}
+                    <a class="about-structure-title" href="{{ $href }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .title }}</a>
+                  {{ else }}
+                    <span class="about-structure-title">{{ .title }}</span>
+                  {{ end }}
+                  <span class="about-structure-copy">{{ .description }}</span>
+                  {{ with .badge }}<span class="about-structure-badge">{{ . }}</span>{{ end }}
+                  {{ if .cta_url }}<a class="about-structure-cta" href="{{ .cta_url }}" target="_blank" rel="noopener noreferrer">{{ .cta_label }} <span aria-hidden="true">&rarr;</span></a>{{ end }}
+                </li>
+              {{ end }}
+            </ol>
+            {{ if and .show_groups $groups }}
+              <div class="about-structure-groups">
+                <p>{{ $structure.groups_heading }}</p>
+                <ul>
+                  {{ range $groups }}<li><a href="{{ .href }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></li>{{ end }}
+                </ul>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
       </figure>
       <div class="about-principles">
         {{ range $index, $principle := $content.principles }}

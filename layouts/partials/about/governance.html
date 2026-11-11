@@ -4,11 +4,11 @@
     <header class="about-section-heading">
       <p class="about-eyebrow">{{ $content.eyebrow }}</p>
       <h2>{{ $content.heading }}</h2>
-      <p class="about-body">{{ $content.description }}</p>
+      <p class="about-body">{{ $content.description | markdownify }}</p>
     </header>
     <div class="about-governance-grid">
       {{ range $content.groups }}
-        <article class="about-governance-card"{{ if .show_project_leads }} id="project-lead-circle"{{ end }}>
+        <article class="about-governance-card"{{ with .anchor }} id="{{ . }}"{{ end }}>
           <span class="about-governance-number">{{ .number }}</span>
           <p class="about-governance-label">{{ .short }}</p>
           <h3>{{ .name }}</h3>

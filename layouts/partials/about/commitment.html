@@ -8,7 +8,7 @@
     <div class="about-commitment-grid">
       <article class="about-commitment-card" id="engagement-program">
         <h3>{{ $content.engagement_heading }}</h3>
-        <p>{{ $content.engagement_paragraph }}</p>
+        <p>{{ $content.engagement_paragraph | markdownify }}</p>
         <h4 class="about-commitment-subheading">{{ $content.engagement_participants_heading }}</h4>
         {{ range $content.engagement_participants }}
           <div class="about-program-participants">

@@ -62,6 +62,12 @@ description = "The program recognizes organizational participation and commitmen
 enrol_url = "https://eclipsesdv.org/platform-council/#my_application_form"
 enrol_label = "Enrol now"
 
+[engagement_program.council]
+heading = "X-CORE Platform Council"
+description = "The council provides strategic guidance for Eclipse S-CORE, including release planning, branding, and ecosystem adoption. Platinum organizations are eligible to participate."
+link_label = "Find out more about the X-CORE Platform Council"
+url = "https://eclipsesdv.org/platform-council/"
+
 [[engagement_program.levels]]
 name = "Platinum"
 benefits = ["Play a strategic role in shaping the future of Eclipse S-CORE", "Become eligible to participate in the X-CORE Platform Council", "Influence governance and the platform's long-term direction", "Achieve maximum visibility across Eclipse S-CORE and Eclipse SDV channels", "Be recognised as a top-tier ecosystem leader and strategic partner"]

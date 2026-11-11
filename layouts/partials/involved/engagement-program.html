@@ -30,5 +30,14 @@
         </article>
       {{ end }}
     </div>
+    {{ with $content.council }}
+      <aside class="engagement-council">
+        <div>
+          <h3>{{ .heading }}</h3>
+          <p>{{ .description }}</p>
+        </div>
+        <a class="score-feature-action score-feature-action--inverse" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .link_label }} <span aria-hidden="true">&rarr;</span></a>
+      </aside>
+    {{ end }}
   </div>
 </section>
