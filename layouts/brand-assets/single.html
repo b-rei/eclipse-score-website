@@ -1,0 +1,84 @@
+{{ define "main" }}
+{{ partial "shared/compact-stage.html" (dict "eyebrow" .Params.stage_eyebrow "title" .Params.stage_title "description" .Params.stage_description) }}
+<main class="brand-page">
+  <div class="score-shell">
+    <p class="brand-notice"><strong>Proposal for review:</strong> The assets and values below reflect the current website and an S-CORE presentation theme. Project-wide brand guidelines and usage permissions are subject to approval.</p>
+
+    <section class="brand-section brand-section--stacked" aria-labelledby="brand-principles-heading">
+      <div class="brand-section-intro">
+        <p class="brand-eyebrow">VISUAL DIRECTION</p>
+        <h2 id="brand-principles-heading">Proposed design principles</h2>
+        <p>A starting point for discussing how S-CORE presents itself across project materials.</p>
+      </div>
+      <div class="brand-principles">
+        {{ range .Params.principles }}
+          <div><h3>{{ .title }}</h3><p>{{ .description }}</p></div>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="brand-section brand-section--stacked" aria-labelledby="brand-logo-heading">
+      <div class="brand-section-intro">
+        <p class="brand-eyebrow">01 / LOGO</p>
+        <h2 id="brand-logo-heading">{{ .Params.logo.title }}</h2>
+        <p>{{ .Params.logo.description }}</p>
+      </div>
+      <div class="brand-logos">
+        {{ range .Params.logo.variants }}
+          <article class="brand-logo">
+            <div class="brand-logo-preview{{ if .dark_background }} brand-logo-preview--dark{{ end }}">
+              <img src="{{ .image | relURL }}" alt="Eclipse S-CORE {{ .name }} logo" loading="lazy">
+            </div>
+            <div class="brand-logo-details">
+              <h3>{{ .name }}</h3>
+              <a class="brand-download" href="{{ .image | relURL }}" download>Download <span>PNG</span><span class="brand-visually-hidden">{{ .name }} logo</span></a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="brand-section brand-section--stacked" aria-labelledby="brand-colour-heading">
+      <div class="brand-section-intro">
+        <p class="brand-eyebrow">02 / COLOUR</p>
+        <h2 id="brand-colour-heading">Website palette</h2>
+        <p>These colours are taken from the current website styles; they are not yet a project-wide specification.</p>
+      </div>
+      <div class="brand-colours">
+        {{ range .Params.colours }}
+          <div class="brand-colour">
+            <div class="brand-swatch" style="background-color: {{ .hex }}" aria-hidden="true"></div>
+            <div class="brand-colour-details"><strong>{{ .name }}</strong><code>{{ .hex }}</code><span>{{ .role }}</span></div>
+          </div>
+        {{ end }}
+      </div>
+      <div class="brand-section-intro brand-palette-intro">
+        <h3>Presentation accents</h3>
+        <p>These supporting colours come from the Eclipse-S-CORE #4 theme in the provided presentation. Check contrast before using them for text or interface controls.</p>
+      </div>
+      <div class="brand-colours">
+        {{ range .Params.presentation_colours }}
+          <div class="brand-colour">
+            <div class="brand-swatch" style="background-color: {{ .hex }}" aria-hidden="true"></div>
+            <div class="brand-colour-details"><strong>{{ .name }}</strong><code>{{ .hex }}</code><span>{{ .role }}</span></div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="brand-section" aria-labelledby="brand-type-heading">
+      <div class="brand-section-intro">
+        <p class="brand-eyebrow">03 / TYPOGRAPHY</p>
+        <h2 id="brand-type-heading">{{ .Params.typography.title }}</h2>
+        <p>{{ .Params.typography.description }}</p>
+        <a class="brand-text-link" href="{{ "fonts/manrope/OFL.txt" | relURL }}">Read the font licence <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="brand-type-sample" aria-label="Manrope type specimen">
+        <span class="brand-type-large">Aa</span>
+        <span>Open collaboration.<br>Shared progress.</span>
+        <small>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</small>
+      </div>
+    </section>
+  </div>
+</main>
+{{ end }}
