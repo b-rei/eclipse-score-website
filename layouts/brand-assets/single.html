@@ -79,6 +79,17 @@
         <small>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</small>
       </div>
     </section>
+
+    {{ with .Params.presentation_template }}
+      <section class="brand-section brand-section--stacked" aria-labelledby="brand-presentation-heading">
+        <div class="brand-section-intro">
+          <p class="brand-eyebrow">04 / PRESENTATIONS</p>
+          <h2 id="brand-presentation-heading">{{ .title }}</h2>
+          <p>{{ .description }}</p>
+          <a class="brand-download" href="{{ .file | relURL }}" download>Download presentation template <span>PPTX</span></a>
+        </div>
+      </section>
+    {{ end }}
   </div>
 </main>
 {{ end }}

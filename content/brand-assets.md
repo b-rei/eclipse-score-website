@@ -46,6 +46,11 @@ dark_background = true
 title = "Manrope"
 description = "The website uses Manrope for headings, navigation and body text. The font is available under the SIL Open Font License."
 
+[presentation_template]
+title = "Eclipse S-CORE presentation template"
+description = "Use the PowerPoint template for Eclipse S-CORE presentations."
+file = "Corporate_Design_Assets/202611_Eclipse_S-CORE_PPT_Template_Brand.pptx"
+
 [[colours]]
 name = "Navy"
 hex = "#193967"
