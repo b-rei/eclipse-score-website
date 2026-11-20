@@ -50,6 +50,17 @@
   line-height: 1.65;
 }
 
+.brand-section-intro > p a {
+  color: var(--score-orange-dark);
+  font-weight: 800;
+  text-underline-offset: 3px;
+}
+
+.brand-section-intro > p a:focus-visible {
+  outline: 3px solid var(--score-orange-dark);
+  outline-offset: 3px;
+}
+
 .brand-eyebrow {
   margin: 0;
   color: var(--score-orange-dark);
