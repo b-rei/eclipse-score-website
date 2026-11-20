@@ -1,0 +1,24 @@
+{{ with .Site.GetPage "/articles" }}
+  {{ $articlesURL := .RelPermalink }}
+  {{ with .Params.articles.items }}
+    <section class="score-section score-latest-news" aria-labelledby="latest-news-heading">
+      <div class="score-shell">
+        <div class="score-section-header score-section-header-stacked">
+          <p class="score-mini">From the project</p>
+          <h2 id="latest-news-heading">Latest S-CORE News</h2>
+        </div>
+        <div class="score-news-grid">
+          {{ range first 3 . }}
+            {{ $anchor := printf "article-%s" (urlize (printf "%s-%s" .date .title)) }}
+            <article class="score-news-item">
+              <p class="score-news-date">{{ .date }}</p>
+              <h3><a href="{{ $articlesURL }}#{{ $anchor }}">{{ .title }}</a></h3>
+              <p class="score-news-summary">{{ .summary | default (.body | markdownify | plainify | truncate 150) }}</p>
+            </article>
+          {{ end }}
+        </div>
+        <a class="score-feature-action score-feature-action--inverse" href="{{ $articlesURL }}">All S-CORE news <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

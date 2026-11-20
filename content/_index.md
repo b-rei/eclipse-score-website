@@ -150,8 +150,8 @@ description = "Automotive microprocessors and SoCs for high-performance ECUs."
 
 [news]
 eyebrow = "Stay connected"
-heading = "Latest News & Events"
-link_label = "More News & Events"
+heading = "Upcoming SDV Events"
+link_label = "All News & Events"
 +++
 
 
