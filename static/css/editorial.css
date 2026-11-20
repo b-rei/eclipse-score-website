@@ -73,6 +73,17 @@
   object-fit: contain;
 }
 
+.editorial-article-image--logo {
+  box-sizing: border-box;
+  min-height: 140px;
+  padding: 24px;
+}
+
+.editorial-article-image--logo img {
+  width: min(100%, 400px);
+  max-height: 90px;
+}
+
 .editorial-article-content {
   display: flex;
   flex-direction: column;

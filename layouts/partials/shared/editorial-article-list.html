@@ -2,7 +2,7 @@
   {{ $item := . }}
   <article class="main-blog-item-card editorial-article-card">
     {{ with $item.image }}
-      <div class="editorial-article-image">
+      <div class="editorial-article-image{{ if eq $item.image_style "logo" }} editorial-article-image--logo{{ end }}">
         <img src="{{ . | relURL }}" alt="{{ $item.image_alt }}" loading="lazy">
       </div>
     {{ end }}

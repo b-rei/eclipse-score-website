@@ -10,6 +10,25 @@ editorial_description = "Project releases, community stories, and perspectives f
 extra_styles = ["css/editorial.css"]
 
 [[articles.items]]
+date = "November 20, 2026"
+title = "A new website and visual identity for Eclipse S-CORE"
+image = "images/icons/Eclipse-S-CORE-colour-horizontal.png"
+image_alt = "The new Eclipse S-CORE logo in blue."
+image_style = "logo"
+summary = "The relaunched Eclipse S-CORE website makes project information easier to find and introduces a shared visual identity for the growing community."
+action_label = "Explore Brand & Assets"
+action_url = "brand-assets.html"
+body = """
+As Eclipse S-CORE matures towards its 1.0 milestone, targeted for December 2026, we have relaunched the project website. The new design makes it easier to find relevant information and understand how to engage with the project.
+
+Whether you are a developer looking for [documentation](https://eclipse-score.github.io/score/main/) and ways to contribute, a manager following the roadmap, or a stakeholder exploring the project's goals and community, the website provides a clear starting point. It brings together project information, documentation, news, events and opportunities to get involved.
+
+Alongside the website relaunch, we have introduced a new Eclipse S-CORE logo and are establishing a shared design approach across the website, documentation, presentations and other project materials. The aim is to make S-CORE recognisable while keeping information **clear**, **consistent** and **accessible** to its different audiences.
+
+The new Brand & Assets page brings together logo variants, colours, typography and a PowerPoint template as a starting point.
+"""
+
+[[articles.items]]
 date = "November 3, 2026"
 title = "Eclipse S-CORE 0.10 is here!"
 image = "images/news/score-v0-10-release.svg"
