@@ -6,7 +6,7 @@ layout = "single"
 extra_styles = ["css/brand-assets.css"]
 stage_eyebrow = "ECLIPSE S-CORE"
 stage_title = "Brand & Assets"
-stage_description = "A starting point for the visual identity of Eclipse S-CORE and the assets used across its website."
+stage_description = "Explore the visual identity, design principles and assets of Eclipse S-CORE."
 
 [[principles]]
 title = "Clear"
@@ -23,6 +23,7 @@ description = "Support readable contrast, responsive layouts and inclusive acces
 [logo]
 title = "Eclipse S-CORE logos"
 description = "Colour and white logo variants are available in horizontal and stacked layouts."
+usage_notice = "Eclipse S-CORE and its logo are trademarks of Eclipse Foundation AISBL. Use of the logo is subject to the [Eclipse Foundation Trademark Usage Policy](https://www.eclipse.org/legal/logo-guidelines/). Do not modify the logo or imply endorsement or affiliation without appropriate permission."
 
 [[logo.variants]]
 name = "Colour horizontal"

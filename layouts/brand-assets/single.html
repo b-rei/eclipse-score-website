@@ -2,13 +2,11 @@
 {{ partial "shared/compact-stage.html" (dict "eyebrow" .Params.stage_eyebrow "title" .Params.stage_title "description" .Params.stage_description) }}
 <main class="brand-page">
   <div class="score-shell">
-    <p class="brand-notice"><strong>Proposal for review:</strong> The assets and values below reflect the current website and an S-CORE presentation theme. Project-wide brand guidelines and usage permissions are subject to approval.</p>
-
     <section class="brand-section brand-section--stacked" aria-labelledby="brand-principles-heading">
       <div class="brand-section-intro">
         <p class="brand-eyebrow">VISUAL DIRECTION</p>
-        <h2 id="brand-principles-heading">Proposed design principles</h2>
-        <p>A starting point for discussing how S-CORE presents itself across project materials.</p>
+        <h2 id="brand-principles-heading">Design principles</h2>
+        <p>These principles guide how S-CORE presents itself across project materials.</p>
       </div>
       <div class="brand-principles">
         {{ range .Params.principles }}
@@ -22,6 +20,7 @@
         <p class="brand-eyebrow">01 / LOGO</p>
         <h2 id="brand-logo-heading">{{ .Params.logo.title }}</h2>
         <p>{{ .Params.logo.description }}</p>
+        <p>{{ .Params.logo.usage_notice | markdownify }}</p>
       </div>
       <div class="brand-logos">
         {{ range .Params.logo.variants }}
@@ -42,7 +41,7 @@
       <div class="brand-section-intro">
         <p class="brand-eyebrow">02 / COLOUR</p>
         <h2 id="brand-colour-heading">Website palette</h2>
-        <p>These colours are taken from the current website styles; they are not yet a project-wide specification.</p>
+        <p>These colours are used across the Eclipse S-CORE website.</p>
       </div>
       <div class="brand-colours">
         {{ range .Params.colours }}
@@ -54,7 +53,7 @@
       </div>
       <div class="brand-section-intro brand-palette-intro">
         <h3>Presentation accents</h3>
-        <p>These supporting colours come from the Eclipse-S-CORE #4 theme in the provided presentation. Check contrast before using them for text or interface controls.</p>
+        <p>These supporting colours come from the Eclipse S-CORE presentation theme. Check contrast before using them for text or interface controls.</p>
       </div>
       <div class="brand-colours">
         {{ range .Params.presentation_colours }}
